@@ -1,8 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .headerNav {
     text-align: right;
     background-color: rgb(244,244,244);
     padding-right: 15px;
     margin: 0;
+}
+
+.headerLogo {
+    height: 30px;
+    float: left;
+    margin: 10px;
+}
+.companyName {
+    float: left;
 }
 
 .topMenu {
@@ -26,16 +39,23 @@
 }
 
 /* */
+
+
 .promotionSlider {
+    width: 100%;
     text-align: center;
     position: relative;
     animation-name: imageFade;
     animation-duration: 1.5s;
+    background-color: blanchedalmond;
 }
 
 .image {
-    width: 700px;
+    width: 900px;
+    height: 500px;
     border-radius: 10px;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 @keyframes imageFade {
@@ -43,11 +63,14 @@
     to {opacity: 1}
 }
 
+
+
+
 .prev, .next, .stop {
     cursor: pointer;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    width: auto;
+    width: auto; */
     padding: 16px;
     margin-top: -22px;
     color: white;
@@ -56,35 +79,34 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-
+    background-color: rgba(0,0,0,0.6);
 }
+ /* 
 .prev{
-    left: 400px;
+    position: absolute;
+    left: 200px;
     border-radius: 3px 0 0 3px;
 }
-
-.next {
-    right: 400px;
+} */
+/* .next {
+    position: absolute;
+    right: 0;
     border-radius: 3px 0 0 3px;
-}
+} */
 
-.stop {
+/* .stop {
     right: 400px;
     top:90%;
     border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover, .stop:hover {
-    background-color: rgba(0,0,0,0.8);
-}
+} */
 
 .captionNumber {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 16pt;
     padding: 8px 12px;
     position: absolute;
     top: 90%;
-    left: 40%;
+    left: 50%;
 }
 
 .recommdation {
@@ -98,3 +120,59 @@
 }
 
 
+/* footer */
+.footerNav {
+    background-color: rgb(244,244,244);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 80px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.bottomLine {
+    border: none;
+    height: 1px;
+    background-color: rgb(185,187,189);
+}
+
+.indexContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footerLogo {
+    height: 100px;
+}
+
+.siteIndex {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    list-style-position: inside;
+}
+
+.siteIndex p{
+    color: rgb(128, 131, 133);
+    font-family: arial;
+    font-size: 11pt;
+    margin-top: 15px;
+}
+
+.goToTop {
+    display: none;
+}
+
+.newGoToTop {
+    display: block;
+    border-radius: 50%;
+}
+
+.newGoToTop img {
+    position: fixed;
+    width: 50px;
+    bottom: 100px;
+    right: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(3px 3px 4px rgb(0, 0, 0,0.3));
+}

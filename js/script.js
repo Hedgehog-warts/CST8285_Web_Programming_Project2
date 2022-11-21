@@ -1,29 +1,35 @@
+window.addEventListener('scroll', () => {
+    var scroll = this.scrollY;
+    var top = document.getElementById("goToTopID")
+    if (scroll >100 ) {
+        top.classList.add("newGoToTop")
+    } else {
+        top.classList.remove("newGoToTop")
+    }
+});
+
+
 var slideIndex = 1;
 var stop = 0;
 bannerSlides(slideIndex, stop);
+var customTimeout;
 
 var nextButton = document.querySelector(".next");
 var prevButton = document.querySelector(".prev");
 var stopButton = document.querySelector(".stop");
-nextButton.addEventListener('click', nextSlides);
-prevButton.addEventListener('click', prevSlides);
+nextButton.addEventListener('click', function() {moveSlides(1);});
+prevButton.addEventListener('click', function() {moveSlides(-1);});
 stopButton.addEventListener('click', stopSlides);
 
-function nextSlides() {
-    slideIndex += 1;
+function moveSlides(move) {
+    slideIndex += move;
     stop = 1;
     bannerSlides(slideIndex, stop);
-}
-
-function prevSlides() {
-    slideIndex -= 1;
-    stop = 1;
-    bannerSlides(slideIndex, stop);
+    clearTimeout(customTimeout);
 }
 
 function stopSlides() {
-    stop = 1;
-    bannerSlides(slideIndex, stop);
+    clearTimeout(customTimeout);
 }
 
 function autoSlides() {
@@ -45,7 +51,7 @@ function bannerSlides(n, s) {
 
     slides[slideIndex-1].style.display = "block";
     if(s === 0) {
-        console.log(slides);
-        setTimeout(autoSlides, 4000);
+        customTimeout = setTimeout(autoSlides, 4000);
     } 
 }
+

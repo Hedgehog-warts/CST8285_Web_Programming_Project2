@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/signup-style.css">
+    <script src="./js/login-script.js" defer></script>
+    <title>login Page</title>
+</head>
+
+<body>
+    <!-- starting main tag -->
+    <main>
+
+        <div class="gtwelcome">
+            <img src="" alt="gitTour Canada Logo">
+            <h1>Log in to your account</h1>
+            <div class="noDot">
+                <ul>
+                    <li>Welcome back! Please enter your details.</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <form action="login.html" method="get" id="gtregistration" name="gtregistration"
+            onsubmit="return validate();">
+            <!-- Write the validate function for this form. -->
+            <div class="gtformcontainer">
+                <div class="gtextfield">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                    <small></small>
+                </div>
+
+                <div class="gtextfield">
+                    <label for="login">User Name</label>
+                    <input type="text" name="login" id="login" placeholder="Enter your user name">
+                    <small></small>
+                </div>
+
+                <div class="gtextfield">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="Enter your password">
+                    <small></small>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="signBtn2">Log in</button>
+                    <br>
+                    <button type="reset" id="restBtn">Reset</button>
+                </div>
+                <div class="noDot">
+                    <ul>
+                        <li> Don't have an account? <a
+                                href="http://127.0.0.1:5503/CST8285_Web_Programming_Project2/signup.html">Sign Up</a></li>
+                    </ul>
+        
+        
+                </div>
+            </div>
+            
+    
+
+        </form>
+
+
+
+        
+    </main>
+
+
+</body>
+
+</html>

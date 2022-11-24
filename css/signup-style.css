@@ -1,0 +1,235 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    margin: 0;
+}
+
+
+/* start for Sign-up and log in form */
+.gtformcontainer,.traveltheme, .travelprovince {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    margin:20px;
+}
+
+
+
+img{
+    margin: 15px;
+    padding: 10px;
+
+}
+.form {
+    padding: 10px 20px;
+}
+
+.gtwelcome, .noDot{
+    text-align: center;
+    margin: 15px;
+    /* padding: 10px; */
+
+}
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.noDot ul {
+    font-size: 16px;
+    list-style: none;
+}
+
+.gtextfield, .btn {
+    margin: 20px;
+    padding: 5px;
+}
+
+.gtextfield label {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.gtextfield input {
+    border: solid 2px #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    
+    display: block;
+    width: 100%;
+}
+
+.gtextfield input:focus {
+    outline: none;
+}
+
+.gtextfield.error input {
+    border-color: var(--error-color);
+}
+
+.gtextfield.success input {
+    border-color: var(--success-color);
+}
+
+
+.gtextfield small {
+    color: var(--error-color);
+}
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+/* button */
+
+.btn button {
+
+    margin-bottom: 16px;
+}
+
+#signBtn, #signBtn2{
+    width: 100%;
+    padding: 3%;
+    background: #037d52;
+    border-bottom: 2px solid #037d52;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#restBtn{
+    width: 100%;
+    padding: 3%; 
+    background: #582502;
+    border-bottom: 2px solid #582502;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+   
+
+.btn:focus {
+    outline: none;
+}
+/* end for Sign-up and log in */
+
+/* start for Travel Province */
+
+h2 {
+
+    text-align: center;
+    margin: 20px;
+}
+/* searching bar - sort by*/ 
+
+
+.select {
+    background-position: 100px 120px;
+    background-repeat: no-repeat;
+    background-color: rgb(177, 186, 177);
+    width:100%;
+    font-size: 14px;
+    padding: 1em;
+    border: 2px solid rgb(48, 47, 48);
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(117, 106, 118, 0.5);
+
+}
+
+
+/* #rrUL {
+    list-style-type: georgian;
+    padding: 1rem;
+    margin: 1em;
+    text-decoration: underline;
+
+
+
+} */
+/* 
+#rrUL li a {
+    border: 1px solid rgb(62, 56, 62);
+    margin-top: -1px;
+    /* Prevent double borders */
+    /* background-color: rgb(177, 186, 177);;
+    padding: 12px;
+    border-radius: 0.5em;
+    font-size: 14px;
+    color: rgba(19, 18, 19, 0.5);
+    display: block;
+} */ 
+/* 
+#rrUL li a:hover:not(.header) {
+    background-color: rgb(242, 245, 247);
+} */
+
+/* .hide {
+    display: none;
+} */
+
+.button1, .button2{
+
+      
+    background-color: rgb(91, 88, 94);
+    color: white;
+    margin:10px;
+    padding: 16px;
+    font-size: 14px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.rrbutton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button1:hover
+{
+    background-color: rgb(6, 68, 27);
+    box-shadow: 0 0 2px 1px rgba(7, 236, 220, 0.5);
+}
+.button2:hover
+{
+    background-color: rgb(68, 31, 6);
+    box-shadow: 0 0 2px 1px rgba(7, 236, 220, 0.5);
+}

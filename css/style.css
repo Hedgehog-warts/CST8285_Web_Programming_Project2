@@ -40,7 +40,6 @@ html {
 
 /* */
 
-
 .promotionSlider {
     width: 100%;
     text-align: center;
@@ -63,61 +62,52 @@ html {
     to {opacity: 1}
 }
 
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
 
+.buttons {
+    position: relative;
+    width: 900px;
+    background-color:rgb(85, 33, 106);
+}
 
+.controller {
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 40px;
+    bottom: 25px;
+    padding: 10px;
+    border-radius: 50px;
+}
 
 .prev, .next, .stop {
     cursor: pointer;
-    /* position: absolute;
-    top: 50%;
-    width: auto; */
-    padding: 16px;
-    margin-top: -22px;
+    padding: 10px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15pt;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.6);
 }
- /* 
-.prev{
-    position: absolute;
-    left: 200px;
-    border-radius: 3px 0 0 3px;
-}
-} */
-/* .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-} */
 
-/* .stop {
-    right: 400px;
-    top:90%;
-    border-radius: 3px 0 0 3px;
-} */
+.stop {
+    font-size: 16pt;
+    vertical-align: 2px;
+}
 
 .captionNumber {
     color: #f2f2f2;
     font-size: 16pt;
-    padding: 8px 12px;
+    padding: 10px 20px;
     position: absolute;
-    top: 90%;
+    bottom: 25px;
     left: 50%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
 }
 
-
-
-
-
-
-
-
 /* Recommdation */
-
 
 .recommdation {
     position: relative;
@@ -128,7 +118,6 @@ html {
 .recommedTitle {
     display: inline;
     padding: 50px;
-    
 }
 
 .link {
@@ -140,7 +129,7 @@ html {
 }
 
 
-.mainGrid {
+.mainReommendGrid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 300px);
@@ -160,7 +149,6 @@ html {
 
 .largeGrid {
     grid-area: largeGrid;
-
 }
 
 .barGrid {
@@ -193,18 +181,14 @@ html {
     opacity: 0;
 }
 
-/* #calgaryGrid.transparent {
-    display: none;
-} */
-
 .vanRecommendTour1, .vanRecommendTour2, .vanRecommendTour3, .vanRecommendTour4 {
-    background: linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), url('../img/index/thailand_beach.jpg');
+    background: linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), url('../img/index/vancouver1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .calRecommendTour1, .calRecommendTour2, .calRecommendTour3, .calRecommendTour4 {
-    background: linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), url('../img/index/thailand_palace.jpg');
+    background: linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), url('../img/index/calgary1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -212,9 +196,78 @@ html {
 /* Themem */
 .travelTheme1 {
     background-color: antiquewhite;
-    height:300px
 }
 
+.theme1Title {
+    padding: 50px;
+}
+
+.mainTheme1Grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-areas: 
+     "themeGrid1 themeGrid2 themeGrid3"
+     "themeGrid4 themeGrid5 themeGrid6"
+    ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.themePara {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.themeLink {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.themeGrid1, .themeGrid2, .themeGrid3, .themeGrid4, .themeGrid5, .themeGrid6 {
+    position: relative;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.themeGrid1 {
+    grid-area: themeGrid1;
+}
+
+.themeGrid2 {
+    grid-area: themeGrid2;
+}
+
+.themeGrid3 {
+    grid-area: themeGrid3;
+}
+
+.themeGrid4 {
+    grid-area: themeGrid4;
+}
+
+.themeGrid5 {
+    grid-area: themeGrid5;
+}
+
+.themeGrid6 {
+    grid-area: themeGrid6;
+}
+
+
+.theme1Img {
+    height: 300px;
+    border-radius: 15px;
+    background-image: url('../img/index/beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+}
 
 /* footer */
 .footerNav {

@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/contactus-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Sans">
     <script src="./js/contactus-script.js" defer></script>
 
     <title>Document</title>
@@ -15,52 +16,80 @@
 
 <body>
     <header>
-
+        <nav id="headerNav" class="headerNav">
+            <img class="headerLogo" src="./img/nav/gittour_logo_transparent.png">
+            <div class="companyName">GitTour</div>
+            <div class="topMenu">
+                <a href="index.html">Home</a>
+                <a href="package.html">Package</a>
+                <a href="individual.html">Individual Travel</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+        </nav>
     </header>
-    <p>Top1 Canadian Travel Agency</p>
-    <h1>Contact Us</h1>
-    <h2>Provide multiple thrilling experience accros from the whole Canada area for your vacation. Contact with us via below
+    <h2 class="center">Top1 Canadian Travel Agency</h2>
+    <h1 class="center">Contact Us</h1>
+    <h2 class="center">Provide multiple thrilling experience accros from the whole Canada area for your vacation.
+        Contact with us via
+        below
         link to get a special discount for yourself.</h2>
-    <p>
-        Sign up for free in just 1 minute. <button type="button" onclick="alert('Not Available now')">SIGN UP</button>
-    </p>
-    <div>
-        <img src="./img/47093.jpg" alt="Doyoung, Kim" title="Doyoung, Kim">
-        <p>Doyoung, Kim</p>
-        <p>Founder</p>
+    <div id="signupdiv">
+        <p id="signup">
+            Sign up for free in just 1 minute <button id="submit" type="button"
+                onclick="alert('Not Available now')">SIGN UP</button>
+        </p>
     </div>
 
-    <div>
-        <img src="./img/slamduck.jpg" alt="Michelle, Ran" title="Michelle, Ran">
-        <p>Michelle, Ran</p>
-        <p>Vice President</p>
+    <div class="team_member">
+        <div class="team_member_1">
+            <img id="doyoung" src="./img/47093.jpg" alt="Doyoung, Kim" title="Doyoung, Kim">
+            <p>Doyoung, Kim</p>
+            <p>Founder</p>
+        </div>
+
+        <div class="team_member_2">
+            <img id="michelle" src="./img/slamduck.jpg" alt="Michelle, Ran" title="Michelle, Ran">
+            <p>Michelle, Ran</p>
+            <p>Vice President</p>
+        </div>
+
+        <div class="team_member_3">
+            <img id="grace" src="./img/akagi-haruko.jpg" alt="Grace, Ellis" title="Grace, Ellis">
+            <p>Grace, Ellis</p>
+            <p>CEO</p>
+        </div>
+
+        <div class="team_member_4">
+            <img id="pojui" src="./img/2119551-akira.jpg" alt="PO JUI, FENG" title="PO JUI, FENG">
+            <p>PO JUI, FENG</p>
+            <p>Sales Manager</p>
+        </div>
     </div>
 
-    <div>
-        <img src="./img/akagi-haruko.jpg" alt="Grace, Ellis" title="Grace, Ellis">
-        <p>Grace, Ellis</p>
-        <p>CEO</p>
-    </div>
-
-    <div>
-        <img src="./img/2119551-akira.jpg" alt="PO JUI, FENG" title="PO JUI, FENG">
-        <p>PO JUI, FENG</p>
-        <p>Sales Manager</p>
-    </div>
 
     <hr>
 
-    <div class="parent">
-        <div class="div1"><img src="./img/partnerships/aircanada.png" alt="aircanada" title="aircanada"></div>
-        <div class="div2"><img src="./img/partnerships/booking.png" alt="booking.com" title="booking.com"></div>
-        <div class="div3"><img src="./img/partnerships/agoda.jpg" alt="agoda" title="agoda"></div>
-        <div class="div4"><img src="./img/partnerships/flair.jpg" alt="flair" title="flair"> </div>
-        <div class="div5"><img src="./img/partnerships/airbnb.jpg" alt="airbnb" title="airbnb"> </div>
-        <div class="div6"><img src="./img/partnerships/porter.jpg" alt="porter" title="porter"> </div>
-        <div class="div7"><img src="./img/partnerships/swoop.jpg" alt="swoop" title="swoop"> </div>
-        <div class="div8"><img src="./img/partnerships/westjet.png" alt="westjet" title="westjet"> </div>
-        <div class="div9"><img src="./img/partnerships/expedia.jpg" alt="expedia" title="expedia"> </div>
-        </div>
+    <div class="partnerships">
+        <div class="partner1 partnerimg"><a href="https://www.aircanada.com/us/en/aco/home.html"><img
+                    src="./img/partnerships/aircanada.png" alt="aircanada" title="aircanada"></a></div>
+        <div class="partner2 partnerimg"><a href="https://www.booking.com"><img src="./img/partnerships/booking.png"
+                    alt="booking.com" title="booking.com"></a></div>
+        <div class="partner3 partnerimg"><a href="https://www.agoda.com"><img src="./img/partnerships/agoda.jpg"
+                    alt="agoda" title="agoda"></a></div>
+        <div class="partner4 partnerimg"><a href="https://flyflair.com/"><img src="./img/partnerships/flair.jpg"
+                    alt="flair" title="flair"></a></div>
+        <div class="partner5 partnerimg"><a href="https://www.airbnb.ca"><img src="./img/partnerships/airbnb.jpg"
+                    alt="airbnb" title="airbnb"></a></div>
+        <div class="partner6 partnerimg"><a href="https://www.flyporter.com/en-ca/"><img
+                    src="./img/partnerships/porter.jpg" alt="porter" title="porter"></a></div>
+        <div class="partner7 partnerimg"><a href="https://www.flyswoop.com/"><img src="./img/partnerships/swoop.jpg"
+                    alt="swoop" title="swoop"></a></div>
+        <div class="partner8 partnerimg"><a href="https://www.westjet.com/en-ca"><img
+                    src="./img/partnerships/westjet.png" alt="westjet" title="westjet"></a></div>
+        <div class="partner9 partnerimg"><a href="https://www.expedia.ca/"><img src="./img/partnerships/expedia.jpg"
+                    alt="expedia" title="expedia"></a></div>
+    </div>
 
 
 </body>

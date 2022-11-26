@@ -2,27 +2,49 @@ body {
     background-color: rgb(250, 255, 240);
 }
 
+#top {
+    margin: 40px 0;
+}
+
 h1 {
     font-size: 48px;
     color: #18181b;
     font-family: 'DM serif display', serif;
 }
 
-h2 {
+h2, p {
     font-weight: lighter;
     font-size: 20px;
     font-family: 'DM Sans', serif;
+}
+
+#description {
+    margin: 40px 0;
+}
+
+#signupdiv {
+    background-color: #E4F5F5;
+    width: 440px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
 }
 
 #signup {
     font-family: 'DM Sans', serif;
 }
 
-#signupdiv {
-    background-color: aquamarine;
-    width: 400px;
-    height: 40px;
-    margin: auto;
+#submit {
+    font-family: 'DM Sans', serif;
+    background-color: #005450;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin: 0 0 0 24px;
+    cursor: pointer;
 }
 
 .center {
@@ -61,6 +83,14 @@ h2 {
 #pojui {
     width: 300px;
     height: 300px;
+}
+
+hr {
+    margin: 50px;
+}
+
+#partner {
+    margin: 40px 0;
 }
 
 .partnerships {

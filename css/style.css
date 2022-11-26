@@ -1,3 +1,9 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nerko+One');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +13,28 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Header */
+
 .headerNav {
     text-align: right;
     background-color: rgb(244,244,244);
     padding-right: 15px;
     margin: 0;
+    position:relative;
+    font-family: 'Merriweather';
+}
+
+.companyName {
+    position: absolute;
+    top: -5px;
+    font-family: 'Nerko One';
+    font-size: 44pt;
+    left: 10%;
+    vertical-align: middle;
 }
 
 .headerLogo {
-    height: 30px;
-    float: left;
-    margin: 10px;
-}
-.companyName {
-    float: left;
+    width: 40px
 }
 
 .topMenu {
@@ -33,39 +47,48 @@ html {
     padding: 20px;
     margin: 0;
     color: rgb(45,80,45);
-    font-size: 11pt;
+    font-size: 12pt;
+    font-weight:bold;
 }
 
 .topMenu a:hover {
     background-color: rgb(45,80,45);
     color: white;
-    padding: 20px;
     margin: 0;
 }
 
-/* */
+/* Promotion */
 
 .promotionSlider {
     width: 100%;
     text-align: center;
+}
+
+.ourPromotion {
     position: relative;
-    animation-name: imageFade;
-    animation-duration: 1.5s;
-    background-color: blanchedalmond;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Nerko One';
+    color: white;
+    font-size: 50pt;
+    left: 5%;
+}
+
+.ourPromotionOverlay {   
+    width: 1200px;
+    position: absolute;
 }
 
 .image {
-    width: 900px;
-    height: 500px;
+    width: 1200px;
+    height: 600px;
     border-radius: 10px;
     object-fit: cover;
     object-position: 50% 50%;
 }
 
-@keyframes imageFade {
-    from {opacity: .0}
-    to {opacity: 1}
-}
 
 .buttonContainer {
     display: flex;
@@ -81,7 +104,7 @@ html {
 .controller {
     background-color: rgba(0,0,0,0.6);
     position: absolute;
-    right: 40px;
+    right: 0px;
     bottom: 25px;
     padding: 10px;
     border-radius: 50px;
@@ -93,7 +116,7 @@ html {
     color: white;
     font-weight: bold;
     font-size: 15pt;
-    transition: 0.6s ease;
+    transition: 1s ease;
 }
 
 .stop {
@@ -102,11 +125,12 @@ html {
 }
 
 .captionNumber {
+    z-index: 1;
     color: #f2f2f2;
     font-size: 16pt;
     padding: 10px 20px;
     position: absolute;
-    bottom: 25px;
+    top: 595px;
     left: 50%;
     background-color: rgba(0,0,0,0.6);
     border-radius: 30px;
@@ -121,16 +145,50 @@ html {
 }
 
 .recommedTitle {
-    display: inline;
     padding: 50px;
+    margin-left: 12%;
+    font-family: 'Merriweather';
+}
+
+.circle1, .circle2, .circle3  {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: 700px;
+    left: 230px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle2, .circle3 {
+    bottom: 880px;
+}
+
+.newCircle {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(45,80,45);
+}
+
+.vertical1, .vertical2 {
+    position: absolute;
+    height: 1000px;
+    left: 5px;
+    border-left: solid 1px #bbb;
+    z-index: 1;
+}
+
+.links {
+    margin-left: 300px;
+    margin-bottom: 20px;
 }
 
 .link {
-    margin-right: 50px;
-    padding: 5px;
+    margin: 50px;
     cursor: pointer;
-    color: black;
-    background-color: rgb(216, 216, 216);
+    color: rgb(49, 49, 49);
+    font-family: 'Merriweather';
 }
 
 
@@ -148,13 +206,16 @@ html {
 }
 
 .largeGrid, .barGrid, .smallGrid1, .smallGrid2 {
+    /* cursor: pointer; */
     margin: 20px;
     transition: all 0.5s linear;
 }
 
 .largeGrid {
     grid-area: largeGrid;
+    position: relative;
 }
+
 
 .barGrid {
     grid-area: barGrid;
@@ -178,6 +239,13 @@ html {
     text-align: center;
 }
 
+.gridLink {
+    position:absolute;
+    width: 100%;   
+    height: 100%;
+    z-index: 1;
+}
+
 .lgContent {
     top: 480px;
 }
@@ -185,22 +253,28 @@ html {
 .visuallyHidden {
     opacity: 0;
 }
-
+/* linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), */
 .vanRecommendTour1, .vanRecommendTour2, .vanRecommendTour3, .vanRecommendTour4 {
-    background: linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), url('../img/index/vancouver1.jpg');
+    background: url('../img/index/vancouver1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .calRecommendTour1, .calRecommendTour2, .calRecommendTour3, .calRecommendTour4 {
-    background: linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), url('../img/index/calgary1.jpg');
+    background: url('../img/index/calgary1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.torRecommendTour1, .torRecommendTour2, .torRecommendTour3, .torRecommendTour4 {
+    background: url('../img/index/toronto1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* Themem */
 .travelTheme1 {
-    background-color: antiquewhite;
+    position: relative;
 }
 
 .theme1Title {
@@ -226,7 +300,6 @@ html {
 }
 
 .themeLink {
-    background-color: rgba(0,0,0,0.3);
     position: absolute;
     top: 0;
     width: 100%;
@@ -265,13 +338,20 @@ html {
 }
 
 
-.theme1Img {
+.theme1Img, .theme2Img {
     height: 300px;
     border-radius: 15px;
-    background-image: url('../img/index/beach.jpg');
+    background: url('../img/index/beach.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 80%;
+}
+
+.theme2Img {
+    background: url('../img/index/toronto2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5%;
 }
 
 /* footer */

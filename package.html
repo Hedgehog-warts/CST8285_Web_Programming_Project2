@@ -9,9 +9,137 @@
     <link rel="stylesheet" type="text/css" href="./css/package.css">
     <script src="./js/package-script.js" defer></script>
 
-    <title>Document</title>
+    <title>Packages</title>
 </head>
+
 <body>
-    
+    <div class="promotionPackage">
+        <fieldset>
+            <h1>Promotion Package</h1>
+            <img src="./Banff&LakeLouise.jpg" alt="An image of Banff National Park">
+            <div class="heading">
+                <h3 class="size">Group Tour</h3>
+                <h3 class="price">$1,500</h3>
+            </div>
+            <h2>Banff National Park & Lake Louise</h2>
+            <div>
+                <p class="packageP">Experience Alberta's Banff National Park & Lake Louise and take part in many of the
+                    incredible experiences the park offers. Take part in skiing and snowboarding, go dogsledding, or
+                    even visit the famous Banff hot springs. With this all inclusive 12 day package, you will get to
+                    stay at the Banff Aspen Lodge, go dogsledding, hiking, skiing and snowboarding. Included in this
+                    packcage is 2 large rooms which can fit up to 4 people each. Meals and Wifi are included. </p>
+            </div>
+    </div>
+    </fieldset>
+    <div class="package-search">
+        <input type="text" id="searchBar" onkeyup="searchFunction()" placeholder="Search...">
+       <!-- <button id="package-submitButton" class="package-button">Search</button> -->
+        <button id="package-resetButton" class="package-button">Reset</button>
+        <div id="provinceDropDown">
+        <label for="package-dropDown" id="package-dropDown">Sort by Province</label>
+       <select id="package-dropDown" name="package-provinceMenu"> <!--onchange="filterByProvince(document.getElementById('package-dropDown').value)"> -->
+            <option value="Alberta">Alberta</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+        </select>
+    </div>
+    </div>
+
+    <div class="results-container">
+        <ul class="results-list" id="list">
+
+        </ul>
+    </div>
+    <ul>
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$1,500</h3>
+                </div>
+                <h2>Stargazing in Saskatchewan (6 days)</h2>
+                <p class="packageP">One of the top stargazing locations in Canada is in the Grasslands National
+                    Park, Saskatchewan. On
+                    this 6 day
+                    tour, you will be able to stay in your own front-side campsite which can hold up to 6
+                    guests, go on
+                    long
+                    hikes and of course experience a sky full of stars. This package includes a 6 night stay at
+                    a
+                    front-side
+                    campsite, a tour guide for hiking, and the option of renting an RV to use around the park.
+                </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$4,500</h3>
+                </div>
+                <h2>Experience Stargazing in the Rockies (10 days)</h2>
+
+                <p class="packageP">On this 10 day tour, you and your group will get to experience one of the best
+                    stargazing locations
+                    in Canada, Garibaldi Provincial Park located in British Columbia. It not only is great for
+                    stargazing, but also the perfect
+                    location for hiking and camping. It is a rugged and mountainous location, so pack accordingly! This
+                    package includes a reserved tent pad which can fit up to 2 large tents, maps and a tour guide to
+                    lead you along hiking trails, and 3 meals per day provided by the park.</p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$1,500</h3>
+                </div>
+                <h2>Whiteshell Provincial Park Stargazing (5 days)</h2>
+
+                <p class="packageP">Whiteshell Provincial Park is the perfect family getaway. It has everything from
+                    playgrounds to sandy beaches and lakes. Theres something for the whole family! This park is located
+                    in Manitoba and has very little light pollution which makes it ideal for stargazing and admiring the
+                    milky way. This tour package accomodates for up to 5 people and includes a 5 day stay in a fully
+                    serviced group campsite with a playground. You may also upgrade this package to stay in a family
+                    resort instead.</p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$500</h3>
+                </div>
+                <h2>A Week in the Badlands (7 days)</h2>
+
+                <p class="packageP">Alberta is known for its famous badlands, home to the largest deposit of dinosaur
+                    bones in the world! This package includes a 7 day stay at the Big Knife Provincial Park in two large
+                    tents. The park also allows RV's if you need some extra space. The park provides tap water, a boat
+                    launch and public washrooms. Explore the badlands, go kayaking and watch for wildife! </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$2,000</h3>
+                </div>
+                <h2>Bay of Fundy Getaway (7 days)</h2>
+
+                <p class="packageP">The Bay of Fundy has something for the whole family, from amazing rock formations to
+                    lightouses, it even has the worlds highest rising tides! The Bay of Fundy is located between New Brunswick and Nova Scotia. This package includes an all inclusive 7
+                    day stay at the Algonquin Resort St. Andrews by-the-Sea in New Brunswick. It includes meals, wifi and pool access
+                    aswell as 1 master room. Come experience the wonders of the Bay of Fundy!</p>
+            </div>
+        </li>
+
+
+    </ul>
 </body>
+
 </html>

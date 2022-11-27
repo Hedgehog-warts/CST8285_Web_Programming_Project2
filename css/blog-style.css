@@ -26,16 +26,26 @@ h1 {
 
     width: 100%; 
     border-radius: 5px;
-    box-shadow: 5px 10px 10px rgba(2, 57, 21, 0.5);
+    /* box-shadow: 5px 10px 10px rgba(2, 57, 21, 0.5); */
     cursor: pointer;
 } 
-
 img:hover {
     box-shadow: 0 0 2px 1px rgba(211, 38, 233, 0.5);
 
 
 }
+.footerLogo {
+    height: 100px;
+    width:100px;
+}
 
+
+
+.headerLogo:hover, .footerLogo:hover {
+    box-shadow: none;
+
+
+}
 /* Subscription section */
 
 .noDot{
@@ -410,6 +420,7 @@ text-align: center;
     background-color: rgb(59, 59, 69);
     color: azure;
     border-radius: 5px;
+    margin:20px 0;
     padding: 5px;
 }
 

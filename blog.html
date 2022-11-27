@@ -8,12 +8,28 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/blog-style.css">
-      <script src="./js/blog-script.js" defer></script>
+    <script src="./js/blog-script.js" defer></script>
 
     <title>Blog Review</title>
 </head>
 
 <body>
+    <header>
+        <nav id="headerNav" class="headerNav">
+            <div class="companyName">
+                <img class="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"> GitTour
+            </div>
+            <div class="topMenu">
+                <a href="index.html">Home</a>
+                <a href="package.html">Package</a>
+                <a href="individual.html">Individual Travel</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="signup.html">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
     <main>
 
         <div class="gtblog">
@@ -52,10 +68,8 @@
 
             <div class="gtreviewlinks">
 
-                <!-- <div id="overlay"></div> -->
-                <!-- onclick="off() onclick="on()" -->
                 <div class="bgoverlay">
-                    
+
                     <div class="overlayBlock">
                         <a class="overLink" href="goggle.com">
                             <h1 class="overlayHead">Top winter spots to go stargazing in Canada</h1>
@@ -167,7 +181,19 @@
         </section>
         </div>
     </main>
-
+    <footer>
+        <nav class="footerNav">
+            <hr class="bottomLine">
+            <div class="indexContainer">
+                <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <div class="siteIndex">
+                    <h4>GitTour</h4>
+                    <p>This website was designed by GitTour</p>
+                </div>
+            </div>
+        </nav>
+        <a id="goToTopID" class="goToTop" href="#headerNav"><img src="./img/nav/uparrow.png" alt="uparrow"></a>
+    </footer>
 
 </body>
 

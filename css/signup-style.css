@@ -116,6 +116,7 @@ h1 {
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
+    cursor: pointer;
     
 }
 #restBtn{
@@ -129,8 +130,12 @@ h1 {
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
+    cursor: pointer;
 }
-   
+#signBtn:hover, #signBtn2:hover, #restBtn:hover{
+
+    background-color: rgb(72, 39, 82);
+}
 
 .btn:focus {
     outline: none;

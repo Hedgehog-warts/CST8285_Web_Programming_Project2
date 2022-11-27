@@ -1,15 +1,4 @@
-
-
-
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-
-body {
+main {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
     background-color: #f4f4f4;
@@ -17,38 +6,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
     margin: 0;
 }
 
-
-/* start for Sign-up and log in form */
-.gtformcontainer {
-    background-color: #fff;
-    padding: 16px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 600px;
-    margin:20px;
-}
-
-
-
-img{
-    margin: 15px;
-    padding: 10px;
-
-}
-.form {
-    padding: 10px 20px;
-}
-
-.gtwelcome, .noDot{
-    text-align: center;
-    margin: 15px;
-    /* padding: 10px; */
-
-}
 h1 {
     font-size: 25px;
     text-align: center;
@@ -56,9 +16,31 @@ h1 {
 
 }
 
+/* start for Sign-up and log in form */
+.gtwelcome, .noDot{
+    text-align: center;
+    margin: 15px;
+    /* padding: 10px; */
+}
+
 .noDot ul {
     font-size: 16px;
     list-style: none;
+}
+
+.signupLogo {
+    width: 30%;
+    margin: 15px;
+    padding: 10px;
+}
+
+.gtformcontainer {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    margin:20px;
 }
 
 .gtextfield, .btn {
@@ -69,22 +51,28 @@ h1 {
 .gtextfield label,.themeSubject, .citySubject {
     display: block;
     color: #777;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .gtextfield input, .travelprovince select, .traveltheme select {
     border: solid 2px #f0f0f0;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     font-size: 14px;
     display: block;
+    width: 95%;
+    color: #777;
+}
+
+.travelprovince select, .traveltheme select {
+    margin-bottom: 15px;
     width: 100%;
 }
 
 .travelprovince, .traveltheme{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
 }
 
@@ -99,7 +87,6 @@ h1 {
 .gtextfield.success input {
     border-color: var(--success-color);
 }
-
 
 .gtextfield small {
     color: var(--error-color);
@@ -162,20 +149,17 @@ h1 {
 
 
 
-.select {
-    background-position: 100px 120px;
-    background-repeat: no-repeat;
-    /* background-color: rgb(177, 186, 177); */
-    /* width: 600px;
-    margin:20px; */
-    font-size: 14px;
-    padding: 1em;
-    border: 2px solid rgb(48, 47, 48);
-    border-radius: 5px;
-    /* box-shadow: 0 0 2px 1px rgba(117, 106, 118, 0.5); */
-   
 
+
+.loginLink {
+    color: #037d52;
 }
+
+.loginLink:visited {
+    color: #037d52;
+}
+
+
 
 
 /* #rrUL {

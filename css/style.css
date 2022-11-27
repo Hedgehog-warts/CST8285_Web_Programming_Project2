@@ -15,12 +15,18 @@ html {
 
 /* Header */
 
+.stickyHeaderNav {
+    top: 0;
+    position:sticky;
+    z-index: 5;
+}
+
 .headerNav {
     text-align: right;
     background-color: rgb(244,244,244);
     padding-right: 15px;
     margin: 0;
-    position:relative;
+    
     font-family: 'Merriweather';
 }
 

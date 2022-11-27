@@ -15,23 +15,37 @@
 </head>
 
 <body>
-    <!-- starting main tag -->
+
+    <header class="stickyHeaderNav">
+        <nav id="headerNav" class="headerNav">
+            <div class="companyName">
+                <img class="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"> GitTour
+            </div>
+            <div class="topMenu">
+                <a href="index.html">Home</a>
+                <a href="package.html">Package</a>
+                <a href="individual.html">Individual Travel</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="login.html">Log In</a>
+            </div>
+        </nav>
+    </header>
+
     <main>
 
         <div class="gtwelcome">
-            <img src="" alt="gitTour Canada Logo">
+            <img class="signupLogo" src="./img/nav/gittour_logo_transparent.png" alt="gitTour Canada Logo">
             <h1>Create a new account</h1>
             <div class="noDot">
                 <ul>
                     <li>Welcome! Get started with a free account.</li>
                 </ul>
             </div>
-
-
         </div>
+
         <div class="gtformcontainer">
-            <form action="registration.html" method="get" id="gtregistration" name="gtregistration"
-                onsubmit="return validate();">
+            <form action="registration.html" method="get" id="gtregistration" name="gtregistration" onsubmit="return validate();">
                 <!-- Write the validate function for this form. -->
 
                 <div class="gtextfield">
@@ -186,8 +200,7 @@
 
                 <div class="noDot">
                     <ul>
-                        <li>Already have an account? <a
-                                href="http://127.0.0.1:5503/CST8285_Web_Programming_Project2/login.html">Log in</a></li>
+                        <li>Already have an account?&nbsp;&nbsp;<a class="loginLink" href="./login.html">Log in</a></li>
                     </ul>
                 </div>
             </form>

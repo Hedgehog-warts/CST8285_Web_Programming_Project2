@@ -50,8 +50,11 @@ h1 {
 
 .gtextfield label,.themeSubject, .citySubject {
     display: block;
-    color: #777;
     margin-bottom: 5px;
+}
+
+.gtextfield label::placeholder {
+    color: #777;
 }
 
 .gtextfield input, .travelprovince select, .traveltheme select {
@@ -62,6 +65,9 @@ h1 {
     font-size: 14px;
     display: block;
     width: 95%;
+}
+
+.travelprovince select::placeholder {
     color: #777;
 }
 

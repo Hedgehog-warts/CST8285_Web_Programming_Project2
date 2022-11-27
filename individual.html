@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="./css/individual-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Sans">
     <script src="./js/individual-script.js" defer></script>
-
     <title>Document</title>
 </head>
 
@@ -30,7 +29,7 @@
     </header>
 
     <div class="top-search">
-        <h2>Tons of great packages down below</h2>
+        <h2>Tons of great packages are waiting for you</h2>
         <form action="#">
             <input class="search-form" id="searchbar" type="text" placeholder="Search packages" name="search">
             <button class="search-form" id="searchbutton" type="submit">Search</button>
@@ -38,6 +37,141 @@
         <h2>Start your adventure today!</h2>
     </div>
 
+    <table id="myTable">
+        <tr>
+            <th>Photo</th>
+            <th>Province<button onclick="sortTable()">sort</button></th>
+            <th>Duration</th>
+            <th>Package name</th>
+            <th>Package content</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><img src="./img/individual_packages/Essential Ontario Self Drive.jpg..."
+                    alt="Canadian Canoe Route in Ontario"></td>
+            <td>Ontario</td>
+            <td>9 nights</td>
+            <td>Canadian Canoe Route in Ontario</td>
+            <td>Journey deep into the heart of Ontario and unleash your sense of adventure on this action-packed
+                self-drive tour. From canoeing, hiking, rafting and much more to the vibrant cities of Toronto and
+                Ottawa, this tour is the perfect balance of city and nature. Highlights include guided whitewater
+                rafting on the mighty Ottawa River and a stay at Elmhirst's Resort on Rice Lake.</td>
+            <td>1999 CAD</td>
+        </tr>
+        <tr>
+            <td><img src="./img/individual_packages/Essential Ontario Self Drive.jpg..."
+                    alt="Canadian Canoe Route in Ontario"></td>
+            <td>Ontario</td>
+            <td>15 nights</td>
+            <td>Great Lakes Treasures</td>
+            <td>A captivating journey combining iconic Toronto and Niagara Falls with dramatic northern scenery &
+                fascinating Indigenous culture, revealing the unique character of Ontario. You'll travel through the
+                landscape that inspired the famous Group of Seven artists. Highlights include an unforgettable stay at
+                an Indigenous-operated retreat on the remote Manitoulin Island.</td>
+            <td>3499 CAD</td>
+        </tr>
+        <tr>
+            <td><img src="./img/individual_packages/Essential Ontario Self Drive.jpg..."
+                    alt="Canadian Canoe Route in Ontario"></td>
+            <td>Ontario</td>
+            <td>9 nights</td>
+            <td>Ontario Family Fly Drive</td>
+            <td>This family fun holiday explores the vibrant city of Toronto, outdoor activities at Blue Mountain and
+                one of the natural wonders of the world – Niagara Falls. We have specially created this self-drive
+                holiday for families, with suggested activities to enjoy and
+                longer stays in each destination so you don’t spend all of your time checking in and out of hotels.
+                Itinerary is adaptable. Tailormade.</td>
+            <td>2199 CAD</td>
+        </tr>
+        <tr>
+            <td><img src="./img/individual_packages/Essential Ontario Self Drive.jpg..."
+                    alt="Canadian Canoe Route in Ontario"></td>
+            <td>British Columbia</td>
+            <td>4 nights</td>
+            <td>Rockies Premium Tour from Vancouver</td>
+            <td>This tour provides a unique and truly Canadian experience with overnight stays at the beautiful Sutton
+                Place in Revelstoke, the newly renovated Mount Royal Hotel on Banff Avenue and the Mike Wiegele Cabins
+                in Blue River. You will enjoy 2 nights in Banff with more time to participate in exciting activities,
+                and receive additional inclusions such as four breakfasts, a wine tour and tasting, and a dinner. </td>
+            <td>1799 CAD</td>
+        </tr>
+        <tr>
+            <td><img src="./img/individual_packages/Essential Ontario Self Drive.jpg..."
+                    alt="Canadian Canoe Route in Ontario"></td>
+            <td>British Columbia</td>
+            <td>3 nights</td>
+            <td>Rockies Classic Summer Tour</td>
+            <td>Travel on our spectacular Classic Tour with the option to enjoy the comfort of upgraded hotels
+                throughout. This tour includes amazing sightseeing stops in the Okanagan Valley and the Rocky Mountains
+                including gorgeous Canadian turquoise lakes and awesome mountain peaks!</td>
+            <td>950 CAD</td>
+        </tr>
+        <tr>
+            <td><img src="./img/individual_packages/Essential Ontario Self Drive.jpg..."
+                    alt="Canadian Canoe Route in Ontario"></td>
+            <td>British Columbia</td>
+            <td>13 nights</td>
+            <td>Canadian Rockies: National Parks Westbound</td>
+            <td>Now's the time to explore Canada on your terms with this tour that's affordable for young travellers.
+                The Rockies are a great reason to explore the Canadian West, but why stop there? We asked that question,
+                then answered it with this trip — a sprawling, nature-rich mini-epic that melds some of Canada’s best
+                national parks with time on the mist-shrouded shores of Vancouver Island. Find yourself face-to-face
+                with moose, deer, and maybe even a bear on this trip loaded with diverse experiences — whale-watching,
+                glacier hikes, hot springs, and much, much more — you’ll stuff a lifetime’s worth of adventure into the
+                space of a mere two weeks.</td>
+            <td>3099 CAD</td>
+        </tr>
+        <tr>
+            <td><img src="./img/individual_packages/Essential Ontario Self Drive.jpg..."
+                    alt="Canadian Canoe Route in Ontario"></td>
+            <td>Quebec</td>
+            <td>8 nights</td>
+            <td>Best of Eastern Canada</td>
+            <td>Offering the best of all things Eastern Canada, take in its cosmopolitan cities, French and British
+                heritage, and majestic landscapes. See traditional Pow Wow dancing in Ottawa, watch the cascading waters
+                of Niagara Falls, and stroll through meadows, rolling hills and farms of Quebéc’s Eastern Townships.
+            </td>
+            <td>3099 CAD</td>
+        </tr>
+    </table>
+
+    <footer>
+        <nav class="footerNav">
+            <hr class="bottomLine">
+            <div class="indexContainer">
+                <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <div class="siteIndex">
+                    <h4>GitTour</h4>
+                    <p>This website was designed by GitTour</p>
+                </div>
+            </div>
+        </nav>
+        <a id="goToTopID" class="goToTop" href="#headerNav"><img src="./img/nav/uparrow.png" alt="uparrow"></a>
+    </footer>
+    <script>
+        function sortTable() {
+          var table, rows, switching, i, x, y, shouldSwitch;
+          table = document.getElementById("myTable");
+          switching = true;
+          while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+              shouldSwitch = false;
+              x = rows[i].getElementsByTagName("td")[1];
+              y = rows[i + 1].getElementsByTagName("td")[1];
+              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                shouldSwitch = true;
+                break;
+              }
+            }
+            if (shouldSwitch) {
+              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+              switching = true;
+            }
+          }
+        }
+        </script>
 </body>
 
 </html>

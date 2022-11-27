@@ -91,8 +91,9 @@ const showSuccess = (input) => {
 
 const checkUEmail = () => {
     let valid = false;
-    const email = uEmail.value.trim();
-    if (!isRequired(email) || !isEmailValid(email)) {
+    const email = uEmail.value;
+    console.log(email);
+    if (!isRequired(email) || email.match(/.+@.+\..+/) === null || email.match(/^\.@/) !== null || email.match(/\s/) !== null || email.match(/^\W/) !== null) {
         showError(uEmail, "✕ Email address should be non-empty with the format xyz@xyz.xyz.");
     }
     else {
@@ -124,7 +125,7 @@ const checkPassword = () => {
     let valid = false;
     const password = uPassid.value.trim();
     if (!isRequired(password) || !isPasswordSecure(password)) {
-        showError(uPassid, "✕  Password should be at least 6 characters: 1 uppercase, 1 lowercase.");
+        showError(uPassid, "✕  Password should be at least 6 characters: 1 lowercase, 1 uppercase, 1 number, 1 special character.");
     }
     else {
         showSuccess(uPassid);

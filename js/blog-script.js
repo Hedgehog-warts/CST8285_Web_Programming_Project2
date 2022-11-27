@@ -3,14 +3,38 @@
 
 // validate fields, validate function calls all other functions used for validation.
 
+function gotoPackage1() {
+    alert('this should be going to package1 you have to make a code here');
+    window.open("https://www.google.com")// URL needs to be changed!
+}
 
-function on() {
-    document.getElementById("overlay").style.display = "block";
-  }
+function gotoPackage2() {
+       window.open("https://www.google.com")// URL needs to be changed!
+}
+
+function gotoPackage3() {
+    window.open("https://www.google.com")// URL needs to be changed!
+}
+
+function gotoPackage4() {
+    window.open("https://www.google.com")// URL needs to be changed!
+}
+
+function gotoPackage5() {
+    window.open("https://www.google.com")// URL needs to be changed!
+}
+
+function gotoPackage6() {
+    window.open("https://www.google.com")// URL needs to be changed!
+}
+
+// function on() {
+//     document.getElementById("overlay").style.display = "block";
+//   }
   
-  function off() {
-    document.getElementById("overlay").style.display = "none";
-  }
+//   function off() {
+//     document.getElementById("overlay").style.display = "none";
+//   }
 
 function validate() {
 

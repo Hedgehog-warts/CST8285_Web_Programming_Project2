@@ -2,11 +2,11 @@
 
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 
 body {
@@ -23,7 +23,7 @@ body {
 
 
 /* start for Sign-up and log in form */
-.gtformcontainer,.traveltheme, .travelprovince {
+.gtformcontainer {
     background-color: #fff;
     padding: 16px;
     border-radius: 5px;
@@ -66,21 +66,26 @@ h1 {
     padding: 5px;
 }
 
-.gtextfield label {
+.gtextfield label,.themeSubject, .citySubject {
     display: block;
     color: #777;
     margin-bottom: 10px;
 }
 
-.gtextfield input {
+.gtextfield input, .travelprovince select, .traveltheme select {
     border: solid 2px #f0f0f0;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 5px;
     font-size: 14px;
-    
     display: block;
     width: 100%;
+}
+
+.travelprovince, .traveltheme{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
 }
 
 .gtextfield input:focus {
@@ -124,6 +129,7 @@ h1 {
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
+    
 }
 #restBtn{
     width: 100%;
@@ -146,24 +152,28 @@ h1 {
 
 /* start for Travel Province */
 
-h2 {
+/* h2 {
 
     text-align: center;
     margin: 20px;
-}
+} */
 /* searching bar - sort by*/ 
+
+
 
 
 .select {
     background-position: 100px 120px;
     background-repeat: no-repeat;
-    background-color: rgb(177, 186, 177);
-    width:100%;
+    /* background-color: rgb(177, 186, 177); */
+    /* width: 600px;
+    margin:20px; */
     font-size: 14px;
     padding: 1em;
     border: 2px solid rgb(48, 47, 48);
     border-radius: 5px;
-    box-shadow: 0 0 2px 1px rgba(117, 106, 118, 0.5);
+    /* box-shadow: 0 0 2px 1px rgba(117, 106, 118, 0.5); */
+   
 
 }
 
@@ -198,7 +208,7 @@ h2 {
     display: none;
 } */
 
-.button1, .button2{
+/* .button1, .button2{
 
       
     background-color: rgb(91, 88, 94);
@@ -232,4 +242,4 @@ h2 {
 {
     background-color: rgb(68, 31, 6);
     box-shadow: 0 0 2px 1px rgba(7, 236, 220, 0.5);
-}
+} */

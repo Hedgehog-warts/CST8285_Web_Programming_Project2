@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/blog-style.css">
-    <link rel="stylesheet" type="text/css" href="./css/signup-style.css">
-    <script src="./js/blog-script.js" defer></script>
+      <script src="./js/blog-script.js" defer></script>
 
     <title>Blog Review</title>
 </head>
@@ -20,18 +19,20 @@
         <div class="gtblog">
 
             <div class="gtsubscription">
-            <div class="noDot">
-                <h1>Travel Blog</h1>
-                <ul>
-                    <li><span>inspired with our great blog articles.</span></li>
-                </ul>
-            </div>
 
-           
-                <form action="/action_page.php" method="get" id="subscription" name="subscription"
-                    onsubmit="return validate();">
-                    <!-- Write the validate function for this form. -->
-                    <div class="gtformcontainer">
+
+                <div class="gtformcontainer">
+
+                    <div class="noDot">
+                        <h1 class="bloghead">Travel Blog</h1>
+                        <ul class="blogtext">
+                            <li><span>inspired with our great blog articles.</span></li>
+                        </ul>
+                    </div>
+                    <form action="/action_page.php" method="get" id="subscription" name="subscription"
+                        onsubmit="return validate();">
+                        <!-- Write the validate function for this form. -->
+
                         <h2>Newsletters Subscription</h2>
                         <div class="gtextfield">
                             <label for="email"></label>
@@ -43,88 +44,127 @@
                             <br>
                             <button type="reset" id="restBtn">Reset</button>
                         </div>
-                </form>
+                    </form>
+                </div>
+
+
             </div>
 
             <div class="gtreviewlinks">
 
-                <div id="overlay" onclick="off()"></div>
-
+                <!-- <div id="overlay"></div> -->
+                <!-- onclick="off() onclick="on()" -->
                 <div class="bgoverlay">
-                    <img src="./pics_blog_review/Dark Sky Preserves.jpg" alt="winter travel"> -->
-                    <h1>Top winter spots to go stargazing in Canada</h1>
-                    <p>At 3.85 million square miles, Canada is <span> the second largest country</span> in the world by
-                        total area.
-                        Combine this with being sparsely populated and you'll find a lot of open country, a lack of
-                        light pollution and therefore lots of dark sky spots.</p>
+                    
+                    <div class="overlayBlock">
+                        <a class="overLink" href="goggle.com">
+                            <h1 class="overlayHead">Top winter spots to go stargazing in Canada</h1>
+                            <!-- <p class="overlayPara">At 3.85 million square miles, Canada is <span> the second largest
+                                    country</span> in the world by
+                                total area.
+                                Combine this with being sparsely populated and you'll find a lot of open country, a
+                                lack
+                                of
+                                light pollution and therefore lots of dark sky spots.
+                                <p class="overlayPara">The fact that Canada is home to over <span>half the world's Dark
+                                        Sky
+                                        Preserves
+                                    </span>means it's a
+                                    <span>stargazer's paradise! </span>
+                                </p> -->
+                        </a>
 
-                    <p onclick="on()">The fact that Canada is home to over <span>half the world's Dark Sky Preserves
-                        </span>means it's a
-                        <span>stargazer's paradise! </span>
-                    </p>
+                    </div>
+                    <div class="overlayContent">
+                        <img src="./pics_blog_review/Dark Sky Preserves.jpg" alt="winter travel">
+                    </div>
                 </div>
-
             </div>
+        </div>
 
 
-            <section class="gtgrid">
-                <div class="gtreview1">
-                  
+        <section class="gtgrid">
+            <div class="gtreview1" onclick="gotoPackage1()">
+
                 <img src="./pics_blog_review/canada_culture_cc1.jpg" alt="canada_culture1">
                 <h3>Things you didn't know about Canada</h3>
                 <ul>
-                   
-                    <li> Looking for your next holiday destination? Has Canada started to spark your interest? We can't blame you. With its incredible geographical variety, amazing cities, beautiful scenery, and diverse cultures, there are a million and one reasons to make the trip. Canada is a land full of surprises and to help you get a little more acquainted with it, we've put together a handful of fun facts and stats that you might not know. 
+
+                    <li> Looking for your next holiday destination? Has Canada started to spark your interest? We
+                        can't blame you. With its incredible geographical variety, amazing cities, beautiful
+                        scenery, and diverse cultures, there are a million and one reasons to make the trip. Canada
+                        is a land full of surprises and to help you get a little more acquainted with it, we've put
+                        together a handful of fun facts and stats that you might not know.
                     </li>
                 </ul>
-                </div>
-                <div class="gtreview2">
-                    <img src="./pics_blog_review/canada_culture_cc6.jpg" alt="canada_culture6">
-                    <h3>The most picturesque locations in Canada</h3>
+            </div>
+            <div class="gtreview2" onclick="gotoPackage2()">
+                <img src="./pics_blog_review/canada_culture_cc6.jpg" alt="canada_culture6">
+                <h3>The most picturesque locations in Canada</h3>
                 <ul>
-                   
-                    <li> Canada, home to vistas of all varieties, from rocky outcrops to stunning, sandy beaches, there really is some of the most beautiful locations in the world, dotted across Canada's stunning provinces. A holiday in Canada in 2021 is the perfect way to explore some of these magical locations. There are so many to choose from that we have narrowed down a few of our favourites to give you a little insight into some of the wonderful places you could visit next year.
+
+                    <li> Canada, home to vistas of all varieties, from rocky outcrops to stunning, sandy beaches,
+                        there really is some of the most beautiful locations in the world, dotted across Canada's
+                        stunning provinces. A holiday in Canada in 2021 is the perfect way to explore some of these
+                        magical locations. There are so many to choose from that we have narrowed down a few of our
+                        favourites to give you a little insight into some of the wonderful places you could visit
+                        next year.
                     </li>
                 </ul>
-                </div>
-                <div class="gtreview3">
-                    <img src="./pics_blog_review/Train_Travel_cc8.jpg" alt="Train_Travel8">
-                    <h3>A big trip to a small part of Atlantic Canada</h3>
+            </div>
+            <div class="gtreview3" onclick="gotoPackage3()">
+                <img src="./pics_blog_review/Train_Travel_cc8.jpg" alt="Train_Travel8">
+                <h3>A big trip to a small part of Atlantic Canada</h3>
                 <ul>
-                   
-                    <li> 'West is Best' is always a statement I lived by when visiting Canada, but the opportunity to see the Canadian Maritimes was too good to pass up. This trip to Atlantic Canada would prove a little bit different as I would be travelling by train and car rather than flying, and it would only be for a few days, so there was a whole lot to see in a short space of time. 
+
+                    <li> 'West is Best' is always a statement I lived by when visiting Canada, but the opportunity
+                        to see the Canadian Maritimes was too good to pass up. This trip to Atlantic Canada would
+                        prove a little bit different as I would be travelling by train and car rather than flying,
+                        and it would only be for a few days, so there was a whole lot to see in a short space of
+                        time.
                     </li>
                 </ul>
 
-                </div>
-                <div class="gtreview4">
-                    <img src="./pics_blog_review/Train_Travel_cc10.jpg" alt="Train_Travel10">
-                    <h3>The ultimate guide for crossing the Rockiesa</h3>
+            </div>
+            <div class="gtreview4" onclick="gotoPackage4()">
+                <img src="./pics_blog_review/Train_Travel_cc10.jpg" alt="Train_Travel10">
+                <h3>The ultimate guide for crossing the Rockiesa</h3>
                 <ul>
-                   
-                    <li> The Rocky Mountains are a gem in the crown of Canada and there is so much to see and do here. On a holiday to Western Canada and Alaska you can choose itineraries that include exploring the Rocky Mountains and on these trips you can marvel at spectacular mountains and coastlines, hear stories about the Gold Rush and visit the beautiful coastal cities of British Columbia. 
+
+                    <li> The Rocky Mountains are a gem in the crown of Canada and there is so much to see and do
+                        here. On a holiday to Western Canada and Alaska you can choose itineraries that include
+                        exploring the Rocky Mountains and on these trips you can marvel at spectacular mountains and
+                        coastlines, hear stories about the Gold Rush and visit the beautiful coastal cities of
+                        British Columbia.
                     </li>
                 </ul>
-                </div>
-                <div class="gtreview5">
-                    <img src="./pics_blog_review/winter_ski_cc13.jpg" alt="winter_ski1">
-                    <h3>Top winter spots to go stargazing in Canada</h3>
+            </div>
+            <div class="gtreview5" onclick="gotoPackage5()">
+                <img src="./pics_blog_review/winter_ski_cc13.jpg" alt="winter_ski1">
+                <h3>Top winter spots to go stargazing in Canada</h3>
                 <ul>
-                   
-                    <li> There is going to be a fair amount of celestial activity this winter, so whether you are an amateur astronomer or just have an appreciation for a clear view of the Milky Way, heading out to see one of these events is a must. Even if you have a city hotel in Canada booked, there are plenty of spots away from the city lights where you still have a great view of the action.
+
+                    <li> There is going to be a fair amount of celestial activity this winter, so whether you are an
+                        amateur astronomer or just have an appreciation for a clear view of the Milky Way, heading
+                        out to see one of these events is a must. Even if you have a city hotel in Canada booked,
+                        there are plenty of spots away from the city lights where you still have a great view of the
+                        action.
                     </li>
                 </ul>
-                </div>
-                <div class="gtreview6">
-                    <img src="./pics_blog_review/winter_ski_cc11.jpg" alt="winter_ski11">
-                    <h3>6 magical places to see on your next Ottawa visit</h3>
+            </div>
+            <div class="gtreview6" onclick="gotoPackage6()">
+                <img src="./pics_blog_review/winter_ski_cc11.jpg" alt="winter_ski11">
+                <h3>6 magical places to see on your next Ottawa visit</h3>
                 <ul>
-                   
-                    <li> Considering car hire in Canada's capital? We've rounded up some of the city's most magical destinations for you to tick off your winter bucket list. From an 1860s heritage village to the world's longest skating rink, you don't want to miss these attractions on your next visit.
+
+                    <li> Considering car hire in Canada's capital? We've rounded up some of the city's most magical
+                        destinations for you to tick off your winter bucket list. From an 1860s heritage village to
+                        the world's longest skating rink, you don't want to miss these attractions on your next
+                        visit.
                     </li>
                 </ul>
-                </div>
-            </section>
+            </div>
+        </section>
         </div>
     </main>
 

@@ -29,11 +29,11 @@
 
 
         </div>
+        <div class="gtformcontainer">
+            <form action="registration.html" method="get" id="gtregistration" name="gtregistration"
+                onsubmit="return validate();">
+                <!-- Write the validate function for this form. -->
 
-        <form action="registration.html" method="get" id="gtregistration" name="gtregistration"
-            onsubmit="return validate();">
-            <!-- Write the validate function for this form. -->
-            <div class="gtformcontainer">
                 <div class="gtextfield">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" placeholder="Enter your email">
@@ -58,6 +58,126 @@
                     <small></small>
                 </div>
 
+                <!-- Preferred travel state (list) -->
+                <div class="travelprovince">
+                   
+                    <p class="citySubject">Travel City</p>
+                    <select class="select" name="Sort1" id="Sort1">
+                        <optgroup label="">
+                            <option value="none">Select a preferred travel City</option>
+                        </optgroup>
+                        <optgroup label="Ontario">
+                            <option value="c1">Toronto</option>
+                            <option value="c2">Ottawa</option>
+                            <option value="c3">Mississauga</option>
+                            <option value="c4">Brampton</option>
+                            <option value="c5">Hamilton</option>
+                        </optgroup>
+                        <optgroup label="Quebec">
+                            <option value="c6">Montreal</option>
+                            <option value="c7">Québec City</option>
+                            <option value="c8">Gatineau</option>
+                            <option value="c9">Sherbrooke</option>
+                        </optgroup>
+                        <optgroup label="Alberta">
+                            <option value="c10">Calgary</option>
+                            <option value="c11">Edmonton</option>
+                            <option value="c12">Red Deer</option>
+                            <option value="c13">Lethbridge</option>
+                        </optgroup>
+                        <optgroup label="Saskatchewan">
+                            <option value="c14">Regina</option>
+                            <option value="c15">Saskatoon</option>
+                            <option value="c16">Prince Albert</option>
+                            <option value="c17">Moose Jaw</option>
+                        </optgroup>
+                        <optgroup label="Manitoba">
+                            <option value="c18">Winnipeg</option>
+                            <option value="c19">Brandon</option>
+                            <option value="c20">Steinbach</option>
+                            <option value="c21">Thompson</option>
+                        </optgroup>
+
+                        <optgroup label="British Columbia">
+                            <option value="c22">Vancouver</option>
+                            <option value="c23">Victoria</option>
+                            <option value="c24">Kelowna</option>
+                            <option value="c25">Penticton</option>
+                        </optgroup>
+                        <optgroup label="New Brunswick">
+                            <option value="c26">Moncton</option>
+                            <option value="c27">Saint John</option>
+                            <option value="c28">Fredericton</option>
+                            <option value="c29">Dieppe</option>
+                        </optgroup>
+                        <optgroup label="Nova Scotia">
+                            <option value="c30">Halifax</option>
+                            <option value="c31">Sydney</option>
+                            <option value="c32">Dartmouth</option>
+                            <option value="c33">Truro</option>
+                        </optgroup>
+                        <optgroup label="Newfoundland and Labrador">
+                            <option value="c34">St. John's</option>
+                            <option value="c35">Conception Bay South</option>
+                            <option value="c36">Mount Pearl</option>
+                            <option value="c37">Paradise</option>
+                        </optgroup>
+                        <optgroup label="Prince Edward Island">
+                            <option value="c38">Charlottetown</option>
+                            <option value="c39">Summerside</option>
+                            <option value="c40">Stratford</option>
+                            <option value="c41">Cornwall</option>
+                        </optgroup>
+
+                    </select>
+                    <!-- <div class="rrbutton">
+                        <button class="button1" type="submit">Submit</button>
+                        <button class="button2" type="reset">clear</button>
+                    </div> -->
+                </div>
+
+                <!-- starting sort by Section -->
+                <div class="traveltheme">
+
+                    <p class="themeSubject">Travel theme</p>
+
+                    <select class="select" name="Sort2" id="Sort2">
+                        <optgroup label="">
+                            <option value="none">Select a preferred travel theme</option>
+
+                            <!-- https://www.canadianaffair.com/blog/category/canada-culture/ travel themes from this website Canada Culture-->
+                        </optgroup>
+                        <optgroup label="Canada Culture">
+                            <option value="cc1">Things you didn't know about Canada</option>
+                            <option value="cc2">A guide to Canada's Royal Family & Queen Elizabeth II</option>
+                            <option value="cc3">Answering Frequently Asked Questions About Alaska Cruises</option>
+                            <option value="cc4">The best extreme and adrenaline-filled Canadian activities</option>
+                            <option value="cc5">The complete guide to an Ontario holiday</option>
+                            <option value="cc6">The most picturesque locations in Canada</option>
+                        </optgroup>
+                        <!-- https://www.canadianaffair.com/blog/category/train-tours/page/2/ train-tours-->
+                        <optgroup label="Train Travel">
+                            <option value="cc7">Explore Canadas most scenic routes by rail and cruise!</option>
+                            <option value="cc8">A big trip to a small part of Atlantic Canada</option>
+                            <option value="cc9">The top 10 places to immerse yourself in the Canadian Rockies</option>
+                            <option value="cc10">The ultimate guide for crossing the Rockies</option>
+
+                        </optgroup>
+                        <!-- https://www.canadianaffair.com/blog/page/3/?s&cat=9&m&author=0&tag  Winter and Ski-->
+                        <optgroup label="Winter and Ski">
+                            <option value="cc11">6 magical places to see on your next Ottawa visit</option>
+                            <option value="cc12">5 reasons why we love Niagara Falls in winter</option>
+                            <option value="cc13">Top winter spots to go stargazing in Canada</option>
+                            <option value="cc14">Top 8 snowy experiences in Quebec City</option>
+                        </optgroup>
+
+                    </select>
+                    <!-- <div class="rrbutton">
+                        <button class="button1" type="submit">Submit</button>
+                        <button class="button2" type="reset">clear</button>
+                    </div> -->
+                </div>
+
                 <div class="btn">
                     <button type="submit" id="signBtn">Sign Up</button>
                     <br>
@@ -70,128 +190,8 @@
                                 href="http://127.0.0.1:5503/CST8285_Web_Programming_Project2/login.html">Log in</a></li>
                     </ul>
                 </div>
-            </div>
-
-            <!-- Preferred travel state (list) -->
-            <div class="travelprovince">
-                <h2>Travel City</h2>
-                <select class="select" name="Sort1" id="Sort1">
-                    <optgroup label="">
-                        <option value="none">Select a preferred travel City</option>
-                    </optgroup>
-                    <optgroup label="Ontario">
-                        <option value="c1">Toronto</option>
-                        <option value="c2">Ottawa</option>
-                        <option value="c3">Mississauga</option>
-                        <option value="c4">Brampton</option>
-                        <option value="c5">Hamilton</option>
-                    </optgroup>
-                    <optgroup label="Quebec">
-                        <option value="c6">Montreal</option>
-                        <option value="c7">Québec City</option>
-                        <option value="c8">Gatineau</option>
-                        <option value="c9">Sherbrooke</option>
-                    </optgroup>
-                    <optgroup label="Alberta">
-                        <option value="c10">Calgary</option>
-                        <option value="c11">Edmonton</option>
-                        <option value="c12">Red Deer</option>
-                        <option value="c13">Lethbridge</option>
-                    </optgroup>
-                    <optgroup label="Saskatchewan">
-                        <option value="c14">Regina</option>
-                        <option value="c15">Saskatoon</option>
-                        <option value="c16">Prince Albert</option>
-                        <option value="c17">Moose Jaw</option>
-                    </optgroup>
-                    <optgroup label="Manitoba">
-                        <option value="c18">Winnipeg</option>
-                        <option value="c19">Brandon</option>
-                        <option value="c20">Steinbach</option>
-                        <option value="c21">Thompson</option>
-                    </optgroup>
-
-                    <optgroup label="British Columbia">
-                        <option value="c22">Vancouver</option>
-                        <option value="c23">Victoria</option>
-                        <option value="c24">Kelowna</option>
-                        <option value="c25">Penticton</option>
-                    </optgroup>
-                    <optgroup label="New Brunswick">
-                        <option value="c26">Moncton</option>
-                        <option value="c27">Saint John</option>
-                        <option value="c28">Fredericton</option>
-                        <option value="c29">Dieppe</option>
-                    </optgroup>
-                    <optgroup label="Nova Scotia">
-                        <option value="c30">Halifax</option>
-                        <option value="c31">Sydney</option>
-                        <option value="c32">Dartmouth</option>
-                        <option value="c33">Truro</option>
-                    </optgroup>
-                    <optgroup label="Newfoundland and Labrador">
-                        <option value="c34">St. John's</option>
-                        <option value="c35">Conception Bay South</option>
-                        <option value="c36">Mount Pearl</option>
-                        <option value="c37">Paradise</option>
-                    </optgroup>
-                    <optgroup label="Prince Edward Island">
-                        <option value="c38">Charlottetown</option>
-                        <option value="c39">Summerside</option>
-                        <option value="c40">Stratford</option>
-                        <option value="c41">Cornwall</option>
-                    </optgroup>
-
-                </select>
-                <div class="rrbutton">
-                    <button class="button1" type="submit">Submit</button>
-                    <button class="button2" type="reset">clear</button>
-                </div>
-            </div>
-
-            <!-- starting sort by Section -->
-            <div class="traveltheme">
-
-                <h2>Travel theme</h2>
-
-                <select class="select" name="Sort2" id="Sort2">
-                    <optgroup label="">
-                        <option value="none">Select a preferred travel theme</option>
-
-                        <!-- https://www.canadianaffair.com/blog/category/canada-culture/ travel themes from this website Canada Culture-->
-                    </optgroup>
-                    <optgroup label="Canada Culture">
-                        <option value="cc1">Things you didn't know about Canada</option>
-                        <option value="cc2">A guide to Canada's Royal Family & Queen Elizabeth II</option>
-                        <option value="cc3">Answering Frequently Asked Questions About Alaska Cruises</option>
-                        <option value="cc4">The best extreme and adrenaline-filled Canadian activities</option>
-                        <option value="cc5">The complete guide to an Ontario holiday</option>
-                        <option value="cc6">The most picturesque locations in Canada</option>
-                    </optgroup>
-                    <!-- https://www.canadianaffair.com/blog/category/train-tours/page/2/ train-tours-->
-                    <optgroup label="Train Travel">
-                        <option value="cc7">Explore Canadas most scenic routes by rail and cruise!</option>
-                        <option value="cc8">A big trip to a small part of Atlantic Canada</option>
-                        <option value="cc9">The top 10 places to immerse yourself in the Canadian Rockies</option>
-                        <option value="cc10">The ultimate guide for crossing the Rockies</option>
-                       
-                    </optgroup>
-                    <!-- https://www.canadianaffair.com/blog/page/3/?s&cat=9&m&author=0&tag  Winter and Ski-->
-                    <optgroup label="Winter and Ski">
-                        <option value="cc11">6 magical places to see on your next Ottawa visit</option>
-                        <option value="cc12">5 reasons why we love Niagara Falls in winter</option>
-                        <option value="cc13">Top winter spots to go stargazing in Canada</option>
-                        <option value="cc14">Top 8 snowy experiences in Quebec City</option>
-                    </optgroup>
-
-                </select>
-                <div class="rrbutton">
-                    <button class="button1" type="submit">Submit</button>
-                    <button class="button2" type="reset">clear</button>
-                </div>
-            </div>
-        </form>
-
+            </form>
+        </div>
 
     </main>
 

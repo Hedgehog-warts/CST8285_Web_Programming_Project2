@@ -1,23 +1,26 @@
 * {
-    max-width: 1080px;
-    margin: auto;
-    
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather';
+    min-height: fit-content;
+}
+
+.headerNav {
+    display: flex;
+    flex: wrap;
 }
 
 .tourPackage {
     border: solid black 2px;
+    border-radius: 14px;
     background-color: lightblue;
     padding: 10px;
 }
 
 .heading {
     display: flex;
-    flex:wrap;  
+    flex: wrap;
     float: right;
-}
-
-h3 {
-    padding: 0 10px;
 }
 
 p {
@@ -28,57 +31,95 @@ p {
     display: flex;
 }
 
-ul{
+ul {
     vertical-align: 540px;
     padding-right: 40px;
 }
 
 li {
     list-style: none;
-    margin: 10px 0;
+    margin: 10px 200px;
 }
 
-img{
+img {
     width: 100%;
     display: flex;
-    padding: 20px 0;
 }
 
-.package-search{
-display: flex;  
-text-align: center;
-width: 90%;
-margin: 20px auto;
+.package-search {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 10px 200px;
 }
 
-#searchBar{width: 60%;
-    padding: 10px;
+#searchBar {
+    width: 50%;
+    padding: 8px;
+    margin-right: 10px;
     font-size: 16px;
+    border-radius: 16px;
+    border: solid grey 2px;
 }
 
-#package-resetButton{
+#package-resetButton {
     padding: 10px 30px;
     font-size: 16px;
+    border-radius: 16px;
 }
 
-h1{
+h1 {
     display: flex;
 }
 
-.search-packageTitle{
+h2 {
+    padding: 0 10px;
+}
+
+
+h3 {
+    padding: 0 10px;
+}
+
+
+.search-packageTitle {
     display: list-item;
 }
 
-.promotionPackage{
-    padding: 10px 0;
+.promotionPackage {
+    padding: 0px 150px;
 }
 
-#provinceDropDown{
+#provinceDropDown {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
-select{
-    padding: 2px;
-font-size: 14px;
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 16px;
+}
+
+.topMenu {
+    float: right;
+    width: 100%;
+}
+
+.headerLogo {
+    margin: auto;
+    margin-left: 150px;
+}
+
+.companyName {
+    margin-left: 55px;
+}
+
+#promotionTitle {
+    padding-top: 250px;
+    padding-left: 30px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
 }

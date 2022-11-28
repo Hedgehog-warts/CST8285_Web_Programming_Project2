@@ -13,10 +13,22 @@
 </head>
 
 <body>
+    <nav id="headerNav" class="headerNav">
+        <img class="headerLogo" src="./img/nav/gittour_logo_transparent.png">
+        <div class="companyName">GitTour</div>
+        <div class="topMenu">
+            <a href="index.html">Home</a>
+            <a href="package.html">Package</a>
+            <a href="individual.html">Individual Travel</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </nav>
+
     <div class="promotionPackage">
-        <fieldset>
-            <h1>Promotion Package</h1>
-            <img src="./Banff&LakeLouise.jpg" alt="An image of Banff National Park">
+   
+            <h1 id="promotionTitle">Promotion Package</h1>
+            <img src="./img/Banff&LakeLouise.jpg" alt="An image of Banff National Park">
             <div class="heading">
                 <h3 class="size">Group Tour</h3>
                 <h3 class="price">$1,500</h3>
@@ -30,14 +42,14 @@
                     packcage is 2 large rooms which can fit up to 4 people each. Meals and Wifi are included. </p>
             </div>
     </div>
-    </fieldset>
+  
     <div class="package-search">
         <input type="text" id="searchBar" onkeyup="searchFunction()" placeholder="Search...">
        <!-- <button id="package-submitButton" class="package-button">Search</button> -->
         <button id="package-resetButton" class="package-button">Reset</button>
         <div id="provinceDropDown">
         <label for="package-dropDown" id="package-dropDown">Sort by Province</label>
-       <select id="package-dropDown" name="package-provinceMenu"> <!--onchange="filterByProvince(document.getElementById('package-dropDown').value)"> -->
+       <select id="package-dropDown" name="package-provinceMenu" onchange="filterByProvince(document.getElementById('package-dropDown').value)">
             <option value="Alberta">Alberta</option>
             <option value="British Columbia">British Columbia</option>
             <option value="New Brunswick">New Brunswick</option>
@@ -137,6 +149,47 @@
                     aswell as 1 master room. Come experience the wonders of the Bay of Fundy!</p>
             </div>
         </li>
+
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Solo/Group Tour</h3>
+                    <h3 class="price">$150</h3>
+                </div>
+                <h2>Vancouver Seaplane Tour</h2>
+
+                <p class="packageP">The Vancouver Seaplane Tour takes you to the next level. Experience Vancouver from high above with this once-in-a-lifetime experience!
+                    You will get to experience taking off and landing in the water and a 30 minute tour from the skies guided by an expert pilot. See Vancouver from a different angle! Go solo or with a maximum of 7 people. 
+                </p>
+            </div>
+        </li>
+
+        
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Solo/Group Tour</h3>
+                    <h3 class="price">$220</h3>
+                </div>
+                <h2>Grouse Mountain and Capilano Suspension Bridge Tour</h2>
+
+                <p class="packageP">Come experience two of Vancouvers most popular destinations in the same day with this day tour package! With this package, you will get to ride on the Capilano Suspension Bridge, visit the Grouse Mountain Skyride (North America's largest aerial tramway) and see the Capilano River Hatchery where they raise salmon all in one day.</p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Solo/Group Tour</h3>
+                    <h3 class="price">$2,000</h3>
+                </div>
+                <h2>Whistler and Sea to Sky Gondola Tour</h2>
+
+                <p class="packageP">In this package, you get to spend the day outside the city of Vancouver and experience the mountains. This package includes a gondola ride with a guide for commentary, and enjoy a tour of whistler. We provide the car, driver, and the sights. Take this tour solo or with a group. Max 20 people.</p>
+            </div>
+        </li>
+
 
 
     </ul>

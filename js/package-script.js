@@ -17,16 +17,16 @@ function searchFunction() {
 
 function filterByProvince(selectedProvince){
     let filterProvinces = document.getElementById('package-dropDown').value;
-    let packageResults = document.getElementsByClassName("search-packageTitle");
+    console.log(selectedProvince)
+    let packageResults = document.getElementsByClassName("Saskatchewan").value;
 
-    for (i = 0; i < packageResults.length; i++) {
-        if (!packageResults[i].innerHTML.toLowerCase().includes(filterProvinces)) {
-            packageResults[i].style.display = "none";
-        }
-        else {
+    for (i=0; i > packageResults; i++){
+        if (packageResults == filterProvinces) {
             packageResults[i].style.display = "list-item";
         }
+        else {
+            packageResults[i].style.display = "none";
+        }
     }
-
 
 }

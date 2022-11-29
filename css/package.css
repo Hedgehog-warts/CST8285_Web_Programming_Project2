@@ -1,35 +1,15 @@
+/* general */
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Merriweather';
     min-height: fit-content;
-}
-
-.headerNav {
-    display: flex;
-    flex: wrap;
-}
-
-.tourPackage {
-    border: solid black 2px;
-    border-radius: 14px;
-    background-color: lightblue;
-    padding: 10px;
-}
-
-.heading {
-    display: flex;
-    flex: wrap;
-    float: right;
 }
 
 p {
     padding: 10px;
 }
 
-.packageP {
-    display: flex;
-}
 
 ul {
     vertical-align: 540px;
@@ -46,11 +26,89 @@ img {
     display: flex;
 }
 
+h1 {
+    display: flex;
+}
+
+h2, h3 {
+    padding: 0 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 16px;
+}
+
+/* promotion */
+
+.promotionPackage {
+    padding-top: 50px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slides {
+    top: 60px;
+    width: 1000px;
+    height: 700px;
+    position: absolute;
+    transition: all 1.5s ease-out;
+    opacity: 1;
+}
+
+.promoIMG {
+    width: 100%;
+    height: 400px;
+}
+
+.promo1 {
+    background: url(../img/package/Banff&LakeLouise.jpg) no-repeat 100% 90%;
+}
+
+.promo2 {
+    background: url(../img/package/mountain.jpg) no-repeat 30%;
+}
+
+.promo3 {
+    background: url(../img/package/Banff&LakeLouise.jpg) no-repeat 50%;;
+}
+
+.promo4 {
+    background: url(../img/package/mountain.jpg)no-repeat 30%;;
+}
+
+.promo5 {
+    background: url(../img/package/Banff&LakeLouise.jpg);
+}
+
+#promotionTitle {
+    padding-top: 250px;
+    padding-left: 30px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+}
+
+.heading {
+    display: flex;
+    flex: wrap;
+    float: right;
+}
+
+.packageP {
+    display: flex;
+}
+
+/* search */
+
 .package-search {
     display: flex;
-    text-align: center;
+    justify-content: center;
     width: 100%;
-    margin: 10px 200px;
+    margin-bottom: 20px;
 }
 
 #searchBar {
@@ -62,32 +120,24 @@ img {
     border: solid grey 2px;
 }
 
-#package-resetButton {
-    padding: 10px 30px;
-    font-size: 16px;
-    border-radius: 16px;
-}
 
-h1 {
-    display: flex;
-}
-
-h2 {
-    padding: 0 10px;
-}
-
-
-h3 {
-    padding: 0 10px;
-}
-
+/* tour package */
 
 .search-packageTitle {
     display: list-item;
 }
 
-.promotionPackage {
-    padding: 0px 150px;
+.tourPackage {
+    border: solid black 2px;
+    border-radius: 14px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+#package-resetButton {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 16px;
 }
 
 #provinceDropDown {
@@ -96,30 +146,5 @@ h3 {
     padding: 10px;
 }
 
-select {
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 16px;
-}
 
-.topMenu {
-    float: right;
-    width: 100%;
-}
 
-.headerLogo {
-    margin: auto;
-    margin-left: 150px;
-}
-
-.companyName {
-    margin-left: 55px;
-}
-
-#promotionTitle {
-    padding-top: 250px;
-    padding-left: 30px;
-    position: absolute;
-    color: white;
-    font-size: 50px;
-}

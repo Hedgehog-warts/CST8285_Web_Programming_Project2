@@ -28,5 +28,29 @@ function filterByProvince(selectedProvince){
             packageResults[i].style.display = "none";
         }
     }
+}
 
+var slideIndex = 0;
+var stop = 0;
+promoSlides(slideIndex, stop);
+
+function autoSlides() {
+    slideIndex += 1;
+    promoSlides(slideIndex, stop);
+}
+
+function promoSlides(n, s) {  
+    var slides = document.querySelectorAll(".slides");  
+    if (n >= slides.length) {slideIndex = 0}    
+
+    if (n < 0) {slideIndex = slides.length-1}
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].setAttribute('style','opacity:0');
+    }
+
+    slides[slideIndex].setAttribute('style','opacity:1');
+    if(s === 0) {
+        setTimeout(autoSlides, 4000);
+    } 
 }

@@ -1,3 +1,4 @@
+/* Assignement 2 Group 7_Rong Ran */
 main {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
@@ -20,7 +21,7 @@ h1 {
 .gtwelcome, .noDot{
     text-align: center;
     margin: 15px;
-    /* padding: 10px; */
+   
 }
 
 .noDot ul {
@@ -148,19 +149,9 @@ h1 {
 }
 /* end for Sign-up and log in */
 
-/* start for Travel Province */
 
-/* h2 {
 
-    text-align: center;
-    margin: 20px;
-} */
 /* searching bar - sort by*/ 
-
-
-
-
-
 
 .loginLink {
     color: #037d52;
@@ -171,70 +162,3 @@ h1 {
 }
 
 
-
-
-/* #rrUL {
-    list-style-type: georgian;
-    padding: 1rem;
-    margin: 1em;
-    text-decoration: underline;
-
-
-
-} */
-/* 
-#rrUL li a {
-    border: 1px solid rgb(62, 56, 62);
-    margin-top: -1px;
-    /* Prevent double borders */
-    /* background-color: rgb(177, 186, 177);;
-    padding: 12px;
-    border-radius: 0.5em;
-    font-size: 14px;
-    color: rgba(19, 18, 19, 0.5);
-    display: block;
-} */ 
-/* 
-#rrUL li a:hover:not(.header) {
-    background-color: rgb(242, 245, 247);
-} */
-
-/* .hide {
-    display: none;
-} */
-
-/* .button1, .button2{
-
-      
-    background-color: rgb(91, 88, 94);
-    color: white;
-    margin:10px;
-    padding: 16px;
-    font-size: 14px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 40%;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-transform: uppercase;
-}
-
-.rrbutton {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-}
-
-.button1:hover
-{
-    background-color: rgb(6, 68, 27);
-    box-shadow: 0 0 2px 1px rgba(7, 236, 220, 0.5);
-}
-.button2:hover
-{
-    background-color: rgb(68, 31, 6);
-    box-shadow: 0 0 2px 1px rgba(7, 236, 220, 0.5);
-} */

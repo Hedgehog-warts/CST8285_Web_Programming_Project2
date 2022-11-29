@@ -1,5 +1,5 @@
 
-//Assignement 2 Group 7
+//Assignement 2 Group 7_Rong Ran
 
 // validate fields, validate function calls all other functions used for validation.
 function validate() {
@@ -11,21 +11,12 @@ function validate() {
         isPasswordValid = checkPassword(),
         isConfirmPasswordValid = checkConfirmPassword();
 
-       // isCheckedTerm = myTerms();
-
+     
     let isFormValid = isUsernameValid &&
         isEmailValid &&
         isPasswordValid &&
         isConfirmPasswordValid;
-        // &&
-        // isCheckedTerm;
-
-    // debugging each function in webpage using console.log, checking the return vaule, true or false.
-    // console.log(isUsernameValid + "username");
-    // console.log(isEmailValid + "email");
-    // console.log(isPasswordValid + "password");
-    // console.log(isConfirmPasswordValid + "confimedPassword");
-    // console.log(isCheckedTerm + "outside");
+     
 
     // submit to the server if the form is valid
     if (isFormValid) {
@@ -44,8 +35,6 @@ const uEmail = document.querySelector('#email');
 const uName = document.querySelector('#login');
 const uPassid = document.querySelector('#pass');
 const confirmPassid = document.querySelector('#pass2');
-// const uNewsletter = document.querySelector('#newsletter');
-// const uTerms = document.querySelector('#terms');
 const resetBtn = document.querySelector('#restBtn');
 const form = document.querySelector('#gtregistration');
 
@@ -60,7 +49,7 @@ const isEmailValid = (email) => {
 };
 
 const isPasswordSecure = (password) => {
-    const regexp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/;
+    const regexp2 = /^(?=.*[a-z])(?=.*[0-9])(?=.{6,})/;
     return regexp2.test(password);
 };
 
@@ -148,39 +137,13 @@ const checkConfirmPassword = () => {
     return valid;
 };
 
-
-// function myCheckBox() {
-//     if (uNewsletter.checked === true) {
-//         alert("Possible spam by setting an event.");
-//     }
-
-// };
-
-// const myTerms = () => {
-//     let valid = true;
-//     if (uTerms.checked === false) {
-//         console.log("inside")
-//         showError(uTerms, "✕  Please accept the terms and conditions.");
-//         valid = false;
-
-//     } else if ((document.querySelector('.error') !== null)) {
-//         // uTerms =null;
-//         showSuccess(uTerms);
-//         valid = true;
-
-//     }
-//     console.log(valid+"ouside");
-//     return valid;
-// };
-
-
+// clear error message by click reset button
 resetBtn.addEventListener("click", clearMsg);
 function clearMsg() {
 
     history.go(0);
 
 };
-
 
 // delay 500ms showing Instant feedback (error message)
 const debounce = (fn, delay = 500) => {
@@ -212,12 +175,6 @@ document.getElementById('gtregistration').addEventListener('input', debounce(fun
         case 'pass2':
             checkConfirmPassword();
             break;
-        // case 'newsletter':
-        //     myCheckBox();
-        //     break;
-        // case 'terms':
-        //     myTerms();
-        //     break;
     }
 }));
 

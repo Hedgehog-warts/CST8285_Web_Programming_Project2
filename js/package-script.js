@@ -30,15 +30,6 @@ function filterByProvince(selectedProvince){
     }
 }
 
-document.querySelector(".promotionPackage").addEventListener('click', change);
-
-function change() {
-    var test1 = document.querySelector(".slide1");
-    var test2 = document.querySelector(".slide2");
-    test1.setAttribute('style','top:-20px; opacity:0');
-    test2.setAttribute('style','top: 60px; opacity:1');
-}
-
 var slideIndex = 0;
 var stop = 0;
 promoSlides(slideIndex, stop);

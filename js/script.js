@@ -1,3 +1,20 @@
+/* Header */
+
+var listLogo = document.querySelector('#hiddenLogo');
+var listLogoName = document.querySelector('.hiddenLogoName');
+
+var list = document.querySelector('.logoList');
+
+
+listLogo.addEventListener('click',showList);
+listLogoName.addEventListener('click',showList);
+
+function showList(){
+    list.classList.toggle('newLogoList');
+}
+
+
+
 /* Promotion */
 
 var slideIndex = 1;

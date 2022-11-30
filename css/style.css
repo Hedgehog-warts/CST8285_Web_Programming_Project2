@@ -19,7 +19,8 @@ html {
 .stickyHeaderNav {
     top: 0;
     position:sticky;
-    z-index: 5;
+    z-index: 2;
+    
 }
 
 .headerNav {
@@ -29,20 +30,83 @@ html {
     margin: 0;
     
     font-family: 'Merriweather';
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .companyName {
     position: absolute;
-    top: -5px;
-    font-family: 'Nerko One';
+    top: -5px; 
     font-size: 44pt;
     left: 10%;
     vertical-align: middle;
+   
 }
 
-#headerLogo {
+#headerLogo, #hiddenLogo {
     display: inline-block;
     width: 40px;
+}
+
+#headerLogo, .companyLogoName {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#hiddenLogo, .hiddenLogoName {
+    display: none;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.companyLogoName, .hiddenLogoName {
+    font-family: 'Nerko One';
+}
+
+.logoList {
+    background: rgba(244,244,244,0.7);
+    text-align: center;
+    text-decoration: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.newLogoList {
+    transform: scaleY(1);
+}
+
+.logoList a {
+    text-decoration: none;
+}
+
+.logoListOption {
+    list-style: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 10pt;
+    color: rgb(45,80,45);
+}
+
+.logoListOption:hover {
+    background: rgba(244,244,244,1);
+}
+
+.logoListOption:visited {
+    color: rgb(45,80,45);
 }
 
 .topMenu {
@@ -68,7 +132,7 @@ html {
 /* Promotion */
 
 .promotionSlider {
-    width: 100%;
+
     text-align: center;
 }
 
@@ -87,6 +151,7 @@ html {
 .ourPromotionOverlay {   
     width: 1200px;
     position: absolute;
+    font-family: 'Nerko One';
 }
 
 .image {
@@ -154,7 +219,7 @@ html {
 
 .recommedTitle {
     padding: 50px;
-    margin-left: 12%;
+    margin-left: 5%;
     font-family: 'Merriweather';
 }
 
@@ -163,7 +228,7 @@ html {
     height: 10px;
     width: 10px;
     bottom: 700px;
-    left: 230px;
+    left: 5vw;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -188,8 +253,9 @@ html {
 }
 
 .links {
-    margin-left: 300px;
+    margin-left: 15%;
     margin-bottom: 20px;
+    
 }
 
 .link {
@@ -211,6 +277,7 @@ html {
     ;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .largeGrid, .barGrid, .smallGrid1, .smallGrid2 {
@@ -262,8 +329,24 @@ html {
     opacity: 0;
 }
 /* linear-gradient(rgba(45,80,45,0),rgba(45,80,45,0)), */
+
+
+.vanRecommendTour1 {
+    background: url('../img/index/seaplane.jpg');
+}
+
+.vanRecommendTour2 {
+    background: url('../img/index/capilano.jpg');
+}
+.vanRecommendTour3 {
+    background: url('../img/index/gondola.jpg');
+    background-position: 50%;
+}
+.vanRecommendTour4 {
+    background: url('../img/index/whalewatching.jpg');
+}
+
 .vanRecommendTour1, .vanRecommendTour2, .vanRecommendTour3, .vanRecommendTour4 {
-    background: url('../img/index/vancouver1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -366,9 +449,10 @@ html {
 .footerNav {
     background-color: rgb(244,244,244);
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     position: relative;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 .bottomLine {
@@ -379,11 +463,12 @@ html {
 
 .indexContainer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .footerLogo {
-    height: 100px;
+    height: 80px;
+    padding-right: 20px;
 }
 
 .siteIndex {
@@ -391,7 +476,6 @@ html {
     display: inline-block;
     text-align: left;
     width: 200px;
-    list-style-position: inside;
 }
 
 .siteIndex p{
@@ -403,18 +487,113 @@ html {
 
 .goToTop {
     display: none;
+    z-index: 3;
 }
 
 .newGoToTop {
     display: block;
     border-radius: 50%;
+    z-index: 3;
 }
 
 .newGoToTop img {
     position: fixed;
     width: 50px;
-    bottom: 100px;
+    bottom: 80px;
     right: 50px;
     border-radius: 50%;
     filter: drop-shadow(3px 3px 4px rgb(0, 0, 0,0.3));
+    z-index: 3;
 }
+
+@media screen and (max-width:1400px) {
+    
+    .mainReommendGrid {
+        background-color: #f2f2f2;
+    }
+
+    .links {
+        margin-left: 5%;
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .ourPromotionOverlay, .image {   
+        width: 100vw;
+    }
+
+   #hiddenLogo, .hiddenLogoName {
+        display: inline-block;
+    }
+    
+    #headerLogo, .companyLogoName {
+        display: none;
+    }    
+
+    .companyName {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .topMenu {
+        height:55px;
+    }
+
+    .topMenu a{
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width:900px) {
+    
+    .ourPromotionOverlay, .image {   
+        font-size: 30pt;
+    }
+
+    .mainReommendGrid {
+        background-color: red;
+    }
+    
+
+    .links {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    
+    .captionNumber {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    #hiddenLogo {
+        width: 25px;
+    }
+
+    .companyName {
+        font-size: 25pt;
+    }
+    
+    .topMenu {
+        height:30px;
+    }
+
+    .captionNumber {
+        opacity: 0;
+    }
+
+
+    .ourPromotionOverlay, .image {   
+        font-size: 15pt;
+        height: 300px;
+    }
+}
+
+

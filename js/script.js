@@ -73,15 +73,18 @@ function myFunction() {
 var vanGridItem = document.querySelectorAll(".vanGridItem");
 var calGridItem = document.querySelectorAll(".calGridItem");
 var torGridItem = document.querySelectorAll(".torGridItem");
-const allref = [vanGridItem, calGridItem, torGridItem];
+var monGridItem = document.querySelectorAll(".monGridItem");
+const allref = [vanGridItem, calGridItem, torGridItem, monGridItem];
 
 var vanLink = document.querySelector("#vancouver");
 var calLink = document.querySelector("#calgary");
 var torLink = document.querySelector("#toronto");
+var monLink = document.querySelector("#montreal");
 
 vanLink.addEventListener('click', function() {changeRecommend(vanGridItem);});
 calLink.addEventListener('click', function() {changeRecommend(calGridItem);});
 torLink.addEventListener('click', function() {changeRecommend(torGridItem);});
+monLink.addEventListener('click', function() {changeRecommend(monGridItem);});
 
 function changeRecommend(ref) {
     for(let i=0; i<allref.length; i++) {

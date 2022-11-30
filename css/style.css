@@ -132,7 +132,6 @@ html {
 /* Promotion */
 
 .promotionSlider {
-
     text-align: center;
 }
 
@@ -152,6 +151,7 @@ html {
     width: 1200px;
     position: absolute;
     font-family: 'Nerko One';
+    box-sizing: border-box;
 }
 
 .image {
@@ -160,6 +160,7 @@ html {
     border-radius: 10px;
     object-fit: cover;
     object-position: 50% 50%;
+    box-sizing: border-box;
 }
 
 
@@ -215,6 +216,7 @@ html {
     position: relative;
     background-color: white;
     margin-top: 50px;
+    
 }
 
 .recommedTitle {
@@ -253,9 +255,8 @@ html {
 }
 
 .links {
-    margin-left: 15%;
+    text-align: center;
     margin-bottom: 20px;
-    
 }
 
 .link {
@@ -263,6 +264,11 @@ html {
     cursor: pointer;
     color: rgb(49, 49, 49);
     font-family: 'Merriweather';
+    padding: 10px;
+}
+
+.linksForMobile {
+    display: none;
 }
 
 
@@ -290,7 +296,6 @@ html {
     grid-area: largeGrid;
     position: relative;
 }
-
 
 .barGrid {
     grid-area: barGrid;
@@ -351,13 +356,31 @@ html {
     background-size: cover;
 }
 
+.calRecommendTour1 {
+    background: url('../img/index/zoo.jpg');
+}
+.calRecommendTour2 {
+    background: url('../img/index/calgarypark.jpg');
+}
+.calRecommendTour3 {
+    background: url('../img/index/calgarytower.jpg');
+}   
+.calRecommendTour4 {
+    background: url('../img/index/calgarymusic.jpg');
+}
+
 .calRecommendTour1, .calRecommendTour2, .calRecommendTour3, .calRecommendTour4 {
-    background: url('../img/index/calgary1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .torRecommendTour1, .torRecommendTour2, .torRecommendTour3, .torRecommendTour4 {
+    background: url('../img/index/toronto1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.monRecommendTour1, .monRecommendTour2, .monRecommendTour3, .monRecommendTour4 {
     background: url('../img/index/toronto1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -507,15 +530,18 @@ html {
 }
 
 @media screen and (max-width:1400px) {
+    .circle1, .circle2, .circle3 {
+        display: none;
+    }
     
-    .mainReommendGrid {
-        background-color: #f2f2f2;
+    .newCircle {
+        display: none;
+    }
+    
+    .vertical1, .vertical2 {
+        display: none;
     }
 
-    .links {
-        margin-left: 5%;
-
-    }
 }
 
 @media screen and (max-width:1200px) {
@@ -544,24 +570,57 @@ html {
         display: none;
     }
 
+    .mainReommendGrid {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 300px);
+        grid-template-areas: 
+         "barGrid barGrid"
+         "smallGrid1 smallGrid2"
+         "largeGrid largeGrid"
+        ;
+    }
+
+    .lgContent {
+        top: 200px;
+    }
+
+    .mainTheme1Grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-areas: 
+         "themeGrid1 themeGrid2"
+         "themeGrid3 themeGrid4"
+         "themeGrid5 themeGrid6"
+        ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 
 
 @media screen and (max-width:900px) {
-    
+    .linksForMobile {
+        display: block;
+        padding: 10px;
+    }
+
+    .link {
+        border: black 1px solid;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    .seperateForPC {
+        display: none;
+    }
     .ourPromotionOverlay, .image {   
         font-size: 30pt;
     }
 
-    .mainReommendGrid {
-        background-color: red;
-    }
-    
 
-    .links {
-        margin-left: 5%;
-    }
 }
 
 @media screen and (max-width:700px) {

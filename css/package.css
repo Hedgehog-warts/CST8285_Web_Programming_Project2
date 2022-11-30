@@ -21,7 +21,7 @@ li {
     margin: 10px 200px;
 }
 
-img {
+.headerLogo {
     width: 100%;
     display: flex;
 }
@@ -53,7 +53,7 @@ select {
 .slides {
     top: 60px;
     width: 1000px;
-    height: 700px;
+    height: 550px;
     position: absolute;
     transition: all 1.5s ease-out;
     opacity: 1;
@@ -130,14 +130,21 @@ select {
 .tourPackage {
     border: solid black 2px;
     border-radius: 14px;
-    background-color: lightblue;
+    background-color: rgba(42, 151, 214, 0.344);
     padding: 10px;
 }
 
 #package-resetButton {
     padding: 10px 30px;
+    color: rgb(45,80,45);
     font-size: 16px;
     border-radius: 16px;
+    background-color: rgb(228, 227, 227);
+}
+
+#package-resetButton:hover{
+    background-color:rgb(45,80,45);
+    color: white;
 }
 
 #provinceDropDown {
@@ -145,6 +152,3 @@ select {
     flex-direction: column;
     padding: 10px;
 }
-
-
-

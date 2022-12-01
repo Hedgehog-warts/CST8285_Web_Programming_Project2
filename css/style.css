@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-=======
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Nerko+One');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
->>>>>>> d6b8a7d4723ef6aa5735cebe599046adfeb2512a
 /* General */
 
 * {
@@ -19,16 +17,13 @@ html {
 
 /* Header */
 
-<<<<<<< HEAD
-=======
+
 .stickyHeaderNav {
     top: 0;
     position:sticky;
     z-index: 2;
     
 }
-
->>>>>>> d6b8a7d4723ef6aa5735cebe599046adfeb2512a
 .headerNav {
     text-align: right;
     background-color: rgb(244,244,244);

@@ -98,6 +98,7 @@ function changeRecommend(ref) {
 
 /* Footer, Vertical CircleLine */
 
+
 window.addEventListener('scroll', () => {
     var scroll = this.scrollY;
     var top = document.getElementById("goToTopID");
@@ -126,3 +127,10 @@ window.addEventListener('scroll', () => {
     //     circle3.classList.add("newCircle");
     // } 
 });
+
+top.addEventListener('click', topFunction);
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

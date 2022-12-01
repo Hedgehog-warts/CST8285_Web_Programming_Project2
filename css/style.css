@@ -86,6 +86,7 @@ html {
     background-color: rgba(0,0,0,0.6);
     position: absolute;
     right: 40px;
+    right: 0px;
     bottom: 25px;
     padding: 10px;
     border-radius: 50px;
@@ -98,6 +99,7 @@ html {
     font-weight: bold;
     font-size: 15pt;
     transition: 0.6s ease;
+    transition: 1s ease;
 }
 
 .stop {

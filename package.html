@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,537 @@
     <link rel="stylesheet" type="text/css" href="./css/package.css">
     <script src="./js/package-script.js" defer></script>
 
-    <title>Document</title>
+    <title>Packages</title>
 </head>
+
 <body>
-    
+    <header class="stickyHeaderNav">
+        <nav id="headerNav" class="headerNav">
+            <div class="companyName">
+                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"> GitTour
+            </div>
+            <div class="topMenu">
+                <a href="index.html">Home</a>
+                <a href="package.html">Package</a>
+                <a href="individual.html">Individual Travel</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="login.html">Log In</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="promotionPackage">
+        <div class="slides">
+            <h1 id="promotionTitle">Promotion Package1</h1>
+            <div class="promoIMG promo1"></div>
+            <div class="heading">
+                <h3 class="size">Group Tour</h3>
+                <h3 class="price">$1,500</h3>
+            </div>
+            <h2>Banff National Park & Lake Louise</h2>
+            <div>
+                <p class="packageP">Experience Calgary's Banff National Park & Lake Louise and take part in many of the
+                    incredible experiences the park offers. Take part in skiing and snowboarding, go dogsledding, or
+                    even visit the famous Banff hot springs. With this all inclusive 12 day package, you will get to
+                    stay at the Banff Aspen Lodge, go dogsledding, hiking, skiing and snowboarding. Included in this
+                    packcage is 2 large rooms which can fit up to 4 people each. Meals and Wifi are included. </p>
+            </div>
+        </div>
+        <div class="slides">
+            <h1 id="promotionTitle">Promotion Package2</h1>
+            <div class="promoIMG promo2"></div>
+            <div class="heading">
+                <h3 class="size">Group Tour</h3>
+                <h3 class="price">$150</h3>
+            </div>
+            <h2>Montreal Botanical Garden</h2>
+            <div>
+                <p class="packageP">The Montreal Botanical Garden is recognized as one of the biggest and most beautiful
+                    botanical gardens in the world! Come discover all sorts of plants on this relaxing tour, perfect for
+                    couples. This package includes full access tickets to the Botanical Gardens and a lunch at the
+                    Botanical Garden Restaurant.
+                </p>
+            </div>
+        </div>
+        <div class="slides">
+            <h1 id="promotionTitle">Promotion Package3</h1>
+            <div class="promoIMG promo3"></div>
+            <div class="heading">
+                <h3 class="size">Group Tour</h3>
+                <h3 class="price">$1,500</h3>
+            </div>
+            <h2>Banff National Park & Lake Louise</h2>
+            <div>
+                <p class="packageP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga enim nobis ex ipsum,
+                    nihil, voluptas ea numquam accusantium minus ducimus ullam aliquam est adipisci perferendis eos
+                    eaque nisi odit alias. </p>
+            </div>
+        </div>
+        <div class="slides">
+            <h1 id="promotionTitle">Promotion Package4</h1>
+            <div class="promoIMG promo4"></div>
+            <div class="heading">
+                <h3 class="size">Group Tour</h3>
+                <h3 class="price">$1,500</h3>
+            </div>
+            <h2>Banff National Park & Lake Louise</h2>
+            <div>
+                <p class="packageP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga enim nobis ex ipsum,
+                    nihil, voluptas ea numquam accusantium minus ducimus ullam aliquam est adipisci perferendis eos
+                    eaque nisi odit alias. </p>
+            </div>
+        </div>
+        <div class="slides">
+            <h1 id="promotionTitle">Promotion Package5</h1>
+            <div class="promoIMG promo4"></div>
+            <div class="heading">
+                <h3 class="size">Group Tour</h3>
+                <h3 class="price">$1,500</h3>
+            </div>
+            <h2>Banff National Park & Lake Louise</h2>
+            <div>
+                <p class="packageP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga enim nobis ex ipsum,
+                    nihil, voluptas ea numquam accusantium minus ducimus ullam aliquam est adipisci perferendis eos
+                    eaque nisi odit alias. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="package-search">
+        <input type="text" id="searchBar" name="searchBar" onkeyup="searchFunction()" placeholder="Search...">
+        <button id="package-resetButton" type="reset">Reset</button>
+        <div id="provinceDropDown">
+            <label for="package-dropDown" id="package-dropDownLabel">Sort by Province</label>
+
+            <select id="package-dropDown" name="package-provinceMenu"
+                onchange="filterByProvince(document.getElementById('package-dropDown').value)">
+
+                <option value="">None</option>
+                <option value="Vancouver">Vancouver</option>
+                <option value="Calgary">Calgary</option>
+                <option value="Saskatchewan">Saskatchewan</option>
+                <option value="Ottawa">Ottawa</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Quebec City">Quebec City</option>
+                <option value="Montreal">Montreal</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="results-container">
+        <ul class="results-list" id="list">
+
+        </ul>
+    </div>
+    <ul>
+        <li class="search-packageTitle" name="Saskatchewan">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$1,500</h3>
+                </div>
+                <h2>Stargazing in Saskatchewan</h2>
+                <p class="packageP">One of the top stargazing locations in Canada is in the Grasslands National
+                    Park, Saskatchewan. On this 6 day tour, you will be able to stay in your own front-side campsite
+                    which can hold up to 6 guests, go on long hikes and of course experience a sky full of stars. This package includes a 6 night stay at a
+                    front-side campsite, a tour guide for hiking, and the option of renting an RV to use around the park.
+                </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Saskatchewan">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$1,500</h3>
+                </div>
+                <h2>Whiteshell Provincial Park Stargazing</h2>
+
+                <p class="packageP">Saskatchewan Whiteshell Provincial Park is the perfect family getaway. It has
+                    everything from
+                    playgrounds to sandy beaches and lakes. Theres something for the whole family! This park is located
+                    in Manitoba and has very little light pollution which makes it ideal for stargazing and admiring the
+                    milky way. This tour package accomodates for up to 5 people and includes a 5 day stay in a fully
+                    serviced group campsite with a playground. You may also upgrade this package to stay in a family
+                    resort instead.</p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Vancouver">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$150</h3>
+                </div>
+                <h2>Vancouver Seaplane Tour</h2>
+
+                <p class="packageP">The Vancouver Seaplane Tour takes you to the next level. Experience Vancouver from
+                    high above with this once-in-a-lifetime experience!
+                    You will get to experience taking off and landing in the water and a 30 minute tour from the skies
+                    guided by an expert pilot. See Vancouver from a different angle! Go solo or with a maximum of 7
+                    people.
+                </p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Vancouver">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$220</h3>
+                </div>
+                <h2>Grouse Mountain and Capilano Suspension Bridge Tour</h2>
+
+                <p class="packageP">Come experience two of Vancouvers most popular destinations in the same day with
+                    this day tour package! With this package, you will get to ride on the Capilano Suspension Bridge,
+                    visit the Grouse Mountain Skyride (North America's largest aerial tramway) and see the Capilano
+                    River Hatchery where they raise salmon all in one day.</p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Vancouver">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$2,000</h3>
+                </div>
+                <h2>Whistler and Sea to Sky Gondola Tour</h2>
+
+                <p class="packageP">In this package, you get to spend the day outside the city of Vancouver and
+                    experience the mountains. This package includes a gondola ride with a guide for commentary, and
+                    enjoy a tour of whistler. We provide the car, driver, and the sights. Take this tour solo or with a
+                    group. Max 20 people.</p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Vancouver">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$400</h3>
+                </div>
+                <h2>Whale Watching Adventure in Vancouver</h2>
+
+                <p class="packageP">In this half-day package, you get to board a heated whale watching boat with indoor
+                    and outdoor viewing decks. The boat can hold up to 95 people. Tour guides will identify different
+                    marine life and tell you about their natural history. Go on this tour solo or invite a group of
+                    friends, max 95. </p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Vancouver">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$200</h3>
+                </div>
+                <h2>Vancouver Aquarium Family Package</h2>
+
+                <p class="packageP">In this package, you and your family or friends get to experience a guided tour of
+                    the Stanley park with a guide to tell you about the history, have lunch at an amazing restaurant
+                    nearby, and get dropped off at Canada's Largest Aquarium, the Vancouver Aquarium. This package
+                    includes tickets to the aquarium, lunch, and transportation. Maximum of 6 people. </p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Calgary">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$150</h3>
+                </div>
+                <h2>Calgary Zoo Tour</h2>
+
+                <p class="packageP">Experience a day trip to the Calgary zoo! A great family trip that takes you to see
+                    nearly 900 different types of animals from around the world. From penguins to butterflies, the
+                    Calgary Zoo has something for everyone! This tour package includes a guided and commentated tour of
+                    St. Patrick's Island, lunch at a highly rated nearby restaurant, and transportation to the Calgary
+                    Zoo. Tickets to the zoo, the lunch</p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Calgary">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$200</h3>
+                </div>
+                <h2>Calgary's Heritage Park</h2>
+
+                <p class="packageP">At Calgary's Heritage Park, you can experience everything from the Gasoline Alley
+                    Museum to the Heritage Town Square. Heritage Park is the oldest living museum in Canada! In this
+                    package, you and up to 3 others get to enjoy a weekend at a nearby 5 star hotel and have full access
+                    to all the displays in the museum. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Calgary">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$200</h3>
+                </div>
+                <h2>Visit the Calgary Tower</h2>
+
+                <p class="packageP">Come visit the Calgary Tower, 191 meters above downtown Calgary, this tower offers
+                    the best view in the city and is a must-see landmark for anyone visiting. This package includes a
+                    trip to the top of the Calgary Tower along with a lunch in the Sky 360 Restaurant and Lounge in the
+                    Calgary Tower. This package is great for a family trip and will accomodate for up to 5 people. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Calgary">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$150</h3>
+                </div>
+                <h2>Calgary's National Music Center </h2>
+
+                <p class="packageP">Calgary's National Music Center, Studio Bell, hosts incredible concerts, has music
+                    studios available to rent and is home to the Canadian Music Hall fo Fame. In this package, you get
+                    to experience a live concert along with tickets to view the Canadian Music Hall of Fame. Great
+                    package for a date night or to experience with friends. Maximum of 3 people. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Ottawa">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$200</h3>
+                </div>
+                <h2>National Gallery of Canada</h2>
+
+                <p class="packageP">Ottawa is home to many great landmarks, including the National Gallery of Canada. It
+                    is one of the largest art museums in North America by exhibition space. This museum features
+                    paintings and sculptures from all over the world and makes for a great family experience. This
+                    package includes a local tour of the area talking about history and interesting facts, as well as
+                    tickets to the National Gallery of Canada. This package has a maximum of 6 people. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Ottawa">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$250</h3>
+                </div>
+                <h2>Parliament Hill</h2>
+
+                <p class="packageP">Parliament Hill is an area of crown land on the southern banks of the Ottawa River
+                    in downtown Ottawa. It is a Gothic group of buildings with incredible architectural elements of
+                    national symbolic importance. In this package, you will recieve a guided tour of the House of
+                    Commons, as well as a lunch at a nearby 5 star restaurant. This package has a maximum of 10 guests.
+                </p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Ottawa">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$350</h3>
+                </div>
+                <h2>Ottawa City Cruise Day Tour</h2>
+
+                <p class="packageP">Get to view the landmarks of Ottawa from a different angle! In this package, you get
+                    to experienece a day long commentated cruise along the Ottawa River. Cruise past the war museum and
+                    view the Parliament from the cruise ship. This package includes transportation, cruise tickets, and
+                    food and drink. Maximum of 2 people.</p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Ottawa">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$200</h3>
+                </div>
+                <h2>Winterlude (Seasonal Package)</h2>
+
+                <p class="packageP">Winterlude is a winter festival that takes place in downtown Ottawa every year.
+                    Marvel at beautiful ice sculptures, skate on the Rideau Canal and check out a gigantic snow
+                    playground. Fun for the whole family! This package includes transportation to Winterlude, ice skates
+                    and a lunch at a nearby 5 star restaurant. Maximum of 4 people. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Quebec City">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$300</h3>
+                </div>
+                <h2>Montmorency Falls and the Island of Orleans Tour</h2>
+
+                <p class="packageP"> In this half-day tour package, you get to experience Quebecs charming countryside.
+                    Visit the Montmorecny Falls, the Island of Orleans and the Basilica of Sainte-Anne-deBeaupré. This
+                    package includes transportation, food, guides with commentary. Great family experience! Maximum of 5
+                    people.</p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Quebec City">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$250</h3>
+                </div>
+                <h2>Nordic Spa Thermal Experience</h2>
+
+                <p class="packageP">Located in Old Quebec by the picturesque Saint Lawrence River, enjoy a relaxing and
+                    rejuvenating thermal experience. There are heated pools, saunas and hot tubs available for relaxing.
+                    A perfect recharging getaway for couples. Maximum of 2 people.</p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Quebec City">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$150</h3>
+                </div>
+                <h2>Snow Tubing at Village Vacances Valcartier (Seasonal Package)</h2>
+
+                <p class="packageP">Come enjoy one of the largest theme parks in Canada, located in Quebec City. Village
+                    Vacances Valcartier has many different summits to ride down, so grab a snow tube and make the best
+                    of the season! This package includes entrance fees, parking and tubes. Great Family package with a
+                    maximum of 4 people. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Quebec City">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$200</h3>
+                </div>
+                <h2>Historical Walking and Tasting Tour</h2>
+
+                <p class="packageP">Come learn about Quebec's fascinating history with an experienced guide and explore
+                    Quebec City's traditional food on tasting stops. You will get to try a variety of delicious local
+                    delicacies while learning abiout the rich history of the city. This package takes around 3 hours to
+                    complete and will account for up to 4 people. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Toronto">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$250</h3>
+                </div>
+                <h2>Ripley's Aquarium of Canada</h2>
+
+                <p class="packageP">Located in the heart of downtown Toronto and at the base of the CN tower is Ripley's
+                    Aquarium of Canada. Experience interactive dive shows, touch live stingray and view all of the
+                    amazing exhibits. This great family package includes a guided tour of downtown Toronto on the way to
+                    the aquarium and tickets to the aquarium. Maximum of 4 people.</p>
+            </div>
+        </li>
+
+
+
+        <li class="search-packageTitle" name="Toronto">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$300</h3>
+                </div>
+                <h2>CN Tower Tour</h2>
+
+                <p class="packageP">Located right next to Ripley's Aquarium is Toronto's CN Tower. It is a 553 meter
+                    high concrete communications and observation tower in downtown Toronto. Enjoy a meal at the 360
+                    restaurant in the tower or be brave enough to conquer the edgewalk around the exterior of the
+                    Tower's main pod. Great package for families with a maximum of 4 people.</p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Montreal">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$150</h3>
+                </div>
+                <h2>Montreal Botanical Garden</h2>
+
+                <p class="packageP">The Montreal Botanical Garden is recognized as one of the biggest and most beautiful
+                    botanical gardens in the world! Come discover all sorts of plants on this relaxing tour, perfect for
+                    couples. This package includes full access tickets to the Botanical Gardens and a lunch at the
+                    Botanical Garden Restaurant.</p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Montreal">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$120</h3>
+                </div>
+                <h2>Notre-Dame Basilica of Montreal</h2>
+
+                <p class="packageP">The Notre-Dame Basilica of Montreal is a beautiful Roman Catholic Church. With this
+                    package, you will get to have a tour of the church along with the Aura Experience, a lightshow
+                    within the church. This package includes food, ticket fees and transportation. A great experience
+                    for the whole family. </p>
+            </div>
+        </li>
+
+        <li class="search-packageTitle" name="Montreal">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$300</h3>
+                </div>
+                <h2>Montreal Biodome</h2>
+
+                <p class="packageP">The Montreal Biodome is home to a large variety of plants and animals from five
+                    ecosystems of the Americas. From lynx to penguins, they have it all! This package is perfect for a
+                    family getaway. It includes tickets to the Biodome, transportation to and from, and a dinner at a
+                    nearby restaurant. Maximum of 6 people.</p>
+            </div>
+        </li>
+
+
+        <li class="search-packageTitle" name="Montreal">
+            <div class="tourPackage">
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$200</h3>
+                </div>
+                <h2>Museum of Fine Arts</h2>
+
+                <p class="packageP">The Museum of Fine Arts is an art museum located in Montreal. It is the largest art
+                    museum in Canada by gallery space! It is home to many beautiful paintings and scupltures. This
+                    package includes tickets to the museum and tickets to a concert at the Bourgie Hall inside the
+                    museum. Great for a couple.</p>
+            </div>
+        </li>
+    </ul>
+
+    <footer>
+        <nav class="footerPackages">
+            <hr class="bottomLine">
+            <div class="indexContainer">
+                <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <div class="siteIndex">
+                    <h4>GitTour</h4>
+                    <p>This website was designed by GitTour</p>
+                </div>
+            </div>
+        </nav>
+        <a id="goToTopID" class="goToTop" href="#headerNav"><img src="./img/nav/uparrow.png" alt="uparrow"></a>
+    </footer>
 </body>
+
 </html>

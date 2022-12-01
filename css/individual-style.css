@@ -1,0 +1,53 @@
+body {
+    font-family: 'DM Sans', serif;
+}
+
+.top-search {
+    display: flex;
+    height: 650px;
+    background-image: url("../img/background/DSC08343-scaled.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-search h2 {
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+.search-form {
+    margin: 10px 0;
+}
+
+#searchbar {
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    padding: 4px 12px;
+    vertical-align: top;
+}
+
+#searchbutton {
+    width: 80px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #005450;
+    font-family: 'DM Sans', serif;
+    font-size: 16px;
+    color: azure;
+    border-style: solid;
+    border-color: #005450;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+form {
+    padding: 5px 0px 0px 0px;
+}

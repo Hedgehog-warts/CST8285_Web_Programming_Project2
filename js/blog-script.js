@@ -1,16 +1,32 @@
 
-//Assignement 2 Group 7
+//Assignement 2 Group 7_Rong Ran
 
 // validate fields, validate function calls all other functions used for validation.
 
+function gotoPackage1() {
+        window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+}
 
-function on() {
-    document.getElementById("overlay").style.display = "block";
-  }
-  
-  function off() {
-    document.getElementById("overlay").style.display = "none";
-  }
+function gotoPackage2() {
+       window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+}
+
+function gotoPackage3() {
+    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+}
+
+function gotoPackage4() {
+    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+}
+
+function gotoPackage5() {
+    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+}
+
+function gotoPackage6() {
+    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+}
+
 
 function validate() {
 
@@ -35,7 +51,6 @@ function validate() {
 
 
 const uEmail = document.querySelector('#email');
-
 const resetBtn = document.querySelector('#restBtn');
 const form = document.querySelector('#gtregistration');
 
@@ -88,7 +103,7 @@ const checkUEmail = () => {
     return valid;
 };
 
-
+// clear error message by click reset button
 resetBtn.addEventListener("click", clearMsg);
 function clearMsg() {
 
@@ -120,8 +135,7 @@ document.getElementById('gtregistration').addEventListener('input', debounce(fun
             checkUEmail();
             break;
        
-    
-    }
+        }
 }));
 
 

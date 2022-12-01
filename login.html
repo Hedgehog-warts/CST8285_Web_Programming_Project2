@@ -1,3 +1,5 @@
+<!-- Assignement 2 Group 7_Rong Ran -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,15 +10,50 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/signup-style.css">
     <script src="./js/login-script.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <title>login Page</title>
 </head>
-
-<body>
+ <!-- starting body tag -->
+ <header class="stickyHeaderNav">
+    <nav id="headerNav" class="headerNav">
+        <div class="companyName">
+            <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="hiddenLogoName"> GitTour</span>
+            <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="companyLogoName"> GitTour</span>
+            <ul class="logoList">
+                <a href="index.html">
+                    <li class="logoListOption"><p>Home</p></li>
+                </a>
+                <a href="package.html">
+                    <li class="logoListOption"><p>Package</p></li>
+                </a>
+                <a href="individual.html">
+                    <li class="logoListOption"><p>Individual Travel</p></li>
+                </a>
+                <a href="blog.html">
+                    <li class="logoListOption"><p>Blog</p></li>
+                </a>
+                <a href="contactus.html">
+                    <li class="logoListOption"><p>Contact Us</p></li>
+                </a>
+                <a href="login.html">
+                    <li class="logoListOption"><p>Log In</p></li>
+                </a>
+            </ul>
+        </div>
+        <div class="topMenu">
+            <a href="index.html">Home</a>
+            <a href="package.html">Package</a>
+            <a href="individual.html">Individual Travel</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="login.html">Log In</a>
+        </div>
+    </nav>
+</header>
     <!-- starting main tag -->
     <main>
 
         <div class="gtwelcome">
-            <img src="" alt="gitTour Canada Logo">
             <h1>Log in to your account</h1>
             <div class="noDot">
                 <ul>
@@ -25,22 +62,12 @@
                 </ul>
             </div>
         </div>
-
-
-
-        <form action="login.html" method="get" id="gtregistration" name="gtregistration"
-            onsubmit="return validate();">
+        <form action="login.html" method="get" id="gtregistration" name="gtregistration" onsubmit="return validate();">
             <!-- Write the validate function for this form. -->
             <div class="gtformcontainer">
                 <div class="gtextfield">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" placeholder="Enter your email">
-                    <small></small>
-                </div>
-
-                <div class="gtextfield">
-                    <label for="login">User Name</label>
-                    <input type="text" name="login" id="login" placeholder="Enter your user name">
                     <small></small>
                 </div>
 
@@ -56,23 +83,28 @@
                 </div>
                 <div class="noDot">
                     <ul>
-                        <li> Don't have an account? <a
-                                href="http://127.0.0.1:5503/CST8285_Web_Programming_Project2/signup.html">Sign Up</a></li>
+                        <li> Don't have an account? <a href="./signup.html">Sign Up</a></li>
                     </ul>
-        
-        
+
                 </div>
             </div>
-            
-    
-
         </form>
 
-
-
-        
     </main>
-
+  <!-- starting footer tag -->
+    <footer>
+        <nav class="footerNav">
+            <hr class="bottomLine">
+            <div class="indexContainer">
+                <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <div class="siteIndex">
+                    <h4>GitTour</h4>
+                    <p>This website was designed by GitTour</p>
+                </div>
+            </div>
+        </nav>
+        <a id="goToTopID" class="goToTop" href="#headerNav"><img src="./img/nav/uparrow.png" alt="uparrow"></a>
+    </footer>
 
 </body>
 

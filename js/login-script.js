@@ -1,20 +1,17 @@
 
-//Assignement 2 Group 7
+//Assignement 2 Group 7_Rong Ran
 
 // validate fields, validate function calls all other functions used for validation.
 function validate() {
 
     let result = false;
-
-    let isUsernameValid = checkUsername(),
-        isEmailValid = checkUEmail(),
+        let isEmailValid = checkUEmail(),
         isPasswordValid = checkPassword();
      
-    let isFormValid = isUsernameValid &&
+        let isFormValid = 
         isEmailValid &&
         isPasswordValid;
          
-
     // submit to the server if the form is valid
     if (isFormValid) {
 
@@ -29,7 +26,6 @@ function validate() {
 
 
 const uEmail = document.querySelector('#email');
-const uName = document.querySelector('#login');
 const uPassid = document.querySelector('#pass');
 const resetBtn = document.querySelector('#restBtn');
 const form = document.querySelector('#gtregistration');
@@ -45,7 +41,7 @@ const isEmailValid = (email) => {
 };
 
 const isPasswordSecure = (password) => {
-    const regexp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/;
+    const regexp2 = /^(?=.*[a-z])(?=.*[0-9])(?=.{6,})/;
     return regexp2.test(password);
 };
 
@@ -88,23 +84,6 @@ const checkUEmail = () => {
     return valid;
 };
 
-const checkUsername = () => {
-    let valid = false;
-    const min = 1,
-        max = 20;
-    const username = uName.value.trim();
-    if (!isRequired(username) || !isBetween(username.length, min, max)) {
-        showError(uName, "✕ User Name should be non-empty, and within 20 characters long.")
-    }
-    else {
-        uName.value = uName.value.toLowerCase();
-        showSuccess(uName);
-        valid = true;
-
-    }
-    return valid;
-};
-
 const checkPassword = () => {
     let valid = false;
     const password = uPassid.value.trim();
@@ -118,14 +97,13 @@ const checkPassword = () => {
     return valid;
 };
 
-
+// clear error message by click reset button
 resetBtn.addEventListener("click", clearMsg);
 function clearMsg() {
 
     history.go(0);
 
 };
-
 
 // delay 500ms showing Instant feedback (error message)
 const debounce = (fn, delay = 500) => {
@@ -145,9 +123,6 @@ const debounce = (fn, delay = 500) => {
 //pass the input event handler to the debounce() function to debounce it
 document.getElementById('gtregistration').addEventListener('input', debounce(function (e) {
     switch (e.target.id) {
-        case 'login':
-            checkUsername();
-            break;
         case 'email':
             checkUEmail();
             break;

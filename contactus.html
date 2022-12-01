@@ -15,19 +15,43 @@
 </head>
 
 <body>
-    <header>
+    <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
-            <img class="headerLogo" src="./img/nav/gittour_logo_transparent.png">
-            <div class="companyName">GitTour</div>
+            <div class="companyName">
+                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="hiddenLogoName"> GitTour</span>
+                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="companyLogoName"> GitTour</span>
+                <ul class="logoList">
+                    <a href="index.html">
+                        <li class="logoListOption"><p>Home</p></li>
+                    </a>
+                    <a href="package.html">
+                        <li class="logoListOption"><p>Package</p></li>
+                    </a>
+                    <a href="individual.html">
+                        <li class="logoListOption"><p>Individual Travel</p></li>
+                    </a>
+                    <a href="blog.html">
+                        <li class="logoListOption"><p>Blog</p></li>
+                    </a>
+                    <a href="contactus.html">
+                        <li class="logoListOption"><p>Contact Us</p></li>
+                    </a>
+                    <a href="login.html">
+                        <li class="logoListOption"><p>Log In</p></li>
+                    </a>
+                </ul>
+            </div>
             <div class="topMenu">
                 <a href="index.html">Home</a>
                 <a href="package.html">Package</a>
                 <a href="individual.html">Individual Travel</a>
                 <a href="blog.html">Blog</a>
                 <a href="contactus.html">Contact Us</a>
+                <a href="login.html">Log In</a>
             </div>
         </nav>
     </header>
+    
     <h2 class="center" id="top">Top1 Canadian Travel Agency</h2>
     <h1 class="center">Contact Us</h1>
     <h2 class="center" id="description">Provide multiple thrilling experience accros from the whole Canada area for your vacation.
@@ -50,7 +74,7 @@
 
         <div class="team_member_2">
             <img id="michelle" src="./img/slamduck.jpg" alt="Michelle, Ran" title="Michelle, Ran">
-            <p>Michelle, Ran</p>
+            <p>Rong, Ran</p>
             <p>Vice President</p>
         </div>
 
@@ -97,7 +121,7 @@
         <nav class="footerNav">
             <hr class="bottomLine">
             <div class="indexContainer">
-                <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png">
+                <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
                 <div class="siteIndex">
                     <h4>GitTour</h4>
                     <p>This website was designed by GitTour</p>

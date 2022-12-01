@@ -531,6 +531,7 @@ html {
 }
 
 @media screen and (max-width:1400px) {
+
     .circle1, .circle2, .circle3 {
         display: none;
     }
@@ -546,6 +547,7 @@ html {
 }
 
 @media screen and (max-width:1200px) {
+    
     .ourPromotionOverlay, .image {   
         width: 100vw;
     }
@@ -561,7 +563,7 @@ html {
     .companyName {
         left: 50%;
         transform: translate(-50%, 0);
-    }
+    } 
 
     .topMenu {
         height:55px;
@@ -569,7 +571,7 @@ html {
 
     .topMenu a{
         display: none;
-    }
+    }    
 
     .mainReommendGrid {
         grid-template-columns: repeat(2, 300px);
@@ -625,7 +627,11 @@ html {
 }
 
 @media screen and (max-width:700px) {
-    
+
+    .ourPromotionOverlay, .image {   
+        height: 500px;
+    }
+
     .captionNumber {
         opacity: 0;
     }

@@ -1,3 +1,6 @@
+/* Web Programming Assignment2  */
+/* Grace Ellis */
+
 // search bar function
 function searchFunction() {
     let searchPackages = document.getElementById('searchBar').value;

@@ -65,11 +65,6 @@ function bannerSlides(n, s) {
 
 /* Recommndation */
 
-function myFunction() {
-    alert("asdf");
-}
-
-
 var vanGridItem = document.querySelectorAll(".vanGridItem");
 var calGridItem = document.querySelectorAll(".calGridItem");
 var torGridItem = document.querySelectorAll(".torGridItem");
@@ -98,15 +93,15 @@ function changeRecommend(ref) {
 
 /* Footer, Vertical CircleLine */
 
-
+var goTop = document.getElementById("goToTopID");
 window.addEventListener('scroll', () => {
     var scroll = this.scrollY;
-    var top = document.getElementById("goToTopID");
+    
 
     if (scroll >100 ) {
-        top.classList.add("newGoToTop");
+        goTop.classList.add("newGoToTop");
     } else {
-        top.classList.remove("newGoToTop");
+        goTop.classList.remove("newGoToTop");
     }
 
     // var circle1=document.querySelector('.circle1');
@@ -128,7 +123,7 @@ window.addEventListener('scroll', () => {
     // } 
 });
 
-top.addEventListener('click', topFunction);
+goTop.addEventListener('click', topFunction);
 
 function topFunction() {
     document.body.scrollTop = 0; // For Safari

@@ -5,11 +5,13 @@
     margin: 0;
     min-height: fit-content;
 }
+body{
+    background-color:#FFF6BF ;
+}
 
 p {
     padding: 10px;
 }
-
 
 ul {
     vertical-align: 540px;
@@ -24,6 +26,10 @@ li {
 .headerLogo {
     width: 100%;
     display: flex;
+}
+
+.companyName {
+    font-family: 'Nerko One';
 }
 
 h1 {
@@ -101,6 +107,13 @@ select {
     float: right;
 }
 
+.promotionPackage .heading {
+    display: flex;
+    flex: wrap;
+    float: right;
+    margin-top: -30px;
+}
+
 .packageP {
     display: flex;
 }
@@ -131,9 +144,10 @@ select {
 }
 
 .tourPackage {
-    border: solid black 2px;
+    border: solid #ABD9FF 2px;
     border-radius: 14px;
-    background-color: rgba(42, 151, 214, 0.344);
+    background-color: #C3F8FF;
+    
     padding: 10px;
 }
 
@@ -142,7 +156,8 @@ select {
     color: rgb(45, 80, 45);
     font-size: 16px;
     border-radius: 16px;
-    background-color: rgb(228, 227, 227);
+    background-color: #C3F8FF;
+    border: solid #ABD9FF;
 }
 
 #package-resetButton:hover {
@@ -163,16 +178,33 @@ select {
         margin: 0 auto;
     }
 
-    .promotionPackage .packageP,
     .promotionPackage h2 {
         max-width: 700px;
         margin: 0 auto;
+        display: block;
+        max-width: 60%;
+        text-align: center;
     }
 
-    .heading {
-        max-width: 700px;
+    .slides .packageP {
+        max-width: 400px;
+        text-align: center;
+        display: block;
+        margin: 25px auto;
     }
 
+    .promotionPackage .heading {
+        max-width: 600px;
+        display: flex;
+        padding-top: 30px;
+        padding-right: 250px;
+        padding-left: -100px;
+    }
+
+    .promotionPackage .promoIMG {
+        max-width: 60%;
+        margin: 0px auto;
+    }
 
     li {
         max-width: 700px;
@@ -180,12 +212,16 @@ select {
         margin: 10px auto;
         min-width: 400px;
         padding: 0 22px;
-
-    }
-    .promoIMG {
-        width: 100%;
-        margin: 0 auto;
     }
 
+    #promotionTitle {
+        font-size: 40px;
+        padding-left: 145px;
+    }
+
+    .package-search{
+        margin: 10px auto;
+        padding-top: 30px;
+    }
 
 }

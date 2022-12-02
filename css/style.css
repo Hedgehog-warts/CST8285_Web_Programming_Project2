@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 /* General */
-
 * {
     margin: 0;
     padding: 0;
@@ -16,22 +15,18 @@ html {
     background-color: rgb(242, 238, 234);
 }
 
-
 /* Header */
-
-
 .stickyHeaderNav {
     top: 0;
     position:sticky;
     z-index: 2;
-    
 }
+
 .headerNav {
     text-align: right;
     background-color: rgb(223, 214, 207);
     padding-right: 15px;
     margin: 0;
-    
     font-family: 'Merriweather';
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -39,8 +34,6 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
-    
 }
 
 .companyName {
@@ -53,7 +46,6 @@ html {
 #headerLogo, #hiddenLogo {
     display: inline-block;
     width: 40px;
-    
 }
 
 #headerLogo, .companyLogoName {
@@ -135,10 +127,8 @@ html {
 }
 
 /* Promotion */
-
 .promotionSlider {
     text-align: center;
-    
 }
 
 .ourPromotion {
@@ -171,14 +161,11 @@ html {
     object-fit: cover;
     object-position: 50% 50%;
     box-sizing: border-box;
-    
 }
-
 
 .buttonContainer {
     display: flex;
     justify-content: center;
-    
 }
 
 .buttons {
@@ -193,7 +180,6 @@ html {
     bottom: 25px;
     padding: 10px;
     border-radius: 50px;
-    
 }
 
 .prev, .next, .stop {
@@ -203,7 +189,6 @@ html {
     font-weight: bold;
     font-size: 15pt;
     transition: 1s ease;
-    
 }
 
 .stop {
@@ -220,22 +205,18 @@ html {
     left: 50%;
     background-color: rgba(0,0,0,0.6);
     border-radius: 30px;
-    
 }
 
 /* Recommdation */
-
 .recommdation {
     position: relative;
     margin-top: 50px;
-    
 }
 
 .recommedTitle {
     padding: 50px;
     margin-left: 5%;
     font-family: 'Merriweather';
-    
 }
 
 .circle1, .circle2, .circle3  {
@@ -313,14 +294,11 @@ html {
     ;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .largeGrid, .barGrid, .smallGrid1, .smallGrid2 {
-    /* cursor: pointer; */
     margin: 20px;
     transition: all 0.5s linear;
-    
 }
 
 .largeGrid {
@@ -341,7 +319,6 @@ html {
 .smallGrid2 {
     grid-area: smallGrid2;
     position: relative;
-
 }
 
 .gridContent, .lgContent {
@@ -375,15 +352,13 @@ html {
 
 .lgContent {
     top: 480px;
-    
 }
 
 .visuallyHidden {
     opacity: 0;
 }
 
-/* Recommdation  Grids*/
-
+/* Recommdation Grids*/
 .vanRecommendTour1 {
     background: url('../img/index/seaplane.jpg');
 }
@@ -461,12 +436,10 @@ html {
 /* Themem */
 .travelTheme1 {
     position: relative;
-    
 }
 
 .theme1Title {
     padding: 50px;
-    
 }
 
 .mainTheme1Grid {
@@ -479,14 +452,11 @@ html {
     ;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
 
 .themePara {
     padding-top: 10px;
     margin-bottom: 0;
-    
 }
 
 .themeLink {
@@ -494,7 +464,6 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
-    
 }
 
 .themeGrid1, .themeGrid2, .themeGrid3, .themeGrid4, .themeGrid5, .themeGrid6 {
@@ -502,12 +471,10 @@ html {
     margin-bottom: 25px;
     margin-left: 20px;
     margin-right: 20px;
-    
 }
 
 .themeGrid1 {
     grid-area: themeGrid1;
-
 }
 
 .themeGrid2 {
@@ -553,7 +520,6 @@ html {
 .theme1Img6 {
     background: url('../img/index/marine.jpg');
 }
-
 
 .theme1Img1, .theme1Img2, .theme1Img3, .theme1Img4, .theme1Img5, .theme1Img6  {
     height: 300px;
@@ -750,6 +716,7 @@ html {
 }
 
 @media screen and (max-width:1000px) {
+
     .link {
         margin-bottom: 15px;
     }
@@ -760,6 +727,7 @@ html {
 }
 
 @media screen and (max-width:700px) {
+
     .captionNumber {
         opacity: 0;
     }
@@ -795,7 +763,6 @@ html {
         width: 35px;
         bottom: 30px;
         right: 30px;
-
     }
 }
 

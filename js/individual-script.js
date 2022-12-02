@@ -1,7 +1,8 @@
+// search function for search bar
 function indisearch() {
   var input, filter, table, text;
   input = document.getElementById("searchbar");
-  filter = input.value.toUpperCase();
+  filter = input.value.toUpperCase(); //no restriction for upper or lowercase. 
   table = document.getElementsByClassName("packages");
   for (i = 0; i < table.length; i++) {
     text = table[i].innerText;
@@ -11,9 +12,10 @@ function indisearch() {
       table[i].style.display = "none";
     }
   }
-  window.scrollTo(0, 650);
+  window.scrollTo(0, 650); //after clicking search, scroll to certain position
 }
 
+//elements filter 
 function filterByProvince(province){
   let hide = document.getElementsByClassName("packages");
   let show = document.getElementsByClassName(province);
@@ -25,10 +27,11 @@ function filterByProvince(province){
     show[i].style.display = "";
   }
 
-  window.scrollTo(0, 650);
+  window.scrollTo(0, 650); //after clicking search, scroll to certain position
     
 }
 
+//show all elements
 function showAll(){
   let show = document.getElementsByClassName("packages");
   for (i=0; i<show.length; i++){

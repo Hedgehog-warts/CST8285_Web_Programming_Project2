@@ -1,5 +1,6 @@
 body {
     font-family: 'DM Sans', serif;
+    background-color: #C3F8FF;
 }
 
 .top-search {
@@ -43,12 +44,12 @@ body {
     width: 80px;
     height: 50px;
     border-radius: 8px;
-    background-color: #005450;
+    background-color: #ABD9FF;
     font-family: 'DM Sans', serif;
     font-size: 16px;
-    color: azure;
+    color: black;
     border-style: solid;
-    border-color: #005450;
+    border-color: #ABD9FF;
     vertical-align: top;
     cursor: pointer;
 }
@@ -66,18 +67,18 @@ form {
     width: 120px;
     height: 50px;
     border-radius: 8px;
-    background-color: rgb(34, 161, 108);
+    background-color: #ABD9FF;
     font-family: 'DM Sans', serif;
     font-size: 16px;
     border-style:none;
-    color: azure;
+    color: black;
     cursor: pointer;
-    margin-left: 10px;
+    margin: 5px;
 }
 
 #myBtnContainer button:hover{
-    background-color: rgb(147, 235, 147);
-    color: #005450;
+    background-color: #FFEBAD;
+    color: black;
 }
 /* 
 table, th, td {
@@ -89,7 +90,7 @@ table {
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    background-color:rgb(225, 253, 245);
+    background-color:#FFF6BF;
 }
 
 .description {
@@ -144,9 +145,6 @@ table {
 }
 
 @media screen and (max-width: 850px){
-    /* .top-search {
-        width: 100%;
-    } */
 
     .packages img {
         width: 80%;

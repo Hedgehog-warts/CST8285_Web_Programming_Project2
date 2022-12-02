@@ -36,11 +36,12 @@ h1 {
 }
 
 .gtformcontainer {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: rgb(250, 244, 245);
     padding: 16px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 600px;
+    min-width: 400px;
     margin:20px;
 }
 
@@ -115,8 +116,8 @@ h1 {
 #signBtn, #signBtn2{
     width: 100%;
     padding: 3%;
-    background: #037d52;
-    border-bottom: 2px solid #037d52;
+    background: rgb(45,80,45);
+    border-bottom: 2px solid rgb(45,80,45);
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;
@@ -129,8 +130,8 @@ h1 {
 #restBtn{
     width: 100%;
     padding: 3%; 
-    background: #582502;
-    border-bottom: 2px solid #582502;
+    background: #987976;
+    border-bottom: 2px solid #987976;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;

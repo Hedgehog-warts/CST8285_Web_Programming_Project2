@@ -23,10 +23,9 @@ ul {
     padding-right: 0px;
 }
 
-
-
 .companyName {
     font-family: 'Nerko One';
+    top:-2px;
 }
 
 h1 {
@@ -172,12 +171,13 @@ select {
 @media screen and (max-width:900px) {
 
     .slides {
-        max-width: 700px;
+        /* max-width: 700px; */
+        width: 100%;
         margin: 0 auto;
     }
 
     .promotionPackage h2 {
-        max-width: 700px;
+        /* max-width: 700px; */
         margin: 0 auto;
         display: block;
         max-width: 60%;
@@ -185,14 +185,14 @@ select {
     }
 
     .slides .packageP {
-        max-width: 400px;
+        /* max-width: 400px; */
         text-align: center;
         display: block;
         margin: 25px auto;
     }
 
     .promotionPackage .heading {
-        max-width: 600px;
+        /* max-width: 600px; */
         display: flex;
         padding-top: 30px;
         padding-right: 250px;
@@ -200,7 +200,7 @@ select {
     }
 
     .promotionPackage .promoIMG {
-        max-width: 60%;
+        /* max-width: 60%; */
         margin: 0px auto;
     }
 
@@ -210,6 +210,12 @@ select {
         margin: 10px auto;
         min-width: 400px;
         padding: 0 22px;
+    }
+
+    .companyName li {
+        min-width: 0px;
+        margin: 0px;
+        padding: 5px;
     }
 
     #promotionTitle {

@@ -21,40 +21,26 @@
     <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
-                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
-                    class="hiddenLogoName"> GitTour</span>
-                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
-                    class="companyLogoName"> GitTour</span>
+                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="hiddenLogoName"> GitTour</span>
+                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="companyLogoName"> GitTour</span>
                 <ul class="logoList">
                     <a href="index.html">
-                        <li class="logoListOption">
-                            <p>Home</p>
-                        </li>
+                        <li class="logoListOption"><p>Home</p></li>
                     </a>
                     <a href="package.html">
-                        <li class="logoListOption">
-                            <p>Package</p>
-                        </li>
+                        <li class="logoListOption"><p>Package</p></li>
                     </a>
                     <a href="individual.html">
-                        <li class="logoListOption">
-                            <p>Individual Travel</p>
-                        </li>
+                        <li class="logoListOption"><p>Individual Travel</p></li>
                     </a>
                     <a href="blog.html">
-                        <li class="logoListOption">
-                            <p>Blog</p>
-                        </li>
+                        <li class="logoListOption"><p>Blog</p></li>
                     </a>
                     <a href="contactus.html">
-                        <li class="logoListOption">
-                            <p>Contact Us</p>
-                        </li>
+                        <li class="logoListOption"><p>Contact Us</p></li>
                     </a>
                     <a href="login.html">
-                        <li class="logoListOption">
-                            <p>Log In</p>
-                        </li>
+                        <li class="logoListOption"><p>Log In</p></li>
                     </a>
                 </ul>
             </div>
@@ -82,7 +68,7 @@
         </div>
 
         <div class="gtformcontainer">
-            <form action="registration.html" method="get" id="gtregistration" name="gtregistration"
+            <form action="./php/registration.php" method="post" id="gtregistration" name="gtregistration"
                 onsubmit="return validate();">
                 <!-- Write the validate function for this form. -->
 
@@ -237,6 +223,20 @@
         </div>
 
     </main>
+
+    <footer>
+        <nav class="footerNav">
+            <hr class="bottomLine">
+            <div class="indexContainer">
+                <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <div class="siteIndex">
+                    <h4>GitTour</h4>
+                    <p>This website was designed by GitTour</p>
+                </div>
+            </div>
+        </nav>
+        <a id="goToTopID" class="goToTop" href="#headerNav"><img src="./img/nav/uparrow.png" alt="uparrow"></a>
+    </footer>
 
 </body>
 

@@ -27,6 +27,8 @@ if(isset($_POST['email']))
     $concept = $_POST['Sort2'];
 
     // database insert SQL code
+    
+
     $sql = "INSERT INTO userinformation (emailAddress, userName, userPassword, preferredProvince, travelConcept)
             VALUES ('$email', '$userName', '$password', '$province', '$concept')";
     

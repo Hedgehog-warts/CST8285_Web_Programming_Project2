@@ -4,13 +4,17 @@
     padding: 0;
     margin: 0;
     min-height: fit-content;
+
+}
+
+body {
+    background-color: #FFF6BF;
+    width: 100%;
 }
 
 p {
     padding: 10px;
 }
-
-
 
 ul {
     vertical-align: 540px;
@@ -22,13 +26,17 @@ ul {
     padding-right: 0px;
 }
 
-
+.companyName {
+    font-family: 'Nerko One';
+    top: -2px;
+}
 
 h1 {
     display: flex;
 }
 
-h2, h3 {
+h2,
+h3 {
     padding: 0 10px;
 }
 
@@ -98,6 +106,13 @@ select {
     float: right;
 }
 
+.promotionPackage .heading {
+    display: flex;
+    flex: wrap;
+    float: right;
+    margin-top: -30px;
+}
+
 .packageP {
     display: flex;
 }
@@ -130,9 +145,10 @@ select {
 }
 
 .tourPackage {
-    border: solid black 2px;
+    border: solid #ABD9FF 2px;
     border-radius: 14px;
-    background-color: rgba(42, 151, 214, 0.344);
+    background-color: #C3F8FF;
+
     padding: 10px;
 }
 
@@ -141,7 +157,8 @@ select {
     color: rgb(45, 80, 45);
     font-size: 16px;
     border-radius: 16px;
-    background-color: rgb(228, 227, 227);
+    background-color: #C3F8FF;
+    border: solid #ABD9FF;
 }
 
 #package-resetButton:hover {
@@ -155,36 +172,87 @@ select {
     padding: 10px;
 }
 
-@media screen and (max-width:900px) {
+ @media screen and (max-width:800px) {
+    
 
-    .slides {
-        max-width: 700px;
-        margin: 0 auto;
+        .slides {
+            /* max-width: 700px; */
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .promotionPackage h2 {
+            /* max-width: 700px; */
+            margin: 0 auto;
+            display: block;
+            max-width: 60%;
+            text-align: center;
+        }
+
+        .slides .packageP {
+            /* max-width: 400px; */
+            text-align: center;
+            display: block;
+            margin: 25px auto;
+        }
+
+        .promotionPackage .heading {
+            /* max-width: 600px; */
+            display: flex;
+            padding-top: 30px;
+            padding-right: 250px;
+            padding-left: -100px;
+        }
+
+        .promotionPackage .promoIMG {
+            /* max-width: 60%; */
+            margin: 0px auto;
+        }
+
+        .slides {
+            max-width: 500px;
+        }
+
+        li {
+            max-width: 700px;
+            list-style: none;
+            min-width: 400px;
+        }
+
+        .companyName li {
+            min-width: 0px;
+            margin: 0px;
+            padding: 5px;
+        }
+
+        #promotionTitle {
+            font-size: 40px;
+            padding-left: 145px;
+        }
+
+        .package-search {
+            margin: 10px auto;
+            padding-top: 60px;
+        }
+
+        .search-packageTitle {
+            max-width: 700px;
+            min-width: 400px;
+            display: list-item;
+            list-style: none;
+            margin: 10px auto;
+            padding: 10px auto;
+        }
+
+        #hiddenLogo {
+            display: flex;
+            padding-left: 200px;
+            margin: 14px auto;
+            width: 40px;
+        }
+
+        .hiddenLogoName {
+            display: none;
+        }
+
     }
-
-    .promotionPackage .packageP,
-    .promotionPackage h2 {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-
-    .heading {
-        max-width: 700px;
-    }
-
-
-    li {
-        max-width: 700px;
-        list-style: none;
-        margin: 10px auto;
-        min-width: 400px;
-        padding: 0 22px;
-
-    }
-    .promoIMG {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
-}

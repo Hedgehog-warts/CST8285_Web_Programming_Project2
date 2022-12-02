@@ -24,6 +24,11 @@ body {
     margin: 10px 0;
 }
 
+.flexsearchbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #searchbar {
     width: 300px;
     height: 38px;
@@ -66,31 +71,102 @@ form {
     font-size: 16px;
     border-style:none;
     color: azure;
-    vertical-align: top;    
     cursor: pointer;
+    margin-left: 10px;
 }
 
 #myBtnContainer button:hover{
     background-color: rgb(147, 235, 147);
     color: #005450;
 }
-
+/* 
 table, th, td {
     border: 1px solid black;
-  }
+  } */
 
 table {
-    width: 80%;
+    width: 850px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    background-color:rgb(225, 253, 245);
 }
 
 .description {
     height: 200px;
+    padding-left: 10px;
+    text-align: left;
 }
 
 .packagepic{
     width: 400px;
     height: 300px;
+}
+
+.night {
+    width: 120px;
+    text-align: right;
+}
+
+.price {
+    width: 120px;
+    text-align: right;
+}
+
+.location {
+    vertical-align: top;
+    padding-left: 10px;
+    text-align: left
+}
+
+.tourname {
+    font-size: 30px;
+    font-family: 'DM serif display', serif;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left
+}
+
+.flexcontainer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexcontainer div {
+    vertical-align: top;
+}
+
+.flexcontainer div {
+    text-align: center;
+}
+
+@media screen and (max-width: 850px){
+    /* .top-search {
+        width: 100%;
+    } */
+
+    .packages img {
+        width: 80%;
+        height: auto;
+    }
+
+    .packages table {
+        width: 100%;
+    }
+
+    .flexsearchbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #searchbar {
+        width: 100%;
+    }
+
+    #searchbutton {
+        width: 50%;
+    }
 }

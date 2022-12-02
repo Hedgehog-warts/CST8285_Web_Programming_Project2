@@ -1,6 +1,8 @@
+/* Assignement 2 Group 7_PO JUI, FENG */
+
 body {
     font-family: 'DM Sans', serif;
-    background-color: #C3F8FF;
+    background-color:  rgb(242, 238, 234);
 }
 
 .top-search {
@@ -44,12 +46,12 @@ body {
     width: 80px;
     height: 50px;
     border-radius: 8px;
-    background-color: #ABD9FF;
+    background-color: rgb(45,80,45);
     font-family: 'DM Sans', serif;
     font-size: 16px;
-    color: black;
+    color: white;
     border-style: solid;
-    border-color: #ABD9FF;
+    border-color: rgb(45,80,45);
     vertical-align: top;
     cursor: pointer;
 }
@@ -67,11 +69,11 @@ form {
     width: 120px;
     height: 50px;
     border-radius: 8px;
-    background-color: #ABD9FF;
+    background-color:rgb(45,80,45);
     font-family: 'DM Sans', serif;
     font-size: 16px;
     border-style:none;
-    color: black;
+    color: white;
     cursor: pointer;
     margin: 5px;
 }
@@ -80,17 +82,13 @@ form {
     background-color: #FFEBAD;
     color: black;
 }
-/* 
-table, th, td {
-    border: 1px solid black;
-  } */
 
 table {
     width: 850px;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    background-color:#FFF6BF;
+    background-color:rgb(250, 244, 245);
 }
 
 .description {
@@ -129,7 +127,7 @@ table {
 }
 
 .flexcontainer {
-    margin-top: 10px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

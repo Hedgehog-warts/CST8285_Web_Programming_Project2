@@ -601,6 +601,11 @@ html {
     margin-top: 15px;
 }
 
+.signPage {
+    color: rgb(100, 104, 106);
+    font-size: 9pt;
+}
+
 .goToTop {
     display: none;
     z-index: 3;

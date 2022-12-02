@@ -4,9 +4,12 @@
     padding: 0;
     margin: 0;
     min-height: fit-content;
+
 }
-body{
-    background-color:#FFF6BF ;
+
+body {
+    background-color: #FFF6BF;
+    width: 100%;
 }
 
 p {
@@ -33,7 +36,8 @@ h1 {
     display: flex;
 }
 
-h2, h3 {
+h2,
+h3 {
     padding: 0 10px;
 }
 
@@ -145,7 +149,7 @@ select {
     border: solid #ABD9FF 2px;
     border-radius: 14px;
     background-color: #C3F8FF;
-    
+
     padding: 10px;
 }
 
@@ -169,12 +173,7 @@ select {
     padding: 10px;
 }
 
-@media screen and (max-width:900px) {
-
-    .slides {
-        max-width: 700px;
-        margin: 0 auto;
-    }
+@media screen and (max-width:800px) {
 
     .promotionPackage h2 {
         max-width: 700px;
@@ -204,12 +203,14 @@ select {
         margin: 0px auto;
     }
 
+    .slides {
+        max-width: 500px;
+    }
+
     li {
         max-width: 700px;
         list-style: none;
-        margin: 10px auto;
         min-width: 400px;
-        padding: 0 22px;
     }
 
     #promotionTitle {
@@ -217,9 +218,29 @@ select {
         padding-left: 145px;
     }
 
-    .package-search{
+    .package-search {
         margin: 10px auto;
-        padding-top: 30px;
+        padding-top: 60px;
+    }
+
+    .search-packageTitle {
+        max-width: 700px;
+        min-width: 400px;
+        display: list-item;
+        list-style: none;
+        margin: 10px auto;
+        padding: 10px auto;
+    }
+
+    #hiddenLogo {
+        display: flex;
+        padding-left: 200px;
+        margin: 14px auto;
+        width: 40px;
+    }
+
+    .hiddenLogoName {
+        display: none;
     }
 
 }

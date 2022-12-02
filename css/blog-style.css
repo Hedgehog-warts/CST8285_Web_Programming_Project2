@@ -6,14 +6,13 @@ main {
    
     margin: 0 auto;
     background-color: antiquewhite;
+    
 }
 
 .gtblog{
     margin-left: 40px;
     margin-right: 40px;
 }
-
-
 
 h1 {
     font-size: 30px;
@@ -38,20 +37,14 @@ h2{
 } 
 img:hover {
     box-shadow: 0 0 2px 1px rgba(211, 38, 233, 0.5);
-
-
 }
 .footerLogo {
     height: 100px;
     width:100px;
 }
 
-
-
-.headerLogo:hover, .footerLogo:hover {
+.headerLogo:hover, .footerLogo:hover, .goToTop img:hover {
     box-shadow: none;
-
-
 }
 
 /* Subscription section */
@@ -77,7 +70,6 @@ img:hover {
 }
 
 .gtsubscription {
-   
     text-align: center;
     display: flex;
     grid-template-columns: repeat(1, 1fr);
@@ -102,7 +94,7 @@ img:hover {
 /* start for subscription in form */
 /* form property */
 .gtformcontainer {
-    margin-top: 20px;
+    margin-top: 80px;
     background-color: rgb(250, 244, 245);
     padding: 16px;
     border-radius: 5px;
@@ -115,7 +107,6 @@ img:hover {
 .form {
     padding: 10px 20px;
 }
-
 
 .gtextfield, .btn {
     margin: 20px;
@@ -134,9 +125,8 @@ img:hover {
     padding: 10px;
     margin-bottom: 5px;
     font-size: 14px;
-    
     display: block;
-    width: 100%;
+    width: 96%;
 }
 
 .gtextfield input:focus {
@@ -205,6 +195,7 @@ img:hover {
 
 /* review section */
 .gtreviewlinks {
+    margin-top: 100px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -218,8 +209,6 @@ img:hover {
         grid-template-columns: 1fr;
         grid-template-areas:
         "bgoverlay";
-
-            
     }
 }
 
@@ -276,7 +265,6 @@ img:hover {
 
 .overLink {
     position: absolute;
-   
     color: white;
     text-decoration: none;
     left: 0;
@@ -303,7 +291,8 @@ img:hover {
 .gtgrid {
     display: grid;
     min-width: 100%;
-    padding: 10px;
+    margin-top: 100px;
+    padding-bottom: 100px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "gtreview1 gtreview2 gtreview3"
@@ -338,7 +327,7 @@ img:hover {
     flex-shrink: 0;
     flex-basis: 20%;
     background-color: #dfd6d1;
-    border: 2px solid rgb(62, 93, 71);
+    border: none;
     border-radius: 5px;
     box-shadow: 5px 10px 10px rgb(76, 87, 76);
     position: relative;

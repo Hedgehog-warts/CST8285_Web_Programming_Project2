@@ -4,27 +4,27 @@
 // validate fields, validate function calls all other functions used for validation.
 
 function gotoPackage1() {
-        window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+        window.open("./package.html")
 }
 
 function gotoPackage2() {
-       window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+       window.open("./package.html")
 }
 
 function gotoPackage3() {
-    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+    window.open("./package.html")
 }
 
 function gotoPackage4() {
-    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+    window.open("./package.html")
 }
 
 function gotoPackage5() {
-    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+    window.open("./package.html")
 }
 
 function gotoPackage6() {
-    window.open("http://127.0.0.1:5503/CST8285_Web_Programming_Project2/package.html")
+    window.open("./package.html")
 }
 
 
@@ -104,12 +104,12 @@ const checkUEmail = () => {
 };
 
 // clear error message by click reset button
-resetBtn.addEventListener("click", clearMsg);
-function clearMsg() {
+// resetBtn.addEventListener("click", clearMsg);
+// function clearMsg() {
 
-    history.go(0);
+//     history.go(0);
 
-};
+// };
 
 
 // delay 500ms showing Instant feedback (error message)
@@ -128,15 +128,15 @@ const debounce = (fn, delay = 500) => {
 };
 
 //pass the input event handler to the debounce() function to debounce it
-document.getElementById('gtregistration').addEventListener('input', debounce(function (e) {
-    switch (e.target.id) {
+// document.getElementById('gtregistration').addEventListener('input', debounce(function (e) {
+//     switch (e.target.id) {
        
-        case 'email':
-            checkUEmail();
-            break;
+//         case 'email':
+//             checkUEmail();
+//             break;
        
-        }
-}));
+//         }
+// }));
 
 
 

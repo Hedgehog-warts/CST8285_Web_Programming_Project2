@@ -18,15 +18,12 @@ ul {
     padding-right: 40px;
 }
 
-li {
-    list-style: none;
-    margin: 10px 200px;
+.companyName ul {
+    vertical-align: 0px;
+    padding-right: 0px;
 }
 
-.headerLogo {
-    width: 100%;
-    display: flex;
-}
+
 
 .companyName {
     font-family: 'Nerko One';
@@ -36,8 +33,7 @@ h1 {
     display: flex;
 }
 
-h2,
-h3 {
+h2, h3 {
     padding: 0 10px;
 }
 
@@ -141,6 +137,8 @@ select {
 
 .search-packageTitle {
     display: list-item;
+    list-style: none;
+    margin: 10px 200px;
 }
 
 .tourPackage {

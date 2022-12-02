@@ -60,7 +60,7 @@ const isRequired = value => value === '' ? false : true;
 const isBetween = (length, min, max) => length < min || length > max ? false : true;
 
 const isEmailValid = (email) => {
-    const regexp1 = /[a-zA-z_.-0-9]+@[a-zA-Z].[a-zA-Z]{2,4}/;
+    const regexp1 = /[a-zA-z0-9]+@[a-zA-Z].[a-zA-Z]{2,4}/;
     return regexp1.test(email);
 };
 
@@ -93,7 +93,7 @@ const checkUEmail = () => {
     let valid = false;
     const email = uEmail.value.trim();
     if (!isRequired(email) || !isEmailValid(email)) {
-        showError(uEmail, "✕ Email address should be non-empty with the format xyz@xyz.xyz.");
+        showError(uEmail, "✕ Email address should be non-empty with the format xyz123@xyz.xyz.");
     }
     else {
         showSuccess(uEmail);

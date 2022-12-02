@@ -64,13 +64,17 @@ h2, p {
 }
 
 #doyoung,
-#michelle,
+#rong,
 #grace,
 #pojui {
     width: 300px;
     height: 300px;
 }
+#rong{
+    width: 320px;
+    height: 300px;
 
+}
 hr {
     margin: 50px;
 }

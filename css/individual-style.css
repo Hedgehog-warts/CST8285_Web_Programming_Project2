@@ -146,18 +146,8 @@ table {
 
 @media screen and (max-width: 850px){
 
-    .packages img {
+    .top-search h2 {
         width: 80%;
-        height: auto;
-    }
-
-    .packages table {
-        width: 100%;
-    }
-
-    .flexsearchbar{
-        display: flex;
-        flex-direction: column;
     }
 
     #searchbar {
@@ -166,5 +156,39 @@ table {
 
     #searchbutton {
         width: 50%;
+    }
+
+    .packages img {
+        width: 80%;
+        height: auto;
+    }
+
+    .packages table {
+        width: 80%;
+    }
+
+    .flexsearchbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tourname {
+        font-size: 4vw;
+    }
+
+    .description {
+        font-size: 2vw;
+    }
+
+    .location {
+        font-size: 2vw;
+    }
+
+    .night {
+        font-size: 2vw;
+    }
+
+    .price {
+        font-size: 2vw;
     }
 }

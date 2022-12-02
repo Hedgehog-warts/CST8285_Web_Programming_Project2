@@ -1,3 +1,5 @@
+/* Assignement 2 Group 7_PO JUI, FENG */
+
 // search function for search bar
 function indisearch() {
   var input, filter, table, text;

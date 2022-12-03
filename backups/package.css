@@ -1,18 +1,12 @@
-/* Web Programming Assignment2  */
-/* Grace Ellis */
-
 /* general */
 
 * {
     padding: 0;
     margin: 0;
     min-height: fit-content;
-
 }
-
-body {
-    background-color: rgb(242, 238, 234);
-    width: 100%;
+body{
+    background-color:#FFF6BF ;
 }
 
 p {
@@ -24,14 +18,18 @@ ul {
     padding-right: 40px;
 }
 
-.companyName ul {
-    vertical-align: 0px;
-    padding-right: 0px;
+li {
+    list-style: none;
+    margin: 10px 200px;
+}
+
+.headerLogo {
+    width: 100%;
+    display: flex;
 }
 
 .companyName {
     font-family: 'Nerko One';
-    top: -2px;
 }
 
 h1 {
@@ -66,10 +64,6 @@ select {
     position: absolute;
     transition: all 1.5s ease-out;
     opacity: 1;
-}
-
-.hidden {
-    opacity: 0;
 }
 
 .promoIMG {
@@ -147,15 +141,13 @@ select {
 
 .search-packageTitle {
     display: list-item;
-    list-style: none;
-    margin: 10px 200px;
 }
 
 .tourPackage {
     border: solid #ABD9FF 2px;
     border-radius: 14px;
     background-color: #C3F8FF;
-
+    
     padding: 10px;
 }
 
@@ -179,87 +171,57 @@ select {
     padding: 10px;
 }
 
- @media screen and (max-width:800px) {
-    
+@media screen and (max-width:900px) {
 
-        .slides {
-            /* max-width: 700px; */
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .promotionPackage h2 {
-            /* max-width: 700px; */
-            margin: 0 auto;
-            display: block;
-            max-width: 60%;
-            text-align: center;
-        }
-
-        .slides .packageP {
-            /* max-width: 400px; */
-            text-align: center;
-            display: block;
-            margin: 25px auto;
-        }
-
-        .promotionPackage .heading {
-            /* max-width: 600px; */
-            display: flex;
-            padding-top: 30px;
-            padding-right: 250px;
-            padding-left: -100px;
-        }
-
-        .promotionPackage .promoIMG {
-            /* max-width: 60%; */
-            margin: 0px auto;
-        }
-
-        .slides {
-            max-width: 500px;
-        }
-
-        li {
-            max-width: 700px;
-            list-style: none;
-            min-width: 400px;
-        }
-
-        .companyName li {
-            min-width: 0px;
-            margin: 0px;
-            padding: 5px;
-        }
-
-        #promotionTitle {
-            font-size: 40px;
-            padding-left: 145px;
-        }
-
-        .package-search {
-            margin: 10px auto;
-            padding-top: 60px;
-        }
-
-        .search-packageTitle {
-            max-width: 700px;
-            min-width: 400px;
-            display: list-item;
-            list-style: none;
-            margin: 10px auto;
-            padding: 10px auto;
-        }
-
-        #hiddenLogo {
-            display: flex;
-            padding-left: 200px;
-            margin: 14px auto;
-            width: 40px;
-        }
-
-        .hiddenLogoName {
-            display: none;
-        }
-
+    .slides {
+        max-width: 700px;
+        margin: 0 auto;
     }
+
+    .promotionPackage h2 {
+        max-width: 700px;
+        margin: 0 auto;
+        display: block;
+        max-width: 60%;
+        text-align: center;
+    }
+
+    .slides .packageP {
+        max-width: 400px;
+        text-align: center;
+        display: block;
+        margin: 25px auto;
+    }
+
+    .promotionPackage .heading {
+        max-width: 600px;
+        display: flex;
+        padding-top: 30px;
+        padding-right: 250px;
+        padding-left: -100px;
+    }
+
+    .promotionPackage .promoIMG {
+        max-width: 60%;
+        margin: 0px auto;
+    }
+
+    li {
+        max-width: 700px;
+        list-style: none;
+        margin: 10px auto;
+        min-width: 400px;
+        padding: 0 22px;
+    }
+
+    #promotionTitle {
+        font-size: 40px;
+        padding-left: 145px;
+    }
+
+    .package-search{
+        margin: 10px auto;
+        padding-top: 30px;
+    }
+
+}

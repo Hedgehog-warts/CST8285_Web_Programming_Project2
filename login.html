@@ -1,6 +1,7 @@
-<!-- Assignement 2 Group 7_Rong Ran -->
+<!-- Assignment 2 Group 7_Rong Ran -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- starting head tag -->
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +13,10 @@
     <script src="./js/script.js" defer></script>
     <title>login Page</title>
 </head>
-
 <!-- starting body tag -->
+
 <body>
+    <!-- starting header tag -->
     <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
@@ -65,8 +67,7 @@
             </div>
         </nav>
     </header>
-
-<!-- starting main tag -->
+    <!-- starting main tag -->
     <main>
         <div class="gtwelcome">
             <h1>Log in to your account</h1>
@@ -76,9 +77,9 @@
                 </ul>
             </div>
         </div>
-
-        <form action="./php/checklogin.php" method="post" id="gtregistration" name="gtregistration" onsubmit="return validate();">
-            <!-- Write the validate function for this form. -->
+        <!-- starting login form -->
+        <form action="./php/checklogin.php" method="post" id="gtregistration" name="gtregistration"
+            onsubmit="return validate();">
             <div class="gtformcontainer">
                 <div class="gtextfield">
                     <label for="email">Email</label>
@@ -104,7 +105,6 @@
             </div>
         </form>
     </main>
-
     <!-- starting footer tag -->
     <footer>
         <nav class="footerNav">
@@ -120,4 +120,5 @@
         <a id="goToTopID" class="goToTop" href="#headerNav"><img src="./img/nav/uparrow.png" alt="uparrow"></a>
     </footer>
 </body>
+
 </html>

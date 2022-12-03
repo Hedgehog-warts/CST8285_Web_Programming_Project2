@@ -7,7 +7,6 @@
     padding: 0;
     margin: 0;
     min-height: fit-content;
-
 }
 
 body {
@@ -21,7 +20,6 @@ p {
 
 ul {
     vertical-align: 540px;
-    padding-right: 40px;
 }
 
 .companyName ul {
@@ -38,8 +36,7 @@ h1 {
     display: flex;
 }
 
-h2,
-h3 {
+h2, h3 {
     padding: 0 10px;
 }
 
@@ -78,25 +75,17 @@ select {
 }
 
 .promo1 {
-    background: url(../img/package/Banff&LakeLouise.jpg) no-repeat 100% 90%;
+    background: url('../img/package/Banff&LakeLouise.jpg') no-repeat 100% 90%;
 }
 
 .promo2 {
-    background: url(../img/package/mountain.jpg) no-repeat 30%;
+    background: url('../img/package/botanic.jpg') no-repeat 30%;
+    background-size: cover;
 }
 
 .promo3 {
-    background: url(../img/package/Banff&LakeLouise.jpg) no-repeat 50%;
+    background: url('../img/package/rockies.jpg') no-repeat 50%;
     ;
-}
-
-.promo4 {
-    background: url(../img/package/mountain.jpg)no-repeat 30%;
-    ;
-}
-
-.promo5 {
-    background: url(../img/package/Banff&LakeLouise.jpg);
 }
 
 #promotionTitle {
@@ -135,41 +124,43 @@ select {
 
 #searchBar {
     width: 50%;
-    padding: 8px;
+    padding: 10px;
     margin-right: 10px;
     font-size: 16px;
     border-radius: 16px;
     border: solid grey 2px;
 }
 
-
 /* tour package */
-
 .search-packageTitle {
+    margin-left: 25%;
     display: list-item;
     list-style: none;
-    margin: 10px 200px;
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .tourPackage {
-    border: solid #ABD9FF 2px;
+    border: none;
     border-radius: 14px;
-    background-color: #C3F8FF;
-
-    padding: 10px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(161, 151, 123);
+    box-shadow: 5px 5px 5px rgb(161, 151, 123);
+    padding: 15px;
 }
 
 #package-resetButton {
-    padding: 10px 30px;
-    color: rgb(45, 80, 45);
+    color: white;
+    padding: 20px;
     font-size: 16px;
     border-radius: 16px;
-    background-color: #C3F8FF;
-    border: solid #ABD9FF;
+    background-color: rgb(153, 121, 118);
+    border: none;
 }
 
 #package-resetButton:hover {
-    background-color: rgb(45, 80, 45);
+    background-color: rgb(153, 121, 118,0.9);
     color: white;
 }
 
@@ -180,86 +171,81 @@ select {
 }
 
  @media screen and (max-width:800px) {
-    
 
-        .slides {
-            /* max-width: 700px; */
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .promotionPackage h2 {
-            /* max-width: 700px; */
-            margin: 0 auto;
-            display: block;
-            max-width: 60%;
-            text-align: center;
-        }
-
-        .slides .packageP {
-            /* max-width: 400px; */
-            text-align: center;
-            display: block;
-            margin: 25px auto;
-        }
-
-        .promotionPackage .heading {
-            /* max-width: 600px; */
-            display: flex;
-            padding-top: 30px;
-            padding-right: 250px;
-            padding-left: -100px;
-        }
-
-        .promotionPackage .promoIMG {
-            /* max-width: 60%; */
-            margin: 0px auto;
-        }
-
-        .slides {
-            max-width: 500px;
-        }
-
-        li {
-            max-width: 700px;
-            list-style: none;
-            min-width: 400px;
-        }
-
-        .companyName li {
-            min-width: 0px;
-            margin: 0px;
-            padding: 5px;
-        }
-
-        #promotionTitle {
-            font-size: 40px;
-            padding-left: 145px;
-        }
-
-        .package-search {
-            margin: 10px auto;
-            padding-top: 60px;
-        }
-
-        .search-packageTitle {
-            max-width: 700px;
-            min-width: 400px;
-            display: list-item;
-            list-style: none;
-            margin: 10px auto;
-            padding: 10px auto;
-        }
-
-        #hiddenLogo {
-            display: flex;
-            padding-left: 200px;
-            margin: 14px auto;
-            width: 40px;
-        }
-
-        .hiddenLogoName {
-            display: none;
-        }
-
+    .slides {
+        width: 100%;
+        margin: 0 auto;
     }
+
+    .promotionPackage h2 {
+        margin: 0 auto;
+        display: block;
+        max-width: 60%;
+        text-align: center;
+    }
+
+    .slides .packageP {
+        text-align: center;
+        display: block;
+        margin: 25px auto;
+    }
+
+    .promotionPackage .heading {
+        display: flex;
+        padding-top: 30px;
+        padding-right: 250px;
+        padding-left: -100px;
+    }
+
+    .promotionPackage .promoIMG {
+        margin: 0px auto;
+    }
+
+    .slides {
+        max-width: 500px;
+    }
+
+    li {
+        max-width: 700px;
+        list-style: none;
+        min-width: 400px;
+    }
+
+    .companyName li {
+        min-width: 0px;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    #promotionTitle {
+        font-size: 40px;
+        padding-left: 145px;
+    }
+
+    .package-search {
+        margin: 10px auto;
+        padding-top: 60px;
+    }
+
+    .search-packageTitle {
+        max-width: 700px;
+        min-width: 400px;
+        display: list-item;
+        list-style: none;
+        margin: 10px auto;
+        margin-top: 30px;
+        padding: 10px auto;
+    }
+
+    #hiddenLogo {
+        display: flex;
+        padding-left: 200px;
+        margin: 14px auto;
+        width: 40px;
+    }
+
+    .hiddenLogoName {
+        display: none;
+    }
+
+}

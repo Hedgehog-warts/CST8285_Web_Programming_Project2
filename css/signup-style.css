@@ -14,14 +14,12 @@ h1 {
     font-size: 25px;
     text-align: center;
     margin: 20px;
-
 }
 
 /* start for Sign-up and log in form */
 .gtwelcome, .noDot{
     text-align: center;
     margin: 15px;
-   
 }
 
 .noDot ul {

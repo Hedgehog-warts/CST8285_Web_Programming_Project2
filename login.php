@@ -12,14 +12,6 @@
    $sql = 'SELECT emp_id, emp_name, emp_salary FROM employee';
    $check = "SELECT * FROM package";
    $result = mysqli_query($con, $check);
-//    if (mysqli_num_rows($result) > 0) {
-//     // OUTPUT DATA OF EACH ROW
-//         while($row = mysqli_fetch_assoc($result)) {
-//             echo "{$row['meta_id_tag']}";
-//             echo "{$row['meta_location']}";
-
-//         }
-//     }
 ?>
 
 <!DOCTYPE html>

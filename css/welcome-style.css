@@ -18,10 +18,10 @@ body {
     padding-right: 30px;
     padding-left: 30px;
     margin: 20px;
-    background-color: rgba(225,219,240,1);
+    background-color: rgb(220, 214, 208);
     border: 0px;
 }
 
 .goToLogIn:hover {
-    background-color: rgba(182,171,171,0.5);
+    background-color: rgba(161,151,123);
 }

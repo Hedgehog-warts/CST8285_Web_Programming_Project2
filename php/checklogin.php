@@ -26,16 +26,14 @@ if(isset($_POST['email']))
     
     if ($found == 0) {
         echo "<script>alert('Invalid account. Please check your ID');</script>";
-        echo "<script>window.location.href = '../signoff.html';</script>";
+        echo "<script>window.location.href = '../login.html';</script>";
     } else {
         $row = mysqli_fetch_assoc($result);
         if ($pass != $row['userPassword']) {
             echo "<script>alert('Password is wrong. Please check password');</script>";
-            echo "<script>window.location.href = '../signoff.html';</script>";
+            echo "<script>window.location.href = '../login.html';</script>";
         } else {
-            $delete = "DELETE FROM userinformation where emailAddress='$email'";
-            $deleteQuery = mysqli_query($con, $delete);
-            echo "<script>alert('Your account is deleted. See you again!');</script>";
+            echo "<script>alert('Welcome, $row[userName]!');</script>";
             echo "<script>window.location.href = '../index.html';</script>";
         }
     }

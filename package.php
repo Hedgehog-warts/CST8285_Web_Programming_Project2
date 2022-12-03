@@ -1,3 +1,6 @@
+<!-- Web Programming Assignment2 -->
+<!-- Grace Ellis  -->
+
 <?php
    $con = mysqli_connect('localhost', 'root', 'abcd1234','webassignment2');
    
@@ -11,14 +14,6 @@
    $sql = 'SELECT emp_id, emp_name, emp_salary FROM employee';
    $check = "SELECT * FROM package";
    $result = mysqli_query($con, $check);
-//    if (mysqli_num_rows($result) > 0) {
-//     // OUTPUT DATA OF EACH ROW
-//         while($row = mysqli_fetch_assoc($result)) {
-//             echo "{$row['meta_id_tag']}";
-//             echo "{$row['meta_location']}";
-
-//         }
-//     }
 ?>
 
 <!DOCTYPE html>
@@ -41,26 +36,40 @@
     <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
-                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="hiddenLogoName"> GitTour</span>
-                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="companyLogoName"> GitTour</span>
+                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
+                    class="hiddenLogoName"> GitTour</span>
+                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
+                    class="companyLogoName"> GitTour</span>
                 <ul class="logoList">
                     <a href="index.html">
-                        <li class="logoListOption"><p>Home</p></li>
+                        <li class="logoListOption">
+                            <p>Home</p>
+                        </li>
                     </a>
                     <a href="package.html">
-                        <li class="logoListOption"><p>Package</p></li>
+                        <li class="logoListOption">
+                            <p>Package</p>
+                        </li>
                     </a>
                     <a href="individual.html">
-                        <li class="logoListOption"><p>Individual Travel</p></li>
+                        <li class="logoListOption">
+                            <p>Individual Travel</p>
+                        </li>
                     </a>
                     <a href="blog.html">
-                        <li class="logoListOption"><p>Blog</p></li>
+                        <li class="logoListOption">
+                            <p>Blog</p>
+                        </li>
                     </a>
                     <a href="contactus.html">
-                        <li class="logoListOption"><p>Contact Us</p></li>
+                        <li class="logoListOption">
+                            <p>Contact Us</p>
+                        </li>
                     </a>
                     <a href="login.html">
-                        <li class="logoListOption"><p>Log In</p></li>
+                        <li class="logoListOption">
+                            <p>Log In</p>
+                        </li>
                     </a>
                 </ul>
             </div>
@@ -79,76 +88,45 @@
         <div class="slides">
             <h1 id="promotionTitle">Promotion Package1</h1>
             <div class="promoIMG promo1"></div>
-            <div class="heading">
-                <h3 class="size">Group Tour</h3>
-                <h3 class="price">$1,500</h3>
-            </div>
-            <h2>Banff National Park & Lake Louise</h2>
-            <div>
-                <p class="packageP">Experience Calgary's Banff National Park & Lake Louise and take part in many of the
-                    incredible experiences the park offers. Take part in skiing and snowboarding, go dogsledding, or
-                    even visit the famous Banff hot springs. With this all inclusive 12 day package, you will get to
+                <h2>Banff National Park & Lake Louise</h2>
+                <div class="heading">
+                    <h3 class="size">Group Tour</h3>
+                    <h3 class="price">$1,500</h3>
+                </div>
+                <p class="packageP">Experience Calgary's Banff National Park & Lake Louise. Take part in skiing and
+                    snowboarding, go dogsledding, or
+                    even visit the famous Banff hot springs. With this 12 day package, you will get to
                     stay at the Banff Aspen Lodge, go dogsledding, hiking, skiing and snowboarding. Included in this
                     packcage is 2 large rooms which can fit up to 4 people each. Meals and Wifi are included. </p>
-            </div>
         </div>
-        <div class="slides">
+
+        <div class="slides hidden">
             <h1 id="promotionTitle">Promotion Package2</h1>
             <div class="promoIMG promo2"></div>
+            <h2>Montreal Botanical Garden</h2>
             <div class="heading">
                 <h3 class="size">Group Tour</h3>
                 <h3 class="price">$150</h3>
             </div>
-            <h2>Montreal Botanical Garden</h2>
-            <div>
-                <p class="packageP">The Montreal Botanical Garden is recognized as one of the biggest and most beautiful
-                    botanical gardens in the world! Come discover all sorts of plants on this relaxing tour, perfect for
-                    couples. This package includes full access tickets to the Botanical Gardens and a lunch at the
-                    Botanical Garden Restaurant.
-                </p>
-            </div>
+            <p class="packageP">The Montreal Botanical Garden is recognized as one of the biggest and most beautiful
+                botanical gardens in the world! Come discover all sorts of plants on this relaxing tour, perfect for
+                couples. This package includes full access tickets to the Botanical Gardens and a lunch at the
+                Botanical Garden Restaurant.
+            </p>
         </div>
-        <div class="slides">
+
+        <div class="slides hidden">
             <h1 id="promotionTitle">Promotion Package3</h1>
             <div class="promoIMG promo3"></div>
+            <h2>Rockies Premium Tour from Vancouver</h2>
             <div class="heading">
                 <h3 class="size">Group Tour</h3>
-                <h3 class="price">$1,500</h3>
+                <h3 class="price">$1,800</h3>
             </div>
-            <h2>Banff National Park & Lake Louise</h2>
-            <div>
-                <p class="packageP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga enim nobis ex ipsum,
-                    nihil, voluptas ea numquam accusantium minus ducimus ullam aliquam est adipisci perferendis eos
-                    eaque nisi odit alias. </p>
-            </div>
-        </div>
-        <div class="slides">
-            <h1 id="promotionTitle">Promotion Package4</h1>
-            <div class="promoIMG promo4"></div>
-            <div class="heading">
-                <h3 class="size">Group Tour</h3>
-                <h3 class="price">$1,500</h3>
-            </div>
-            <h2>Banff National Park & Lake Louise</h2>
-            <div>
-                <p class="packageP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga enim nobis ex ipsum,
-                    nihil, voluptas ea numquam accusantium minus ducimus ullam aliquam est adipisci perferendis eos
-                    eaque nisi odit alias. </p>
-            </div>
-        </div>
-        <div class="slides">
-            <h1 id="promotionTitle">Promotion Package5</h1>
-            <div class="promoIMG promo4"></div>
-            <div class="heading">
-                <h3 class="size">Group Tour</h3>
-                <h3 class="price">$1,500</h3>
-            </div>
-            <h2>Banff National Park & Lake Louise</h2>
-            <div>
-                <p class="packageP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga enim nobis ex ipsum,
-                    nihil, voluptas ea numquam accusantium minus ducimus ullam aliquam est adipisci perferendis eos
-                    eaque nisi odit alias. </p>
-            </div>
+            <p class="packageP">Start and end in Vancouver! With the In-depth Cultural tour Rockies 
+                Premium Tour from Vancouver (34 Seats), you have a 5 days tour package taking you through Vancouver, 
+                Canada and 8 other destinations in Canada. Rockies Premium Tour from Vancouver (34 Seats) 
+                includes accommodation in a hotel as well as an expert guide, meals, transport and more. </p>
         </div>
     </div>
 
@@ -173,11 +151,6 @@
         </div>
     </div>
 
-    <div class="results-container">
-        <ul class="results-list" id="list">
-
-        </ul>
-    </div>
     <ul>
         <?php while($row = mysqli_fetch_assoc($result)) {
             echo "<li class='search-packageTitle'";

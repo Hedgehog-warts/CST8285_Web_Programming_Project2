@@ -46,14 +46,20 @@ body {
     width: 80px;
     height: 50px;
     border-radius: 8px;
-    background-color: rgb(45,80,45);
+    background-color: #987976;
     font-family: 'DM Sans', serif;
     font-size: 16px;
     color: white;
     border-style: solid;
-    border-color: rgb(45,80,45);
+    border-color: #987976;
     vertical-align: top;
     cursor: pointer;
+}
+
+#searchbutton:hover {
+    background-color: #FFEBAD;
+    color: black;
+    border-color: #FFEBAD;
 }
 
 form {
@@ -69,7 +75,7 @@ form {
     width: 120px;
     height: 50px;
     border-radius: 8px;
-    background-color:rgb(45,80,45);
+    background-color:#987976;
     font-family: 'DM Sans', serif;
     font-size: 16px;
     border-style:none;
@@ -136,9 +142,6 @@ table {
 
 .flexcontainer div {
     vertical-align: top;
-}
-
-.flexcontainer div {
     text-align: center;
 }
 
@@ -157,12 +160,13 @@ table {
     }
 
     .packages img {
-        width: 80%;
+        width: 80vw;
         height: auto;
     }
 
     .packages table {
-        width: 80%;
+        width: 80vw;
+        height: auto;
     }
 
     .flexsearchbar{
@@ -175,11 +179,12 @@ table {
     }
 
     .description {
-        font-size: 2vw;
+        display: none;
     }
 
     .location {
         font-size: 2vw;
+        vertical-align:middle;
     }
 
     .night {

@@ -1,6 +1,7 @@
-<!-- Assignement 2 Group 7_Rong Ran -->
+<!-- Assignment 2 Group 7_Rong Ran -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- starting head tag -->
 
 <head>
     <meta charset="UTF-8">
@@ -15,32 +16,47 @@
     <title>Sign-Up Page</title>
 
 </head>
+<!-- starting body tag -->
 
 <body>
-    <!-- head Navigator -->
+    <!-- starting header tag -->
     <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
-                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="hiddenLogoName"> GitTour</span>
-                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="companyLogoName"> GitTour</span>
+                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
+                    class="hiddenLogoName"> GitTour</span>
+                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
+                    class="companyLogoName"> GitTour</span>
                 <ul class="logoList">
                     <a href="index.html">
-                        <li class="logoListOption"><p>Home</p></li>
+                        <li class="logoListOption">
+                            <p>Home</p>
+                        </li>
                     </a>
                     <a href="package.html">
-                        <li class="logoListOption"><p>Package</p></li>
+                        <li class="logoListOption">
+                            <p>Package</p>
+                        </li>
                     </a>
                     <a href="individual.html">
-                        <li class="logoListOption"><p>Individual Travel</p></li>
+                        <li class="logoListOption">
+                            <p>Individual Travel</p>
+                        </li>
                     </a>
                     <a href="blog.html">
-                        <li class="logoListOption"><p>Blog</p></li>
+                        <li class="logoListOption">
+                            <p>Blog</p>
+                        </li>
                     </a>
                     <a href="contactus.html">
-                        <li class="logoListOption"><p>Contact Us</p></li>
+                        <li class="logoListOption">
+                            <p>Contact Us</p>
+                        </li>
                     </a>
                     <a href="login.html">
-                        <li class="logoListOption"><p>Log In</p></li>
+                        <li class="logoListOption">
+                            <p>Log In</p>
+                        </li>
                     </a>
                 </ul>
             </div>
@@ -54,7 +70,7 @@
             </div>
         </nav>
     </header>
-
+    <!-- starting main tag -->
     <main>
         <div class="gtwelcome">
             <img class="signupLogo" src="./img/nav/gittour_logo_transparent.png" alt="gitTour Canada Logo">
@@ -65,11 +81,10 @@
                 </ul>
             </div>
         </div>
-
         <div class="gtformcontainer">
+            <!-- starting sign up form -->
             <form action="./php/registration.php" method="post" id="gtregistration" name="gtregistration"
                 onsubmit="return validate();">
-                <!-- Write the validate function for this form. -->
 
                 <div class="gtextfield">
                     <label for="email">Email</label>
@@ -169,7 +184,7 @@
                     </select>
                 </div>
 
-                <!-- starting sort by Section -->
+                <!-- sorting Travel theme section -->
                 <div class="traveltheme">
                     <p class="themeSubject">Travel theme</p>
                     <select class="select" name="Sort2" id="Sort2">
@@ -214,7 +229,7 @@
         </div>
     </main>
 
-    <!-- foot Navigator -->
+    <!-- starting footer tag -->
     <footer>
         <nav class="footerNav">
             <hr class="bottomLine">

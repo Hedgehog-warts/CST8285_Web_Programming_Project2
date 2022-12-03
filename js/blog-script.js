@@ -1,5 +1,5 @@
 
-//Assignement 2 Group 7_Rong Ran
+//Assignment 2 Group 7_Rong Ran
 
 // validate fields, validate function calls all other functions used for validation.
 

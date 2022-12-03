@@ -24,7 +24,7 @@
                     <a href="index.html">
                         <li class="logoListOption"><p>Home</p></li>
                     </a>
-                    <a href="package.html">
+                    <a href="package.php">
                         <li class="logoListOption"><p>Package</p></li>
                     </a>
                     <a href="individual.html">
@@ -43,7 +43,7 @@
             </div>
             <div class="topMenu">
                 <a href="index.html">Home</a>
-                <a href="package.html">Package</a>
+                <a href="package.php">Package</a>
                 <a href="individual.html">Individual Travel</a>
                 <a href="blog.html">Blog</a>
                 <a href="contactus.html">Contact Us</a>

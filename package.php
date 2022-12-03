@@ -184,13 +184,15 @@
     </ul>
 
     <footer>
-        <nav class="footerPackages">
+        <nav class="footerNav">
             <hr class="bottomLine">
             <div class="indexContainer">
                 <img class="footerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
                 <div class="siteIndex">
                     <h4>GitTour</h4>
                     <p>This website was designed by GitTour</p>
+                    <a class="signPage" href="signup.html"><span>Sign Up&nbsp;</span></a>
+                    <a class="signPage" href="signoff.html"><span>Sign Off</span></a>
                 </div>
             </div>
         </nav>

@@ -127,6 +127,8 @@
             <div class="siteIndex">
                 <h4>GitTour</h4>
                 <p>This website was designed by GitTour</p>
+                <a class="signPage" href="signup.html"><span>Sign Up&nbsp;</span></a>
+                <a class="signPage" href="signoff.html"><span>Sign Off</span></a>
             </div>
         </div>
     </nav>

@@ -14,6 +14,7 @@
     <title>Welcome!</title>
 </head>
 <body>
+    <!-- header -->
     <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
@@ -51,6 +52,7 @@
         </nav>
     </header>
 
+    <!-- welcome message -->
     <?php 
         echo "
         <div class='welcomeDiv'>
@@ -59,7 +61,8 @@
             <a href='./login.html'><button class='goToLogIn' type='button'>Log in</button></a>
         </div>"
     ?>
-
+    
+    <!-- starting footer tag -->
     <footer>
         <nav class="footerNav">
             <hr class="bottomLine">
@@ -68,6 +71,8 @@
                 <div class="siteIndex">
                     <h4>GitTour</h4>
                     <p>This website was designed by GitTour</p>
+                    <a class="signPage" href="signup.html"><span>Sign Up&nbsp;</span></a>
+                    <a class="signPage" href="signoff.html"><span>Sign Off</span></a>
                 </div>
             </div>
         </nav>

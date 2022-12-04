@@ -1,12 +1,9 @@
 /* Assignement 2 Group 7_Doyoung Kim */
 
 /* Header */
-// document.querySelector('.buttonLinks2').addEventListener('click', redirectLink('./blog.html'));
-
 function redirectLink (link) {
     window.location.href = link;
 }
-
 
 var list = document.querySelector('.buttonLists');
 

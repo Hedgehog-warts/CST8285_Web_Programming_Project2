@@ -19,6 +19,13 @@ if(isset($_POST['email']))
     // define variables by using global variables
     $email = $_POST['email'];
 
+    // Create Table if not exists
+    $table = "CREATE TABLE IF NOT EXISTS subscription
+        (id INT AUTO_INCREMENT PRIMARY KEY,
+        subscription_email VARCHAR(50) NOT NULL)
+        ENGINE=INNODB;";
+    $createTable = mysqli_query($con, $table);
+
     // check overlapping data
     $check = "SELECT id FROM subscription where subscription_email=\"$email\"";
     $result = mysqli_query($con, $check);

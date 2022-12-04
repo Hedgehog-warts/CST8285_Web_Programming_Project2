@@ -88,7 +88,7 @@ const checkPassword = () => {
     let valid = false;
     const password = uPassid.value.trim();
     if (!isRequired(password) || !isPasswordSecure(password)) {
-        showError(uPassid, "✕  Password should be at least 6 characters: 1 uppercase, 1 lowercase.");
+        showError(uPassid, "✕  Password should be at least 6 characters: 1 uppercase, 1 lowercase 1 number.");
     }
     else {
         showSuccess(uPassid);

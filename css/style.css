@@ -39,8 +39,11 @@ html {
 .companyName {
     position: absolute;
     top: -5px; 
-    font-size: 44pt;
     left: 10%;
+}
+
+.companyName span {
+    font-size: 44pt;
 }
 
 #headerLogo, #hiddenLogo {
@@ -72,44 +75,33 @@ html {
     font-family: 'Nerko One';
 }
 
-.logoList {
-    background: rgb(223, 214, 207,0.9);
-    text-align: center;
-    text-decoration: none;
+.buttonLists{
+    position: absolute;
     transform: scaleY(0);
     transform-origin: top;
     transition: 0.3s;
-    position: absolute;
-    top:-300px;
 }
 
-.newLogoList {
-    display: block;
+.newButtonLists {
     transform: scaleY(1);
-    position: relative;
-    top:0px;
 }
 
-.logoList a {
-    text-decoration: none;
-}
-
-.logoListOption {
-    list-style: none;
-    cursor: pointer;
-    padding: 15px;
+.buttonLinks {
     font-size: 10pt;
+    margin: 0px;
+    padding: 15px;
+    border: none;
+    width: 200px;
+    background: rgb(223, 214, 207,0.9);
+    cursor: pointer;
     color: black;
 }
 
-.logoListOption:hover {
+.buttonLinks:hover {
     background: rgb(166, 151, 119, 0.9);
     color: rgb(49, 49, 49);
 }
 
-.logoListOption:visited {
-    color: rgb(49, 49, 49);
-}
 
 .topMenu {
     display: inline-block;
@@ -783,22 +775,7 @@ html {
 
 @media screen and (max-width:500px) {
     
-    .companyName {
-        left: 50%;
-        transform: translate(-80%,0);
-    }
-
-    .logoList {
-        transform: scaleY(0) translate(35%,0);
-    }
-
-    .newLogoList {
-        transform: scaleY(1) translate(35%,0);
-    }
     
-    .hiddenLogoName {
-        display: none;
-    }
 }
 
 

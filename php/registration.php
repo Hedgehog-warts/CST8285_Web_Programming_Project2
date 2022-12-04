@@ -23,6 +23,17 @@ if(isset($_POST['email']))
     $province = $_POST['Sort1'];
     $concept = $_POST['Sort2'];
 
+    // Create Table if not exists
+    $table = "CREATE TABLE IF NOT EXISTS userinformation
+        (id INT AUTO_INCREMENT PRIMARY KEY,
+        emailAddress VARCHAR(50) NOT NULL,
+        userName VARCHAR(30) NOT NULL,
+        userPassword VARCHAR(30) NOT NULL,
+        preferredProvince VARCHAR(20) NOT NULL,
+        travelConcept VARCHAR(50) NOT NULL)
+        ENGINE=INNODB;";
+    $createTable = mysqli_query($con, $table);
+
     // check data from database and insert SQL code
     $check = "SELECT userPassword FROM userinformation where emailAddress='$email'";
     $result = mysqli_query($con, $check);

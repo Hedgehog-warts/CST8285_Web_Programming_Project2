@@ -1,7 +1,7 @@
 /* Assignement 2 Group 7_PO JUI, FENG */
 
 body {
-    font-family: 'DM Sans', serif;
+    font-family: 'Merriweather';
     background-color:  rgb(242, 238, 234);
 }
 
@@ -47,7 +47,7 @@ body {
     height: 50px;
     border-radius: 8px;
     background-color: #987976;
-    font-family: 'DM Sans', serif;
+    font-family: 'Merriweather';
     font-size: 16px;
     color: white;
     border-style: solid;
@@ -76,7 +76,7 @@ form {
     height: 50px;
     border-radius: 8px;
     background-color:#987976;
-    font-family: 'DM Sans', serif;
+    font-family: 'Merriweather';
     font-size: 16px;
     border-style:none;
     color: white;
@@ -126,7 +126,7 @@ table {
 
 .tourname {
     font-size: 30px;
-    font-family: 'DM serif display', serif;
+    font-family: 'Merriweather';
     font-weight: bold;
     padding-left: 10px;
     text-align: left

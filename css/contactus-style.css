@@ -11,13 +11,13 @@ body {
 h1 {
     font-size: 48px;
     color: #18181b;
-    font-family: 'DM serif display', serif;
+    font-family: 'Merriweather';
 }
 
 h2, p {
     font-weight: lighter;
     font-size: 20px;
-    font-family: 'DM Sans', serif;
+    font-family: 'Merriweather';
 }
 
 .logoListOption p{
@@ -39,7 +39,7 @@ h2, p {
 }
 
 #signup {
-    font-family: 'DM Sans', serif;
+    font-family: 'Merriweather';
 }
 
 #submit {
@@ -54,7 +54,7 @@ h2, p {
 }
 
 #submit a {
-    font-family: 'DM Sans', serif;
+    font-family: 'Merriweather';
     text-decoration: none;
 }
 

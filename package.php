@@ -33,45 +33,27 @@
 </head>
 
 <body>
-<header class="stickyHeaderNav">
+    <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
                 <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
                 <span class="hiddenLogoName"> GitTour</span>
                 <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
                 <span class="companyLogoName"> GitTour</span>
-                <ul class="logoList">
-                    <a href="index.html">
-                        <li class="logoListOption">
-                            <p>Home</p>
-                        </li>
-                    </a>
-                    <a href="package.php">
-                        <li class="logoListOption">
-                            <p>Package</p>
-                        </li>
-                    </a>
-                    <a href="individual.html">
-                        <li class="logoListOption">
-                            <p>Individual Travel</p>
-                        </li>
-                    </a>
-                    <a href="blog.html">
-                        <li class="logoListOption">
-                            <p>Blog</p>
-                        </li>
-                    </a>
-                    <a href="contactus.html">
-                        <li class="logoListOption">
-                            <p>Contact Us</p>
-                        </li>
-                    </a>
-                    <a href="login.html">
-                        <li class="logoListOption">
-                            <p>Log In</p>
-                        </li>
-                    </a>
-                </ul>
+                <div class="buttonLists">
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./index.html')">Home</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./package.php')">Package</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./individual.html')">Individual Travel</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./blog.html')">Blog</button>
+                        <button class="buttonLinks" 
+                        onclick="redirectLink('./contactus.html')">Contact Us</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./login.html')">Log In</button>
+                </div>
             </div>
             <div class="topMenu">
                 <a href="index.html">Home</a>
@@ -139,7 +121,7 @@
             <select id="package-dropDown" name="package-provinceMenu"
                 onchange="filterByProvince(document.getElementById('package-dropDown').value)">
 
-                <option value="">None</option>
+                <option value="">All</option>
                 <option value="Vancouver">Vancouver</option>
                 <option value="Calgary">Calgary</option>
                 <option value="Saskatchewan">Saskatchewan</option>

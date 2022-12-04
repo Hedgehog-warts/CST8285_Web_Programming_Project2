@@ -1,8 +1,14 @@
 /* Assignement 2 Group 7_Doyoung Kim */
 
 /* Header */
-var list = document.querySelector('.logoList');
+// document.querySelector('.buttonLinks2').addEventListener('click', redirectLink('./blog.html'));
 
+function redirectLink (link) {
+    window.location.href = link;
+}
+
+
+var list = document.querySelector('.buttonLists');
 
 window.onclick = e => {
     if (e.target.id !== 'hiddenLogo' && e.target.classList[0] !== 'hiddenLogoName') {
@@ -15,16 +21,16 @@ window.onclick = e => {
 window.addEventListener('resize', checksize);
 
 function showList(){
-    list.classList.toggle('newLogoList');
+    list.classList.toggle('newButtonLists');
 }
 
 function removeList(){
-    list.classList.remove('newLogoList');
+    list.classList.remove('newButtonLists');
 }
 
 function checksize(){
     if (window.innerWidth>1200) {
-        list.classList.remove('newLogoList');
+        list.classList.remove('newButtonLists');
     }
 }
 

@@ -7,6 +7,8 @@ function searchFunction() {
     searchPackages = searchPackages.toLowerCase();
     let packageResults = document.getElementsByClassName("search-packageTitle");
 
+    document.querySelector('#package-dropDown').value="";
+
     for (i = 0; i < packageResults.length; i++) {
         if (!packageResults[i].innerHTML.toLowerCase().includes(searchPackages)) {
             packageResults[i].style.display = "none";

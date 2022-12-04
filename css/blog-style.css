@@ -27,13 +27,16 @@ h2{
 
 }
  img {
-   
     width: 100%; 
     border-radius: 5px;
-        cursor: pointer;
+    cursor: pointer;
 } 
 img:hover {
     box-shadow: 0 0 2px 1px rgba(211, 38, 233, 0.5);
+}
+
+.companyName img:hover {
+    box-shadow:none;
 }
 .footerLogo {
     height: 100px;

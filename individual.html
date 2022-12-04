@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/individual-style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Sans">
+
     <script src="./js/individual-script.js" defer></script>
     <script src="./js/script.js" defer></script>
     <title>GitTour - Individual Travel</title>
@@ -25,38 +25,20 @@
                 <span class="hiddenLogoName"> GitTour</span>
                 <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
                 <span class="companyLogoName"> GitTour</span>
-                <ul class="logoList">
-                    <a href="index.html">
-                        <li class="logoListOption">
-                            <p>Home</p>
-                        </li>
-                    </a>
-                    <a href="package.php">
-                        <li class="logoListOption">
-                            <p>Package</p>
-                        </li>
-                    </a>
-                    <a href="individual.html">
-                        <li class="logoListOption">
-                            <p>Individual Travel</p>
-                        </li>
-                    </a>
-                    <a href="blog.html">
-                        <li class="logoListOption">
-                            <p>Blog</p>
-                        </li>
-                    </a>
-                    <a href="contactus.html">
-                        <li class="logoListOption">
-                            <p>Contact Us</p>
-                        </li>
-                    </a>
-                    <a href="login.html">
-                        <li class="logoListOption">
-                            <p>Log In</p>
-                        </li>
-                    </a>
-                </ul>
+                <div class="buttonLists">
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./index.html')">Home</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./package.php')">Package</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./individual.html')">Individual Travel</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./blog.html')">Blog</button>
+                        <button class="buttonLinks" 
+                        onclick="redirectLink('./contactus.html')">Contact Us</button>
+                    <button class="buttonLinks" 
+                        onclick="redirectLink('./login.html')">Log In</button>
+                </div>
             </div>
             <div class="topMenu">
                 <a href="index.html">Home</a>
@@ -95,7 +77,7 @@
     <!-- packages -->
     <div class="packages ON flexcontainer">
         <div>
-            <img class="packagepic" src="./img/individual_packages/Essential Ontario Self Drive.jpg" alt="Canadian Canoe Route in Ontario">
+            <img class="packagepic" src="./img/individual_packages/Essential_Ontario_Self_Drive.jpg" alt="Canadian Canoe Route in Ontario">
         </div>
         <div>
             <table>
@@ -148,7 +130,7 @@
 
     <div class="packages ON flexcontainer">
         <div>
-            <img class="packagepic" src="./img/individual_packages/Ontario Family Fly Drive.jpg" alt="Canadian Canoe Route in Ontario">
+            <img class="packagepic" src="./img/individual_packages/Ontario_Family_Fly_Drive.jpg" alt="Canadian Canoe Route in Ontario">
         </div>
         <div>
             <table>
@@ -234,7 +216,7 @@
 
     <div class="packages BC flexcontainer">
         <div>
-            <img class="packagepic" src="./img/individual_packages/Canadian Canoe Route.jpg" alt="Canadian Canoe Route in Ontario">
+            <img class="packagepic" src="./img/individual_packages/Canadian_Canoe_Route.jpg" alt="Canadian Canoe Route in Ontario">
         </div>
         <div>
             <table>

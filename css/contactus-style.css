@@ -20,6 +20,11 @@ h2, p {
     font-family: 'DM Sans', serif;
 }
 
+.logoListOption p{
+    font-size: 10pt;
+    font-family: 'Merriweather';
+}
+
 #description {
     margin: 40px 0;
 }

@@ -644,9 +644,14 @@ html {
 }
 
 @media screen and (max-width:1200px) {
-    
-    .ourPromotionOverlay, .image {   
-        width: 100vw;
+
+    .image {   
+        width: 95vw;
+        height: 50vw;
+    }
+
+    .ourPromotionOverlay{
+        width: 85vw;
         height: 50vw;
     }
 

@@ -236,16 +236,4 @@ select {
         margin-top: 30px;
         padding: 10px auto;
     }
-
-    #hiddenLogo {
-        display: flex;
-        padding-left: 200px;
-        margin: 14px auto;
-        width: 40px;
-    }
-
-    .hiddenLogoName {
-        display: none;
-    }
-
 }

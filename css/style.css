@@ -79,10 +79,15 @@ html {
     transform: scaleY(0);
     transform-origin: top;
     transition: 0.3s;
+    position: absolute;
+    top:-300px;
 }
 
 .newLogoList {
+    display: block;
     transform: scaleY(1);
+    position: relative;
+    top:0px;
 }
 
 .logoList a {

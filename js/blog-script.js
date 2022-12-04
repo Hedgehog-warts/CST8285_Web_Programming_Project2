@@ -4,27 +4,27 @@
 // validate fields, validate function calls all other functions used for validation.
 
 function gotoPackage1() {
-        window.open("./package.html")
+        window.open("./package.php")
 }
 
 function gotoPackage2() {
-       window.open("./package.html")
+       window.open("./package.php")
 }
 
 function gotoPackage3() {
-    window.open("./package.html")
+    window.open("./package.php")
 }
 
 function gotoPackage4() {
-    window.open("./package.html")
+    window.open("./package.php")
 }
 
 function gotoPackage5() {
-    window.open("./package.html")
+    window.open("./package.php")
 }
 
 function gotoPackage6() {
-    window.open("./package.html")
+    window.open("./package.php")
 }
 
 
@@ -103,15 +103,6 @@ const checkUEmail = () => {
     return valid;
 };
 
-// clear error message by click reset button
-// resetBtn.addEventListener("click", clearMsg);
-// function clearMsg() {
-
-//     history.go(0);
-
-// };
-
-
 // delay 500ms showing Instant feedback (error message)
 const debounce = (fn, delay = 500) => {
     let timeoutId;
@@ -126,17 +117,6 @@ const debounce = (fn, delay = 500) => {
         }, delay);
     };
 };
-
-//pass the input event handler to the debounce() function to debounce it
-// document.getElementById('gtregistration').addEventListener('input', debounce(function (e) {
-//     switch (e.target.id) {
-       
-//         case 'email':
-//             checkUEmail();
-//             break;
-       
-//         }
-// }));
 
 
 

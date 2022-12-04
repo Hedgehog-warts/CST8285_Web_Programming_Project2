@@ -11,33 +11,47 @@
     <link rel="stylesheet" type="text/css" href="./css/welcome-style.css">
 
     <script src="./js/script.js" defer></script>
-    <title>Welcome!</title>
+    <title>GitTour - Welcome!</title>
 </head>
 <body>
     <!-- header -->
     <header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
-                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="hiddenLogoName"> GitTour</span>
-                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span class="companyLogoName"> GitTour</span>
+                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <span class="hiddenLogoName"> GitTour</span>
+                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <span class="companyLogoName"> GitTour</span>
                 <ul class="logoList">
                     <a href="index.html">
-                        <li class="logoListOption"><p>Home</p></li>
+                        <li class="logoListOption">
+                            <p>Home</p>
+                        </li>
                     </a>
                     <a href="package.php">
-                        <li class="logoListOption"><p>Package</p></li>
+                        <li class="logoListOption">
+                            <p>Package</p>
+                        </li>
                     </a>
                     <a href="individual.html">
-                        <li class="logoListOption"><p>Individual Travel</p></li>
+                        <li class="logoListOption">
+                            <p>Individual Travel</p>
+                        </li>
                     </a>
                     <a href="blog.html">
-                        <li class="logoListOption"><p>Blog</p></li>
+                        <li class="logoListOption">
+                            <p>Blog</p>
+                        </li>
                     </a>
                     <a href="contactus.html">
-                        <li class="logoListOption"><p>Contact Us</p></li>
+                        <li class="logoListOption">
+                            <p>Contact Us</p>
+                        </li>
                     </a>
                     <a href="login.html">
-                        <li class="logoListOption"><p>Log In</p></li>
+                        <li class="logoListOption">
+                            <p>Log In</p>
+                        </li>
                     </a>
                 </ul>
             </div>

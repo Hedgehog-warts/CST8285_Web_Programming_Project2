@@ -160,31 +160,18 @@ img:hover {
     width: 100%;
     padding: 3%;
     background: rgb(45,80,45);
-    border-bottom: 2px solid rgb(45,80,45);
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
+    border: none;
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
-}
-#restBtn{
-    width: 100%;
-    padding: 3%; 
-    background: #987976;
-    border-bottom: 2px solid #987976;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    border-radius: 5px;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
+    box-shadow: 3px 3px 3px rgb(45,80,45);
 }
    
 #signBtn:hover, #restBtn:hover{
-    background-color: rgb(72, 39, 82);}
+    background-color: rgb(45,80,45,0.9);
+}
+
 .btn:hover {
     outline: none;
 }

@@ -29,17 +29,17 @@
     <script src="./js/script.js" defer></script>
     <script src="./js/package-script.js" defer></script>
 
-    <title>Packages</title>
+    <title>GitTour - Packages</title>
 </head>
 
 <body>
-    <header class="stickyHeaderNav">
+<header class="stickyHeaderNav">
         <nav id="headerNav" class="headerNav">
             <div class="companyName">
-                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
-                    class="hiddenLogoName"> GitTour</span>
-                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo"><span
-                    class="companyLogoName"> GitTour</span>
+                <img id="hiddenLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <span class="hiddenLogoName"> GitTour</span>
+                <img id="headerLogo" src="./img/nav/gittour_logo_transparent.png" alt="gittourlogo">
+                <span class="companyLogoName"> GitTour</span>
                 <ul class="logoList">
                     <a href="index.html">
                         <li class="logoListOption">

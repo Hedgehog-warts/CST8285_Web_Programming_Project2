@@ -1,3 +1,4 @@
+/* Assignement 2 Group 7_Doyoung Kim */
 /* Promotion */
 
 var slideIndex = 1;

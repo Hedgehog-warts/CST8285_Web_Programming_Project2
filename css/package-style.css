@@ -27,9 +27,10 @@ ul {
     padding-right: 0px;
 }
 
-.companyName {
-    font-family: 'Nerko One';
-    top: -2px;
+.companyName li {
+    min-width: 0px;
+    margin: 0px;
+    padding: 5px;
 }
 
 h1 {
@@ -211,11 +212,7 @@ select {
         min-width: 400px;
     }
 
-    .companyName li {
-        min-width: 0px;
-        margin: 0px;
-        padding: 5px;
-    }
+    
 
     #promotionTitle {
         font-size: 40px;

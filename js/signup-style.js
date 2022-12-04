@@ -81,7 +81,6 @@ const showSuccess = (input) => {
 const checkUEmail = () => {
     let valid = false;
     const email = uEmail.value;
-    console.log(email);
     if (!isRequired(email) || email.match(/.+@.+\..+/) === null || email.match(/^\.@/) !== null || email.match(/\s/) !== null || email.match(/^\W/) !== null) {
         showError(uEmail, "✕ Email address should be non-empty with the format xyz123@xyz.xyz.");
     }

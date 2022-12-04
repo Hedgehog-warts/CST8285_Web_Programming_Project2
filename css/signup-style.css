@@ -113,7 +113,6 @@ h1 {
 /* button */
 
 .btn button {
-
     margin-bottom: 16px;
 }
 
@@ -121,10 +120,8 @@ h1 {
     width: 100%;
     padding: 3%;
     background: rgb(45,80,45);
-    border-bottom: 2px solid rgb(45,80,45);
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
+    border:none;
+    box-shadow: 1px 1px 1px rgb(45,80,45);
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
@@ -134,19 +131,20 @@ h1 {
 #restBtn{
     width: 100%;
     padding: 3%; 
-    background: #987976;
-    border-bottom: 2px solid #987976;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
+    background: rgb(152,121,118);
+    border:none;
+    box-shadow: 1px 1px 1px rgb(152,121,118);
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
 }
-#signBtn:hover, #signBtn2:hover, #restBtn:hover{
+#signBtn:hover, #signBtn2:hover {
+    background: rgb(45,80,45,0.9);
+}
 
-    background-color: rgb(72, 39, 82);
+#restBtn:hover{
+    background: rgb(152,121,118,0.9);
 }
 
 .btn:focus {
